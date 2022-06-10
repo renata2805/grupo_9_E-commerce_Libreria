@@ -11,7 +11,7 @@ Nuestro E-Commerce se dedica a...
 ● Una breve descripción de los integrantes del equipo.
 - CARLOS GIOVANNY
 
-
+Renata Soria.
 
 
 
