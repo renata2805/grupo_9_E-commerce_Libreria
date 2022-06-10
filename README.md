@@ -9,7 +9,7 @@ sitio. También agregar una breve descripción del público al que apunta el sit
 Nuestro E-Commerce se dedica a...
 
 ● Una breve descripción de los integrantes del equipo.
-
+- CARLOS GIOVANNY
 
 
 
