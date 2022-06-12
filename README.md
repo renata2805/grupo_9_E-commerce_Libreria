@@ -36,7 +36,13 @@ Comercialización de Libros en línea en formato digital y físico
 💞️ Apasionado: El Aprendizaje Autónomo
 📫 Email: sirbryanheart@gmail.com
 
-//Renata Soria.
+👋 RENATA SORIA
+👀 Intereses: El mundo IT - Finanzas y Negocios - Deportes
+💞️ Hobbies: la música, los viajes y el gimnasio 
+📫 Email: renata.soria.arg@gmail.com
+
+
+
 
 
 
