@@ -42,6 +42,15 @@ Comercialización de Libros en línea en formato digital y físico
 📫 Email: renata.soria.arg@gmail.com
 
 
+Buscar inspiración en referentes del mercado
+ Sitios de referencia:
+ https://www.tematika.com/
+ https://www.elespejolibros.com.ar/
+ https://www.cuspide.com/
+ https://www.librenta.com/
+ https://www.buscalibre.com.ar/
+
+
 
 
 
