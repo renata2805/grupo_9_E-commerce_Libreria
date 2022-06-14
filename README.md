@@ -41,6 +41,11 @@ Comercialización de Libros en línea en formato digital y físico
 💞️ Hobbies: la música, los viajes y el gimnasio 
 📫 Email: renata.soria.arg@gmail.com
 
+👋 SANTIAGO RESTREPO
+👀 Intereses: La tecnología - Diseño UX/IX - Programación
+💞️ Hobbies: jugar basketball, la cracion de paginas web solo por conocer nuevos metodos y el aprendizaje autonomo
+📫 Email: santiagores130@gmail.com
+
 
 Buscar inspiración en referentes del mercado
  Sitios de referencia:
