@@ -1,4 +1,4 @@
-# grupo_9_E-commerce_Libreria
+# grupo_9_E-commerce_BookExpress
 E-commerce Libros
 https://github.com/renata2805/grupo_9_E-commerce_Libreria.git
 
