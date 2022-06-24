@@ -1,6 +1,11 @@
 # grupo_9_E-commerce_BookExpress
 E-commerce Libros
+
+Link al repo remoto en Git Hub:
 https://github.com/renata2805/grupo_9_E-commerce_Libreria.git
+
+Link al tablero de Sprints en Trello:
+https://trello.com/b/9lQ2cuXP/grupo-n9-bookexpress
 
 **CONSIGNA 2: DEFINIR LA TEMÁTICA DEL MARKET PLACE**
 
