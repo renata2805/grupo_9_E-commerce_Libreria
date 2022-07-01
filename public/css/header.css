@@ -11,6 +11,7 @@ header {
     background-color: #ffffff;
 }
 
+
 .inner-width {
     max-width: 80%;
     display: flex;
@@ -137,6 +138,7 @@ p {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 900;
     color: #3452b2;
+    font-size: 2em;
 }
 
 .Express {
@@ -145,4 +147,11 @@ p {
     font-weight: 100;
     color: #6486f2;
     margin-left: -10px;
+    font-size: 2em;
+}
+
+.logo{
+    width: 2em;
+    justify-content: center;
+    align-items: center;
 }
