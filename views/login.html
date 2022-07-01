@@ -4,9 +4,55 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/css/login.css">
+    <link rel="icon" type="image/svg" href="/public/images/favicon.svg"/>
     <title>Login - BookExpress</title>
 </head>
 <body>
-    
+    <div>
+        <div class="logoBox">
+            <a href="/views/index.html"><img class="logo" src="/public/images/favicon.svg" alt=""></a>
+        </div>
+        <form action="/" method="post">
+            <div class="inputBox">
+                <input type="email" id="email" required="required">
+                <span>Email</span>
+            </div>
+
+            <div class="inputBox">
+                <input type="password" id="contraseña" required="required">
+                <span>Contraseña</span>
+            </div>
+
+            <div class="passBox">
+                <div class="guardarContra">
+                    <input class="cbox" id="guardarPass" type="checkbox">
+                    <span class="guardar">Guardar Contraseña</span>
+                </div>
+                <div class="OlvidarContra">
+                    <a class="link" href="">Olvidaste tu contraseña?</a>
+                </div>
+            </div>
+
+            <div class="botonBox">
+                <button class="boton" id="acceder" type="submit" value="acceder">Acceder</button>
+            </div>
+
+            <div class="crear_cuenta">
+                <div class="guardarContra">
+                    <span class="guardar">No tienes cuenta aún?</span>
+                </div>
+                <div class="OlvidarContra">
+                    <a class="link" href="/views/register.html">Crear Cuenta</a>
+                </div>
+            </div>
+
+            <div class="termBox">
+                <span><a class="link" href="">Terminos y condiciones</a></span>
+            </div>
+
+        </form>
+    </div>
+
 </body>
 </html>

@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:  Arial, Helvetica, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    background-color: #fff;
+}
+.logoBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo{
+    width: 100px;
+ 
+}
+
+.inputBox {
+    position: relative;
+    width: 250px;
+    margin: 30px;
+}
+
+.inputBox input {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #464646;
+    background: none;
+    border-radius: 5px;
+    outline: none;
+    color: #464646;
+    font-size: 1em;
+    transition: 0.5s;
+ 
+}
+
+.inputBox span {
+    position: absolute;
+    left: 0;
+    padding: 10px;
+    pointer-events: none;
+    font-size: 1em;
+    color: #464646;
+    text-transform: uppercase;
+}
+
+.inputBox input:valid ~ span,
+.inputBox input:focus ~ span {
+    color: #ff7700;
+    transform: translateX(10px) translateY(-7px);
+    font-size: 0.65em;
+    padding: 6px;
+    background-color: #fff;
+    border-left: 2px solid #ff7700;
+    border-right: 2px solid #ff7700;
+    letter-spacing: 0.2em;
+
+}
+
+
+.inputBox input:valid ,
+.inputBox input:focus {
+    border: 2px solid #ff7700;
+}
+.botonBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.boton {
+    width: 60%;
+    padding: 10px;
+    border: 2px solid #3452b2;
+    background: #3452b2;
+    border-radius: 5px;
+    outline: none;
+    color: #fff;
+    font-size: 1em;
+    transition: 0.5s;    
+}
+
+.boton:hover{
+    border: 2px solid #ff7700;
+    color: #ff7700;
+    background: none;
+}
+
+.passBox,
+.crear_cuenta {
+    font-size: 14px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.cbox {
+    width: 15px;
+    background: #3700ff;
+}
+.guardar{
+    padding-left: 5px;
+    color: #464646;
+}
+.olvidarContra{
+    width: 45%;
+    margin-left: 1px;
+}
+.link{
+    color: #3700ff;
+    text-decoration: none;
+}
+.link:hover{
+    color: #ff7700;
+    transition: 0.5s;
+
+}
+.guardarContra {
+    display: flex;
+    width: 50%;
+}
+
+.termBox {
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
