@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family:  Arial, Helvetica, sans-serif;
+    font-family: 'Istok Web', sans-serif;
 }
 
 body {
@@ -37,7 +37,7 @@ body {
     border-radius: 5px;
     outline: none;
     color: #464646;
-    font-size: 1em;
+    font-size: 0.5em;
     transition: 0.5s;
  
 }
@@ -96,13 +96,16 @@ body {
 
 .passBox,
 .crear_cuenta {
-    font-size: 14px;
+    font-size: 13px;
     justify-content: center;
     align-items: center;
     display: flex;
     margin-bottom: 20px;
 }
 
+.crear_cuenta{
+    font-size: 14px;
+}
 .cbox {
     width: 15px;
     background: #3700ff;
@@ -112,7 +115,8 @@ body {
     color: #464646;
 }
 .olvidarContra{
-    width: 45%;
+    font-size: 10px;
+    width: 50%;
     margin-left: 1px;
 }
 .link{
@@ -130,6 +134,7 @@ body {
 }
 
 .termBox {
+    font-size: 13px;
     margin-top: 50px;
     width: 100%;
     display: flex;
