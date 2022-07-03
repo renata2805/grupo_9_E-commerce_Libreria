@@ -22,17 +22,18 @@ body {
 }
 
 section {
-    padding: 10px 100px 20px;
-    margin-right: auto;
+    display: inline-block;
+    padding: 20px 30px;
+    width: 150px;
     font-size: 16px;
     border-radius: 5px;
     color: #fff;
     background-color: #3452b2;
-    text-align: center;
+    align-items: center;
 }
 
 .option {
-    display: inline;
-    padding: 10px 100px 20px;
+    display: inline-block;
+    padding: 50px;
     margin: auto;
-    }    
+}    
