@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Istok Web', sans-serif;
+}
+
+.footer {
+    background-color: rgb(224, 224, 224);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.footBox {
+    padding: 50px;
+    width: 30%;
+}
+
+.logo{
+    width: 200px;
+}
+
+.iconos {
+    width: 100%;
+    padding-left: 50px;
+    margin-top: 10px;
+}
+
+.fi-brands-github {
+    width: 100px;
+    color: #3452b2;
+}
+.fi-brands-facebook {
+    width: 100px;
+    color: #3452b2;
+    
+}
+
+.fi-brands-instagram {
+    width: 100px;
+    color: #3452b2;
+}
+
+
+.footBox2 {
+    background-color: rgb(224, 224, 224);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border-top: solid 2px rgb(201, 201, 201);
+    padding: 10px;
+}
+
+li {
+    text-decoration: none;
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: #3452b2;
+}
+
+a:hover {
+    color: #f84904;
+}
+
+.copy {
+    color: #f84904;
+}
