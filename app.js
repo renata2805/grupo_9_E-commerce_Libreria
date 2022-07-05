@@ -29,7 +29,7 @@ app.get("/productCart.html",(req,res)=>{
 });
 
 app.get("/productDetail.html",(req,res) => {
-    res.sendFile(path.resolve(__dirname + "/views/productDetail.html"));
+    res.sendFile(path.join(__dirname + "/views/productDetail.html"));
 });
 
 app.post("/",(req,res)=>{
