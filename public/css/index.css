@@ -68,7 +68,6 @@ body {
     text-align: center;
 }
 .content_slider h2{
-    font-family: 'arial';
     font-size: 30pt;
     letter-spacing: 1px;
     text-transform: uppercase;
@@ -76,7 +75,6 @@ body {
 }
 .content_slider p {
     font-size: 15pt;
-    font-family: 'arial';
     color: #FFF;
     margin-bottom: 20px;
 }
@@ -96,7 +94,6 @@ body {
 .btnSlider{
     color: #FFF;
     font-size: 15pt;
-    font-family: 'arial';
     letter-spacing: 1px;
     padding: 10px 50px;
     border: 1px solid #CCC;
