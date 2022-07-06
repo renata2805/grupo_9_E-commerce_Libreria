@@ -13,6 +13,11 @@ body {
     background-color: #fff;
     align-items: flex-start;
 }
+.iFooter {
+  margin-top: 50px;
+  width: 100% !important;
+  height: 310px !important;
+}
 .logoBox{
     display: flex;
     justify-content: center;

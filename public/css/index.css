@@ -139,6 +139,17 @@ body {
     background: #FFF  !important;
 }
 
+.iFooter {
+    margin-top: 50px;
+    width: 100% !important;
+    height: 310px !important;
+}
+
+.iHeader {
+    width: 100% !important;
+    height: 310px !important;
+    
+}
 @media screen and (max-width: 460px){
 	.content_slider h2 {
 	    font-size: 15pt !important;
@@ -167,4 +178,30 @@ body {
     	font-size: 10pt;
 	}
 
+}
+
+.navegacion{
+    width: 1000px;
+    margin: 30px;
+    background: #FFF;
+}
+
+.navegacion ul {
+    list-style: none;
+}
+
+.menu > li {
+    position: relative;
+    display: inline-block;
+}
+
+.menu > li > a {
+display: block;
+padding: 15px 20px;
+color: #0000ff;
+text-decoration: none;
+}
+
+.menu li a :hover {
+color: #ff7700
 }
