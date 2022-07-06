@@ -11,9 +11,9 @@ body {
     align-items: center;
     min-height: 100vh;
     flex-direction: column;
-    /* background-color: #fff; */
-    background-image: url(/public/images/cool-background\ \(1\).png);
+    background-color: #fff;
 }
+
 .logoBox{
     display: flex;
     justify-content: center;
