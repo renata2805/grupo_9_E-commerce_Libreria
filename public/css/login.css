@@ -13,6 +13,7 @@ body {
     flex-direction: column;
     background-color: #fff;
 }
+
 .logoBox{
     display: flex;
     justify-content: center;
