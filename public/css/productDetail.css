@@ -28,11 +28,16 @@ section {
     width: 150px;
     font-size: 16px;
     border-radius: 5px;
-    color: #fff;
+    color: rgb(248, 245, 245);
     background-color: #3452b2;
     align-items: center;
 }
 
+.option {
+    display: inline-block;
+    padding: 50px;
+    margin: auto;
+}    
 .botonBox {
     display: flex;
     justify-content: center;
@@ -56,30 +61,3 @@ section {
     color: #ff7700;
     background: none;
 }
-
-table {
-    table-layout: fixed;
-    width: 100%;
-    border-collapse: collapse;
-    border: 3px solid #ff7700;
-    padding: 10px;
-  }
-
-  th, td {
-    padding: 10px;
-  }
-  th {
-    letter-spacing: 2px;
-  }
-  
-  td {
-    letter-spacing: 1px;
-  }
-  
-  tbody td {
-    text-align: center;
-  }
-  
-  tfoot th {
-    text-align: right;
-  }
