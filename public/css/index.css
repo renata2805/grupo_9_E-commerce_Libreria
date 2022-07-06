@@ -147,7 +147,7 @@ body {
 
 .iHeader {
     width: 100% !important;
-    height: 310px !important;
+    height: 78px;
     
 }
 @media screen and (max-width: 460px){
