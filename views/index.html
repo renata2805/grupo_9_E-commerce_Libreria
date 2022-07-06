@@ -1,21 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/svg" href="/images/favicon.svg"/>
-    <link rel="stylesheet" href="/css/index.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg" href="/images/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="/public/css/index.css" />
+    <link rel="stylesheet" href="/functions.js">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <script defer src="functions.js"></script>
     <title>Inicio - BookExpress</title>
-</head>
-<body>
+  </head>
+
+  <body>
     <!-- MENU -->
-    <iframe class="iframeMenu" src="/views/header.html" frameborder="0"></iframe>
+    <!-- <iframe class="iframeMenu" src="/views/header.html" frameborder="0"></iframe> -->
     <!-- FIN MENU -->
 
+    <!-- SLIDER -->
+        <section id="container-slider">	
+            <a href="javascript: fntExecuteSlide('prev');" class="arrowPrev"><i class="fas fa-chevron-circle-left"></i></a>
+            <a href="javascript: fntExecuteSlide('next');" class="arrowNext"><i class="fas fa-chevron-circle-right"></i></a>
+            <ul class="listslider">
+              <li><a itlist="itList_0" href="#" class="item-select-slid"></a></li>
+              <li><a itlist="itList_1" href="#"></a></li>
+              <li><a itlist="itList_2" href="#"></a></li>
+            </ul>
+            <ul id="slider">
+              <li style="background-image: url('https://cdn.pixabay.com/photo/2020/04/15/11/20/telework-5046230_1280.jpg'); z-index:0; opacity: 1;">
+                <div class="content_slider" >
+                  <div>
+                    <h2>Que quieres estudiar hoy</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero cumque ut soluta quibusdam iusto qum qui.</p>
+                <a href="#" class="btnSlider">Ver más</a>
+              </div>
+                </div>
+              </li>
+              <li style="background-image: url('https://cdn.pixabay.com/photo/2018/02/20/10/28/business-3167295_960_720.jpg'); ">
+                <div class="content_slider" >
+                  <div>
+                    <h2>Matematicas</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero cumque ut soluta quibusdam iusto qum qui.</p>
+                <a href="#" class="btnSlider">Ver más</a>
+              </div>
+                </div>
+              </li>
+              <li style="background-image: url('https://cdn.pixabay.com/photo/2015/07/17/22/42/typing-849806_960_720.jpg'); ">
+                <div class="content_slider" >
+                  <div>
+                    <h2>Historia</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero cumque ut soluta quibusdam iusto qum qui.</p>
+                <a href="#" class="btnSlider">Ver más</a>
+              </div>
+                </div>
+              </li>
+           </ul>
+         </section>
 
-</body>
+    <!-- FIN SLIDER -->
+   
+    <header>
+    <nav class="navegacion">
+        <ul class="menu">
+            <li><a href="" #="">Recomendados</a></li>
+            <ul class="submenu">
+                <li> <a href="#"></li>
+            </ul>
+            <li><a href="" #="">Novedades</a></li>
+            <ul class="submenu">
+                <li> <a href="#"></li>
+            </ul>
+            <li><a href="" #="">Más vendidos</a></li>
+            <ul class="submenu">
+                <li> <a href="#"></li>
+            </ul>
+        </ul>
+    </nav>
+
+    </header>
+
+    <main>
+      <section class="imagen-main"></section>
+      <img src="" alt="" />
+      <section class="main-concepto">
+        <!-- es el contenedor principar de mi elemento concepto -->
+        <div class="main-concepto-container">
+          <!-- este es el contenedor padre que llevan los elementos del concepto -->
+          <h1 class="titulo">QUIENES SOMOS?</h1>
+          <!-- este h1 nos va a servir para generar un titulo -->
+
+          <p class="texto">
+            Una biblioteca digital que busca conectar <br />
+            la comunidad entre alumnos, profesores e <br />
+            instituciones educativas <span><a href="#">Ver más...</a></span>
+          </p>
+          <!-- este p nos sirve para generar texto -->
+          <a class="mas-icon" href=""></a>
+          <!-- el icono mas nos lleva a otra pagina que detalla mision y vision  -->
+        </div>
+      </section>
+      <section class="main-items">
+        <div class="main-items-container">
+          <ul class="main-items-lista">
+            <!--Lista desordenada: Sin numerar-->
+            <li>matemática</li>
+            <li>ciencias sociales</li>
+            <li>geografía</li>
+            <li>ingles</li>
+            <li>ciencias físicas</li>
+            <li>historia</li>
+            <li>astronomía</li>
+            <li>informática</li>
+            <li>literatura</li>
+            <li>química</li>
+            <li>ciencias biológicas</li>
+            <li>dibujo</li>
+            <li>ciencias económicas</li>
+            <li>educación física</li>
+          </ul>
+        </div>
+
+        <div>
+            <img src="" alt="">
+        </div>
+
+      </section>
+
+      <section>
+        <article>
+          <div><img src="./public/images/alumna .jpg" alt="alumna" /></div>
+          <div><h1>María, estudiante</h1></div>
+          <div>
+            <p>
+              Gracias a bookExpress puedo conectar Con estudiantes de otros
+              lugares, esta Comunidad es genial!
+            </p>
+          </div>
+        </article>
+        <article>
+          <div><img src="./public/images/docente .jpg" alt="docente" /></div>
+          <div>
+            <h1>Claudia, docente</h1>
+          </div>
+          <div>
+            <p>
+              Una herramienta muy útil para dialogar Con otros colegas, saber
+              dónde están los Problemas y buscar soluciones colaborativas
+            </p>
+          </div>
+        </article>
+
+        <article>
+          <div><img src="./public/images/alumno .jpg" alt="alumno" /></div>
+          <div>
+            <h1>Juan, alumno</h1>
+          </div>
+          <div>
+            <p>
+              ¡Nunca más a las fotocopias! bookExpress me Permite centralizar
+              mis libros en un solo dispositivos, Y lo mas importante, colaboro
+              con el medio ambiente
+            </p>
+          </div>
+        </article>
+
+      </section>
+
+
+    </main>
+  </body>
 </html>
