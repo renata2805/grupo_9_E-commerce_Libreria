@@ -22,14 +22,14 @@ body {
     width: 100px;
 }
 
-section {
+.desplegable {
     display: inline-block;
     padding: 20px 30px;
-    width: 150px;
+    width: 180px;
     font-size: 16px;
     border-radius: 5px;
-    color: #fff;
-    background-color: #3452b2;
+    color: solid #fff;
+    background-color: #ff7700;
     align-items: center;
 }
 
@@ -38,6 +38,7 @@ section {
     justify-content: center;
     align-items: center;
     margin-bottom: 50px;
+    margin-top: 50px;
 }
 .boton {
     width: 100%;
@@ -61,8 +62,9 @@ table {
     table-layout: fixed;
     width: 100%;
     border-collapse: collapse;
-    border: 3px solid #ff7700;
+    border: 3px solid  #3452b2;
     padding: 10px;
+    margin-top: 20px;
   }
 
   th, td {
@@ -83,3 +85,13 @@ table {
   tfoot th {
     text-align: right;
   }
+
+  .menuQ{
+    width: 45px;
+    height: 30px;
+    font-size:medium;
+    text-align: center;
+     }
+    .menu {
+        margin-bottom: 50px;
+    }
