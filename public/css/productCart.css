@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Istok Web', sans-serif;
+}
+
+body {
+    display: flex;
+    margin: 1%;
+    min-height: 35vh;
+    flex-direction: column;
+    background-color: #fff;
+    align-items: flex-start;
+}
+.iFooter {
+  margin-top: 50px;
+  width: 100% !important;
+  height: 310px !important;
+}
+.logoBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo{
+    width: 100px;
+}
+
+.desplegable {
+    display: inline-block;
+    padding: 10px;
+    width: 160px;
+    font-size: 16px;
+    border-radius: 5px;
+    color: solid #fff;
+    background-color: #ff7700;
+    align-items: center;
+  }
+
+.desplegable :hover {
+  display: block;
+  background-color: #3452b2;
+  }
+
+  .menu li a {
+    display: block;
+    color:#3452b2;
+    padding: 5px;
+  } 
+
+
+  li {
+    list-style: none;
+  }
+
+.botonBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+.boton {
+    width: 100%;
+    padding: 20px;
+    border: 2px solid #3452b2;
+    background: #3452b2;
+    border-radius: 5px;
+    outline: none;
+    color: #fff;
+    font-size: 1em;
+    transition: 0.5s;    
+}
+
+.boton:hover{
+    border: 2px solid #ff7700;
+    color: #ff7700;
+    background: none;
+}
+
+table {
+    table-layout: fixed;
+    width: 80%;
+    border-collapse: collapse;
+    border: 3px solid  #3452b2;
+    padding: 10px;
+    margin-top: 15px;
+    position: relative
+  }
+
+  th, td {
+    padding: 5px;
+  }
+  th {
+    letter-spacing: 2px;
+  }
+  
+  td {
+    letter-spacing: 1px;
+  }
+  
+  tbody td {
+    text-align: center;
+  }
+  
+  tfoot th {
+    text-align: right;
+  }
+
+  .totales{
+    background-color: red;
+    margin-top: 10px;
+  }
+  .menuQ{
+    width: 45px;
+    height: 30px;
+    font-size:medium;
+    text-align: center;
+  }
+    
+  .menu {
+        margin-bottom: 20px;
+    }

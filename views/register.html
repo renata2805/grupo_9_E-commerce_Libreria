@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/register.css">
+    <link rel="icon" type="image/svg" href="images/favicon.svg"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <title>Registrarse - BookExpress</title>
+</head>
+<body>
+    <div>
+        <div class="logoBox">
+            <a href="/views/index.html"><img class="logo" src="images/favicon.svg" alt=""></a>
+        </div>
+        <form action="/" method="post">
+            <div class="inputBox">
+                <input type="text" name="nombre" id="nombre" required="required">
+                <span>Nombre Completo</span>
+            </div>
+
+            <div class="inputBox">
+                <input type="tel" name="tel" id="tel" required="required">
+                <span>Celular</span>
+            </div>
+
+            <div class="inputBox">
+                <input type="email" name="email" id="email" required="required">
+                <span>email</span>
+            </div>
+
+            <div class="inputBox">
+                <input type="password" name="contraseña" id="contraseña" required="required">
+                <span>Contraseña</span>
+            </div>
+
+            <div class="inputBox">
+                <input type="password" name="confirmarContraseña" id="confirmarContraseña" required="required">
+                <span>Confirmar Contraseña</span>
+            </div>
+
+            <div class="passBox">
+                <div class="guardarContra">
+                    <input class="cbox" id="guardarPass" type="checkbox" required="required">
+                    <span class="guardar">Aceptar <a class="link" href="#">Términos y Condiciones</a></span>
+                </div>
+
+            </div>
+
+            <div class="botonBox">
+                <button class="boton" id="acceder" type="submit" value="acceder">Registrarme</button>
+            </div>
+
+            <div class="accederBox">
+                <div class="accederCuenta">
+                    <span class="guardar">Ya tienes cuenta?</span>
+                </div>
+                <div class="OlvidarContra">
+                    <a class="link" href="/views/login.html">Acceder</a>
+                </div>
+            </div>
+
+
+        </form>
+    </div>
+
+
+
+</body>
+</html>
