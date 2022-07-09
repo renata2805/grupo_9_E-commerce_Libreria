@@ -25,85 +25,106 @@
                 <i class="fas fa-bars"></i>
             </div>
         </div>
-
     </header>
+
     <br>
-    <nav class="desplegable">
-        <ul class="menu">
-            <li><a href="" #="">Ver Carrito</a></li>
-        </ul>
-    </nav>
-    <table summary="Carrito">
-        <thead>
-          <tr>
-            <th scope="col">Producto</th>
-            <th scope="col">Precio</th>
-            <th scope="col">Cantidad</th>
-            <th scope="col">Subtotal</th>
-            <th scope="col">Eliminar artículo</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row"> Producto tal tal</th>
-            <td>$9.99</td>
-            <td><input class="menuQ" type="number"></td>
-            <td>$9.99</td>
-            <td><button type="button"><img height="35" src="/images/cesto-basura.png"></button></td>
-          </tr>
-          <tr>
-            <th scope="row"> Producto tal tal</th>
-            <td>$9.99</td>
-            <td><input class="menuQ" type="number"></td>
-            <td>$9.99</td>
-            <td><button type="button"><img height="35" src="/images/cesto-basura.png"></button></td>
-          </tr>
-          <div class="totales">
-            <tr>
-            <th scope="row">Total</th>
-          </tr>    
-          </div>
-       </tbody>
-      </table>
-       
+
+   <div class="container">
+        <section id="carrito">
+          <ul class="menu">
+            <li >Carrito</li>
+          </ul>
+        </section>  
+        <section>
+          <table summary="Carrito">
+              <thead>
+                <tr>
+                  <th scope="col">Producto</th>
+                  <th scope="col">Precio</th>
+                  <th scope="col">Cantidad</th>
+                  <th scope="col">Subtotal</th>
+                  <th scope="col">Eliminar artículo</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row"> Producto tal tal</th>
+                  <td>$9.99</td>
+                  <td><input class="menuQ" type="number"></td>
+                  <td>$9.99</td>
+                  <td><button type="button"><img height="28" src="/images/cesto-basura.png"></button></td>
+                </tr>
+                <tr>
+                  <th scope="row"> Producto tal tal</th>
+                  <td>$9.99</td>
+                  <td><input class="menuQ" type="number"></td>
+                  <td>$9.99</td>
+                  <td><button type="button"><img height="28" src="/images/cesto-basura.png"></button></td>
+                </tr>
+                </tbody>
+          </table>
+          <table>
+                <tr>
+                    <th class="total" scope="row">Total Compra</th>
+                    <td></td>
+                    <td></td>
+                    <th class="total">$19.99</th>
+                    <td></td>
+                </tr>    
+              </tbody>
+          </table>
+          <table>
+            <tbody>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><button type="button">PAGAR</button></td>
+                <td> <button type="button"> VACIAR CARRITO </button></td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+      </div>   
     <br> 
-        <nav class="desplegable">
-            <ul class="menu">
-                <li><a href="" #="">Ver Guardados</a></li>
-            </ul>
-        </nav>
-    <table summary="Guardados">
-        <thead>
-          <tr>
-            <th scope="col">Producto</th>
-            <th scope="col">Precio</th>
-            <th scope="col">Cantidad</th>
-            <th scope="col">Subtotal</th>
-            <th scope="col">Eliminar artículo</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row"> Producto tal tal</th>
-            <td>$9.99</td>
-            <td><input class="menuQ" type="number"></td>
-            <td>$9.99</td>
-            <td><button type="button"><img height="35" src="/images/cesto-basura.png"></button></td>
-          </tr>
-          <tr>
-            <th scope="row"> Producto tal tal</th>
-            <td>$9.99</td>
-            <td><input class="menuQ" type="number"></td>
-            <td>$9.99</td>
-            <td><button type="button"><img height="35" src="/images/cesto-basura.png"></button></td>
-          </tr>
-          <div class="totales">
-            <tr>
-            <th scope="row">Total</th>
-          </tr>    
-          </div>
-       </tbody>
-      </table>
+    <div class="container">
+      <section id="guardados">
+        <ul class="menu">
+          <li>Guardados</li>
+        </ul>
+      </section>  
+      <section>
+        <table summary="Guardados">
+            <thead>
+              <tr>
+                <th scope="col">Producto</th>
+                <th scope="col">Precio</th>
+                <th scope="col">Cantidad</th>
+                <th scope="col">Subtotal</th>
+                <th scope="col">Agregar al carrito</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row"> Producto tal tal</th>
+                <td>$9.99</td>
+                <td><input class="menuQ" type="number"></td>
+                <td>$9.99</td>
+                <td><button type="button"><img height="28" src="/images/flecha.png"></button></td>
+              </tr>
+              <tr>
+                <th scope="row"> Producto tal tal</th>
+                <td>$9.99</td>
+                <td><input class="menuQ" type="number"></td>
+                <td>$9.99</td>
+                <td><button type="button"><img height="28" src="/images/flecha.png"></button></td>
+              </tr>
+            </tbody>
+        </table>
+      </section>
+    </div>   
+  <br> 
+     
              
         <div class="botonBox">
             <button class="boton">Seguir comprando</button>

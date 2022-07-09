@@ -11,8 +11,13 @@ body {
     min-height: 35vh;
     flex-direction: column;
     background-color: #fff;
-    align-items: flex-start;
+    align-items: left;
 }
+
+.container {
+width: 1200px;
+}
+
 .iFooter {
   margin-top: 50px;
   width: 100% !important;
@@ -27,39 +32,35 @@ body {
     width: 100px;
 }
 
-.desplegable {
+.menu {
     display: inline-block;
     padding: 10px;
-    width: 160px;
+    width: 150px;
     font-size: 16px;
     border-radius: 5px;
     color: solid #fff;
     background-color: #ff7700;
     align-items: center;
-  }
+}
 
-.desplegable :hover {
-  display: block;
-  background-color: #3452b2;
-  }
-
-  .menu li a {
+.menu li a {
     display: block;
-    color:#3452b2;
     padding: 5px;
-  } 
+} 
 
 
   li {
     list-style: none;
-  }
+    text-align: center;
+}
 
 .botonBox {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 30px;
-    margin-top: 30px;
+    margin-top: 10px;
+    width: fit-content;
 }
 .boton {
     width: 100%;
@@ -79,46 +80,46 @@ body {
     background: none;
 }
 
+.total {
+    color: #3452b2;
+    font-size: large;
+}
+
 table {
     table-layout: fixed;
     width: 80%;
-    border-collapse: collapse;
+    border-collapse:inherit;
     border: 3px solid  #3452b2;
     padding: 10px;
     margin-top: 15px;
-    position: relative
-  }
+    position: relative;
+}
 
-  th, td {
-    padding: 5px;
-  }
-  th {
-    letter-spacing: 2px;
-  }
-  
-  td {
+th, td {
+    padding: 1px;
+}
+
+th {
     letter-spacing: 1px;
-  }
+}
   
-  tbody td {
+td {
+    letter-spacing: 1px;
+}
+  
+tbody td {
     text-align: center;
-  }
+}
   
   tfoot th {
     text-align: right;
-  }
+}
 
-  .totales{
-    background-color: red;
-    margin-top: 10px;
-  }
   .menuQ{
     width: 45px;
     height: 30px;
     font-size:medium;
     text-align: center;
-  }
+}
     
-  .menu {
-        margin-bottom: 20px;
-    }
+   
