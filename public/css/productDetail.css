@@ -50,6 +50,26 @@ header .form .input{
     margin-top: 2px;
 }
 
+.main-detail-product{
+    background-color: #FFF;
+    border: 1px solid #000;
+}
+
+.detail-product article, div{
+    background-color: #FFF;
+    border: 1px solid #000;
+}
+
+.detail-product{
+    background-color: #FFF;
+    border: 1px solid #000;
+    color: #666;
+    padding: 1%;
+    display: inline-block;
+    width: 80%;
+    margin-top: 2px;
+}
+
 @media (min-width:768px){
     .top-header{
         border: solid 1px #3452b2;
