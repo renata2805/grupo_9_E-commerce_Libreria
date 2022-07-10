@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/svg" href="/images/favicon.svg"/>
     <link href="/css/productCart.css" rel="stylesheet" type="text/css">
+    <link href="/css/footer.css" rel="stylesheet" type="text/css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
@@ -17,7 +18,7 @@
         
         <div class="inner-width">
             <div>
-                <a href="/views/index.html"><img class="logo" src="/images/favicon.svg" alt=""></a>
+                <a href="/views/index.html"><img class="logo1" src="/images/favicon.svg" alt=""></a>
                 <span class="BookExpress"> <img src="/images/logoWEB.png" height="38"></span>
             </div>
             <div class="menu-icon">
@@ -29,62 +30,63 @@
     <br>
 
    <div class="container">
-        <section id="carrito">
-          <ul class="menu">
-            <li >Carrito</li>
-          </ul>
-        </section>  
-        <section>
-          <table summary="Carrito">
-              <thead>
-                <tr>
-                  <th scope="col">Producto</th>
-                  <th scope="col">Precio</th>
-                  <th scope="col">Cantidad</th>
-                  <th scope="col">Subtotal</th>
-                  <th scope="col">Eliminar artículo</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <th scope="row"> Producto tal tal</th>
-                  <td>$9.99</td>
-                  <td><input class="menuQ" type="number"></td>
-                  <td>$9.99</td>
-                  <td><button type="button"><img height="25" src="/images/cesto-basura.png"></button></td>
-                </tr>
-                <tr>
-                  <th scope="row"> Producto tal tal</th>
-                  <td>$9.99</td>
-                  <td><input class="menuQ" type="number"></td>
-                  <td>$9.99</td>
-                  <td><button type="button"><img height="25" src="/images/cesto-basura.png"></button></td>
-                </tr>
-                </tbody>
-          </table>
-          <table>
-                <tr>
-                    <th class="total" scope="row">Total Compra</th>
-                    <td></td>
-                    <td></td>
-                    <th class="total">$19.99</th>
-                    <td></td>
-                </tr>    
-              </tbody>
-          </table>
-          <table>
-            <tbody>
-              <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><button class="pagar" type="button">PAGAR</button></td>
-                <td> <button class="reseteo" type="reset"> VACIAR CARRITO </button></td>
-              </tr>
-            </tbody>
-          </table>
-        </section>
-      </div>   
+      <section id="carrito">
+        <ul class="menu">
+          <li >Carrito</li>
+        </ul>
+      </section>  
+      <section>
+        <table summary="Carrito">
+          <thead>
+            <tr>
+              <th scope="col">Producto</th>
+              <th scope="col">Precio</th>
+              <th scope="col">Cantidad</th>
+              <th scope="col">Subtotal</th>
+              <th scope="col">Eliminar artículo</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row"> Producto tal tal</th>
+              <td>$9.99</td>
+              <td><input class="menuQ" type="number"></td>
+              <td>$9.99</td>
+              <td><button type="button"><img height="25" src="/images/cesto-basura.png"></button></td>
+            </tr>
+            <tr>
+              <th scope="row"> Producto tal tal</th>
+              <td>$9.99</td>
+              <td><input class="menuQ" type="number"></td>
+              <td>$9.99</td>
+              <td><button type="button"><img height="25" src="/images/cesto-basura.png"></button></td>
+            </tr>
+          </tbody>
+        </table>
+        <table>
+          <tbody>  
+            <tr>
+              <th class="total" scope="row">Total Compra</th>
+              <td></td>
+              <td></td>
+              <th class="total">$19.99</th>
+              <td></td>
+            </tr>    
+          </tbody>
+        </table>
+        <table>
+          <tbody>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td><button class="pagar" type="button">PAGAR</button></td>
+              <td> <button class="reseteo" type="reset"> VACIAR CARRITO </button></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </div>   
     <br> 
     <div class="container">
       <section id="guardados">
@@ -134,12 +136,41 @@
       </section>
     </div>   
   <br> 
-          <div class="botonBox">
-            <button class="boton">Seguir comprando</button>
-        </div>  
-        
-        <footer >
-          <iframe class="iFooter" src="/views/footer.html" frameborder="0"></iframe>
-       </footer>
-</body>
+    <div class="botonBox">
+      <button class="boton">Seguir comprando</button>
+       </div>  
+</body>        
+<footer class="footer" id="footer">
+
+  <div class="footBox">
+      <img class="logo" src="/images/logoWEB2.png" alt=""> <br>
+      <span>Colombia - Argentina - Uruguay</span><br>
+      <span>hola@bookexpress.com</span>
+
+      <div class="iconos">
+          <i class="fi fi-brands-github "></i>
+          <i class="fi fi-brands-facebook "></i>
+          <i class="fi fi-brands-instagram "></i>
+      </div>
+
+
+  </div>
+
+  <div class="footBox">
+      <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Laudantium ipsa cupiditate possimus, quisquam libero beatae
+          delectus repellendus quis impedit temporibus doloribus est 
+          totam incidunt, animi odio accusantium quae mollitia porro?</span>
+  </div>
+
+  <div class="footBox"> 
+      <li><a href="/views/index.html">Inicio</a></li>
+      <li><a href="#">Tienda</a></li>
+      <li><a href="/views/login.html">Acceder</a></li>
+      <li><a href="/views/register.html">Registrarse</a></li>
+      <li><a href="#">Carrito Compras</a></li>
+  </div>
+
+</footer>
+
 </html>
