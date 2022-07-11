@@ -147,8 +147,7 @@ body {
 
 .iHeader {
     width: 100% !important;
-    height: 78px;
-    
+    height: 78px; 
 }
 @media screen and (max-width: 460px){
 	.content_slider h2 {

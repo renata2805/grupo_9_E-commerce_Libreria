@@ -20,6 +20,14 @@ app.get("/login.html",(req,res)=>{
     res.sendFile(path.resolve(__dirname + "/views/login.html"));
 });
 
+app.get("/footer.html",(req,res)=>{
+    res.sendFile(path.resolve(__dirname + "/views/footer.html"));
+});
+
+app.get("/header.html",(req,res)=>{
+    res.sendFile(path.resolve(__dirname + "/views/header.html"));
+});
+
 app.get("/register.html",(req,res)=>{
     res.sendFile(path.resolve(__dirname + "/views/register.html"));
 });
