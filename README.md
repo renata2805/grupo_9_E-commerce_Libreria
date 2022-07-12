@@ -47,7 +47,7 @@ Email: renata.soria.arg@gmail.com
 
 SANTIAGO RESTREPO
 Intereses: La tecnología - Diseño UX/IX - ProgramacióN
-Hobbies: jugar basketball, la cracion de paginas web solo por conocer nuevos metodos y el aprendizaje autonomo
+Hobbies: jugar basketball, la creacion de paginas web solo por conocer nuevos metodos y el aprendizajes autonomos
 Email: santiagores130@gmail.com
 
 SEBASTIÁN DÍAZ
