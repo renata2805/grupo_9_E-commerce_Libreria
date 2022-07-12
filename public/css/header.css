@@ -1,3 +1,12 @@
+:root{
+    --bs-azul: #3452b2;
+    --bs-azulClaro: #6486f2;
+    --bs-naranja: #ff7700;
+    --bs-oscuro: #040615;
+    --bs-gris: #f2f4f5;
+    --bs-blanco: #ffffff;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -24,11 +33,11 @@
 .menu-icon {
     width: 50px;
     height: 50px;
-    background: #000000;
+    background: var(--bs-azulClaro);
     color: #fff;
     text-align: center;
     line-height: 50px;
-    font-size: 20px;
+    font-size: 16px;
     z-index: 2;
     border-radius: 10px;
     cursor: pointer;
