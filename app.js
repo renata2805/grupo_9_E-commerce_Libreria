@@ -1,12 +1,9 @@
 const express = require ("express");
-
 const path = require("path")
-
 const app = express();
-
 const publicPath = path.resolve(__dirname,"./public");
-
 app.use (express.static(publicPath));
+
 
 app.listen(3000, ()=> {
     console.log("Servidor Funcionando")
@@ -20,13 +17,13 @@ app.get("/login.html",(req,res)=>{
     res.sendFile(path.resolve(__dirname + "/views/login.html"));
 });
 
-// app.get("/footer.html",(req,res)=>{
-//     res.sendFile(path.resolve(__dirname + "/views/footer.html"));
-// });
+app.get("/footer.html",(req,res)=>{
+    res.sendFile(path.resolve(__dirname + "/views/footer.html"));
+});
 
-// app.get("/header.html",(req,res)=>{
-//     res.sendFile(path.resolve(__dirname + "/views/header.html"));
-// });
+app.get("/header.html",(req,res)=>{
+    res.sendFile(path.resolve(__dirname + "/views/header.html"));
+});
 
 app.get("/register.html",(req,res)=>{
     res.sendFile(path.resolve(__dirname + "/views/register.html"));
