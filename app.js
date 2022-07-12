@@ -20,13 +20,13 @@ app.get("/login.html",(req,res)=>{
     res.sendFile(path.resolve(__dirname + "/views/login.html"));
 });
 
-app.get("/footer.html",(req,res)=>{
-    res.sendFile(path.resolve(__dirname + "/views/footer.html"));
-});
+// app.get("/footer.html",(req,res)=>{
+//     res.sendFile(path.resolve(__dirname + "/views/footer.html"));
+// });
 
-app.get("/header.html",(req,res)=>{
-    res.sendFile(path.resolve(__dirname + "/views/header.html"));
-});
+// app.get("/header.html",(req,res)=>{
+//     res.sendFile(path.resolve(__dirname + "/views/header.html"));
+// });
 
 app.get("/register.html",(req,res)=>{
     res.sendFile(path.resolve(__dirname + "/views/register.html"));
@@ -40,25 +40,6 @@ app.get("/productDetail.html",(req,res) => {
     res.sendFile(path.join(__dirname + "/views/productDetail.html"));
 });
 
-app.post("/",(req,res)=>{
-    res.sendFile(path.resolve(__dirname + "/views/index.html"));
-});
-
-app.post("/login.html",(req,res)=>{
-    res.sendFile(path.resolve(__dirname + "/views/login.html"));
-});
-
-app.post("/register.html",(req,res)=>{
-    res.sendFile(path.resolve(__dirname + "/views/register.html"));
-});
-
-app.post("/productCart.html",(req,res)=>{
-    res.sendFile(path.resolve(__dirname + "/views/productCart.html"));
-});
-
-app.post("/productDetail.html",(req,res)=>{
-    res.sendFile(path.resolve(__dirname + "/views/productDetail.html"));
-});
 
 
 
