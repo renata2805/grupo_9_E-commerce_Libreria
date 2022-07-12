@@ -157,4 +157,13 @@ tfoot th {
     color: #ff7700;
 }
 
+@keyframes flecha {
+    0% { opacity: 0%;}
+    25% { opacity: 100%;}
+    100% { opacity: 0%;}
+}
+
+.flecha {
+    animation: flecha 2s infinite;
+}
    
