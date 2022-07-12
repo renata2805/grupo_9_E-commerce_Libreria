@@ -9,9 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"/>
     <link rel="stylesheet" href="/css/index.css" />
-             
     <script  src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-    <script  src="functions.js"></script>
 
     <title>Inicio - BookExpress</title>
   </head>
@@ -19,75 +17,89 @@
   <body>
     <!-- MENU -->
     <header>
-        <iframe class="iHeader" src="/views/header.html" frameborder="0"></iframe>
+        <iframe class="iHeader" src="/header.html" frameborder="0"></iframe>
     </header>
     
     <!-- FIN MENU -->
 
     <!-- SLIDER -->
         <section id="container-slider">	
-            <a href="javascript: fntExecuteSlide('prev');" class="arrowPrev"><i class="fas fa-chevron-circle-left"></i></a>
-            <a href="javascript: fntExecuteSlide('next');" class="arrowNext"><i class="fas fa-chevron-circle-right"></i></a>
-            <ul class="listslider">
-              <li><a itlist="itList_0" href="#" class="item-select-slid"></a></li>
-              <li><a itlist="itList_1" href="#"></a></li>
-              <li><a itlist="itList_2" href="#"></a></li>
-            </ul>
-            <ul id="slider">
-              <li style="background-image: url('/images/biblioteca.jpg'); z-index:0; opacity: 1;">
-                <div class="content_slider" >
-                  <div>
-                    <h2>Que quieres estudiar hoy</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero cumque ut soluta quibusdam iusto qum qui.</p>
-                <a href="#" class="btnSlider">Ver más</a>
-              </div>
-                </div>
-              </li>
-              <li style="background-image: url('/images/biblioteca.jpg'); ">
-                <div class="content_slider" >
-                  <div>
-                    <h2>Quienes Somos</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero cumque ut soluta quibusdam iusto qum qui.</p>
-                <a href="#" class="btnSlider">Ver más</a>
-              </div>
-                </div>
-              </li>
-              <li style="background-image: url('/images/biblioteca.jpg'); ">
-                <div class="content_slider" >
-                  <div>
-                    <h2>Nuestra Tienda</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero cumque ut soluta quibusdam iusto qum qui.</p>
-                <a href="#" class="btnSlider">Ver más</a>
-              </div>
-                </div>
-              </li>
+            <div class="slider-frame">
+              <ul>
+                  <li><img src="./images/slider1.jpg" alt=""></li>
+                  <li><img src="./images/slider2.jpg" alt=""></li>
+                  <li><img src="./images/slider3.jpg" alt=""></li>
+                  <li><img src="./images/slider4.jpg" alt=""></li>
+              </ul>
+          </div>
            </ul>
          </section>
 
     <!-- FIN SLIDER -->
-   
-    <section>
-    <nav class="navegacion">
+
+
+   <!-- RECOMENDADOS NOVEDADES MAS VENDIDOS -->
+    <section class="recomendadosNovedades">
+    <div class="recomendados">
         <ul class="menu">
-            <li><a href="" #="">Recomendados</a></li>
-            <ul class="submenu">
-                <!--aquí deberíamos incluir el listado de recomendados-->
-                <li> <a href="#"></li>
-            </ul>
+            <li clas><a href="" #="">Recomendados</a></li>
             <li><a href="" #="">Novedades</a></li>
-            <ul class="submenu">
-                <!--aquí deberíamos incluir el listado de novedades-->
-                <li> <a href="#"></li>
-            </ul>
             <li><a href="" #="">Más vendidos</a></li>
-            <ul class="submenu">
-                <!--aquí deberíamos incluir el listado de más vendidos-->
-                <li> <a href="#"></li>
-            </ul>
         </ul>
-    </nav>
+      </div>
+      
+      <div class="imagenesRecomendados">
+        <div class="cajaImg">
+          <img class="imgCajaRecomendado" src="" alt="">
+        </div>
+
+        <div class="cajaImg">
+          <img class="imgCajaRecomendado" src="" alt="">
+        </div>
+
+        <div class="cajaImg">
+          <img class="imgCajaRecomendado" src="" alt="">
+        </div>
+
+        <div class="cajaImg">
+          <img class="imgCajaRecomendado" src="" alt="">
+        </div>
+
+        <div class="cajaImg">
+          <img class="imgCajaRecomendado" src="" alt="">
+        </div>
+
+        
+      </div>
 
     </section>
+  <!--  FIN RECOMENDADOS NOVEDADES MAS VENDIDOS -->
+
+    <!-- COPIA RECOMENDADOS NOVEDADES MAS VENDIDOS -->
+    <!-- <section class="recomendadosNovedades">
+      <div class="recomendados">
+          <ul class="menu">
+              <li><a href="" #="">Recomendados</a></li>
+              <ul class="submenu">
+                  <!aquí deberíamos incluir el listado de recomendados-->
+                  <!-- <li> <a href="#"></li> -->
+              <!-- </ul> -->
+              <!-- <li><a href="" #="">Novedades</a></li>
+              <ul class="submenu">
+                  aquí deberíamos incluir el listado de novedades
+                  <li> <a href="#"></li>
+              </ul>
+              <li><a href="" #="">Más vendidos</a></li>
+              <ul class="submenu">
+                  aquí deberíamos incluir el listado de más vendidos
+                  <li> <a href="#"></li>
+              </ul>
+          </ul>
+        </div> -->
+  
+      <!-- </section> --> 
+    <!--  FIN COPIA RECOMENDADOS NOVEDADES MAS VENDIDOS -->
+
 
     <section>
       <section class="imagen-main"></section>
@@ -181,7 +193,9 @@
     </section>
 
     <footer >
-       <iframe class="iFooter" src="/views/footer.html" frameborder="0"></iframe>
+
+       <iframe class="iFooter" src="/footer.html" frameborder="0"></iframe>
+
     </footer>
     
   </body>
