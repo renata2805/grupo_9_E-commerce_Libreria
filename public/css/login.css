@@ -38,7 +38,7 @@ body {
     border-radius: 5px;
     outline: none;
     color: #464646;
-    font-size: 0.5em;
+    font-size: 1em;
     transition: 0.5s;
  
 }
@@ -56,14 +56,17 @@ body {
 .inputBox input:valid ~ span,
 .inputBox input:focus ~ span {
     color: #ff7700;
-    transform: translateX(10px) translateY(-7px);
+    transform: translateX(10px) translateY(-20px);
     font-size: 0.65em;
     padding: 6px;
     background-color: #fff;
     border-left: 2px solid #ff7700;
     border-right: 2px solid #ff7700;
     letter-spacing: 0.2em;
-
+    -webkit-transform: translateX(10px) translateY(-20px);
+    -moz-transform: translateX(10px) translateY(-20px);
+    -ms-transform: translateX(10px) translateY(-20px);
+    -o-transform: translateX(10px) translateY(-20px);
 }
 
 
