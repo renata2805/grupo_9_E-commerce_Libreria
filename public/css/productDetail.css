@@ -102,6 +102,12 @@ header .form .input{
     justify-content:space-around;
 }
 
+.iFooter {
+    margin-top: 50px;
+    width: 100% !important;
+    height: 340px !important;
+}
+
 @media (min-width:768px){
     .top-header{
         /*border: solid 1px #3452b2;*/
