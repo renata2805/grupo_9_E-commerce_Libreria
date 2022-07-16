@@ -17,3 +17,16 @@ Breve retrospectiva del primer sprint - Exposición en modelo estrella
 
 5) Dejar de hacer
 // Giovanny: Cambios sin documentar el codigo
+
+Breve retrospectiva del segundo sprint - Exposición en modelo estrella
+
+1) Comenzar a hacer
+
+2) Hacer más
+
+3) Continuar haciendo
+
+4) Hacer menos
+
+
+5) Dejar de hacer
