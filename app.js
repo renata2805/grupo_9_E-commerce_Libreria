@@ -22,11 +22,11 @@ app.get("/register.html",(req,res)=>{
 });
 
 app.get("/productCart.html",(req,res)=>{
-    res.sendFile(path.resolve(__dirname + "/views/productCart.html"));
+    res.sendFile(path.resolve(__dirname + "/views/products/productCart.html"));
 });
 
 app.get("/productDetail.html",(req,res) => {
-    res.sendFile(path.join(__dirname + "/views/productDetail.html"));
+    res.sendFile(path.join(__dirname + "/views/products/productDetail.html"));
 });
 
 
