@@ -28,5 +28,4 @@ Breve retrospectiva del segundo sprint - Exposición en modelo estrella
 
 4) Hacer menos
 
-
 5) Dejar de hacer
