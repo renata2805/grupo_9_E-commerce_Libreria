@@ -80,3 +80,28 @@
 @media (min-width:1000px){
 
 }
+
+.bookImage {
+    margin-left: 20px;
+    display: flex;
+    height: 300px;
+}
+
+.libro {
+   margin-left: 100px;
+   display: block;
+}
+
+.libro p {
+    flex-direction: column;
+}
+
+.detalles {
+    display: block;
+}
+
+.detalles p {
+    flex-direction: row;
+}
+
+
