@@ -102,6 +102,11 @@
     display: flex;
 }
 
+.detalles p {
+    display: inline-block;
+    display: flex;
+}
+
 
 
 
