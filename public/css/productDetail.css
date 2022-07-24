@@ -97,11 +97,11 @@
 }
 
 .detalles {
-    display: block;
+    margin-left: 100px;
+    position: relative;
+    display: flex;
 }
 
-.detalles p {
-    flex-direction: row;
-}
+
 
 
