@@ -82,9 +82,9 @@
 }
 
 .bookImage {
-    margin-left: 20px;
+    margin-left: 30px;
     display: flex;
-    height: 300px;
+    height: 450px;
 }
 
 .libro {
@@ -96,12 +96,74 @@
     flex-direction: column;
 }
 
-.detalles {
-    display: block;
+h1{
+    text-align: center;
+    font-size: x-large;
+}
+
+.clasificacion {
+    font-size: large;
+    text-align: center;
+}
+
+.precio {
+    height: 30px;
+    width: 80px;
+    background-color: #3452b2;
+    color: #fff;
+    border-radius: 5px;
+    transition: 0.4s;
+    border: #3452b2 2px solid;
+}
+
+.precio:hover {
+    background-color: #fff;
+    border: #ff7700 2px solid;
+    color: #ff7700;
+}
+
+.reseña {
+    text-align: justify;
+    width: 700px;
 }
 
 .detalles p {
-    flex-direction: row;
+    display: inline-block;
+    margin-left: 100px;
+    width: 110px;
+    text-align: center;
 }
 
+.botones button{
+    display: inline-block;
+    margin-left: 100px;
+    width: 110px;
+    background-color: lightslategray;
+    color: #fff;
+    height: 30px;
+    border-color: lightslategray;
+    border-radius: 5px;
+    font-weight: 1000;
+}
 
+.informacion p{
+    display: inline-block;
+    margin-left: 100px;
+    width: 110px;
+    text-align: center;
+}
+
+.opinion {
+    margin: 20px;
+    padding: 10px;
+    display: block;
+    position: absolute;
+    left: 10px;
+    border-radius: 2%;
+    border-style: double;
+    background-color: lightgray;
+}
+
+.opinion p {
+    width: 900px;
+}
