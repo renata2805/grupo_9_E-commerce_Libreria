@@ -14,11 +14,11 @@ app.get("/",(req,res)=>{
 });
 
 app.get("/login.html",(req,res)=>{
-    res.sendFile(path.resolve(__dirname + "/views/login.html"));
+    res.sendFile(path.resolve(__dirname + "/views/users/login.html"));
 });
 
 app.get("/register.html",(req,res)=>{
-    res.sendFile(path.resolve(__dirname + "/views/register.html"));
+    res.sendFile(path.resolve(__dirname + "/views/users/register.html"));
 });
 
 app.get("/productCart.html",(req,res)=>{
