@@ -13,21 +13,11 @@
     <title>Carrito de compras</title>
 </head>
 <body>
-   
-   <header>
-        
-        <div class="inner-width">
-            <div>
-                <a href="/views/index.html"><img class="logo1" src="/images/favicon.svg" alt=""></a>
-                <span class="BookExpress"> <img src="/images/logoWEB.png" height="38"></span>
-            </div>
-            <div class="menu-icon">
-                <i class="fas fa-bars"></i>
-            </div>
-        </div>
-    </header>
 
-    <br>
+   <header>
+    <%- include('./partials/header') %>
+   </header>
+    
 
    <div class="container">
       <section id="carrito">
@@ -139,8 +129,12 @@
     <div class="botonBox">
       <button class="boton">Seguir comprando</button>
        </div>  
-</body>        
+</body>   
+
 <footer >
-  <iframe class="iFooter" src="/footer.html" frameborder="0"></iframe>
+
+  <%- include() %>
+ 
 </footer>
+
 </html>

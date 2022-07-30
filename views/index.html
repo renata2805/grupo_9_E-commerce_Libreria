@@ -17,7 +17,7 @@
   <body>
     <!-- MENU -->
     <header>
-        <iframe class="iHeader" src="/header.html" frameborder="0"></iframe>
+      <%- include('partials/header') %>
     </header>
     
     <!-- FIN MENU -->
@@ -26,10 +26,10 @@
         <section id="container-slider">	
             <div class="slider-frame">
               <ul>
-                  <li><img src="./images/slider1.jpg" alt=""></li>
-                  <li><img src="./images/slider2.jpg" alt=""></li>
-                  <li><img src="./images/slider3.jpg" alt=""></li>
-                  <li><img src="./images/slider4.jpg" alt=""></li>
+                  <li><img src="./images/libroAbierto.png" alt=""></li>
+                  <li><img src="./images/libros.png" alt=""></li>
+                  <li><img src="./images/lectores.png" alt=""></li>
+                  <li><img src="./images/libros.png" alt=""></li>
               </ul>
           </div>
            </ul>
@@ -42,9 +42,9 @@
     <section class="recomendadosNovedades">
     <div class="recomendados">
         <ul class="menu">
-            <li clas><a href="" #="">Recomendados</a></li>
-            <li><a href="" #="">Novedades</a></li>
-            <li><a href="" #="">Más vendidos</a></li>
+            <li clas><a href="#">Recomendados</a></li>
+            <li><a href="#">Novedades</a></li>
+            <li><a href="#">Más vendidos</a></li>
         </ul>
       </div>
       
@@ -108,10 +108,12 @@
         
         <div class="texto">
          <p class="texto-contenido">  Una biblioteca digital que busca conectar <br />
-          la comunidad entre alumnos, profesores e <br />
-          instituciones educativas  </p> </div>  
+          la comunidad entre alumnos, profesores e  instituciones educativas </p>
+        </div>  
         
-          <div class="mas">   <a href="#"> <img class="mas-img" src="/images/mas.png" alt="mas"></a></div>
+          <div class="mas">
+              <img class="mas-img" src="/images/mas.png" alt="mas">
+          </div>
        
       
        
@@ -132,7 +134,7 @@
          <div class="tres">  <li><a href="#" class="estilo">    geografía </a></li> </div>
          <div class="cuatro">  <li><a href="#" class="estilo">  ingles </a></li> </div>
           <div class="cinco">   <li> <a href="# " class="estilo"> ciencias físicas </a></li> </div>
-          <div class="seis">  <li> <a href="#" class="estilo"> historia </a></li>  </div>
+          <!-- <div class="seis">  <li> <a href="#" class="estilo"> historia </a></li>  </div> -->
           <div class="siete"> <li> <a href="#" class="estilo" > astronomía </a></li>  </div>
           <div class="ocho">  <li> <a href="#" class="estilo"> informática </a></li>  </div>
           <div class="nueve"> <li> <a href="#" class="estilo"> literatura </a></li>  </div>
@@ -192,7 +194,7 @@
     </section>
     <footer >
 
-       <iframe class="iFooter" src="/footer.html" frameborder="0"></iframe>
+      <%- include('/partials/footer') %>
 
     </footer>
     

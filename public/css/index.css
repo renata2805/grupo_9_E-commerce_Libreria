@@ -47,7 +47,7 @@ body {
 
 .slider-frame {
 	width: 100%;
-    height: auto;
+    height: 70vh;
 	margin:5px auto 0;
 	overflow: hidden;
 }
