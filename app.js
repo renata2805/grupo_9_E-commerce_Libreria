@@ -19,19 +19,19 @@ app.get("/",(req,res)=>{
     res.sendFile(path.resolve(__dirname + "/views/index.html"));
 });
 
-app.get("/login.html",(req,res)=>{
+app.get("/login",(req,res)=>{
     res.sendFile(path.resolve(__dirname + "/views/users/login.html"));
 });
 
-app.get("/register.html",(req,res)=>{
+app.get("/register",(req,res)=>{
     res.sendFile(path.resolve(__dirname + "/views/users/register.html"));
 });
 
-app.get("/productCart.html",(req,res)=>{
+app.get("/productCart",(req,res)=>{
     res.sendFile(path.resolve(__dirname + "/views/products/productCart.html"));
 });
 
-app.get("/productDetail.html",(req,res) => {
+app.get("/productDetail",(req,res) => {
     res.sendFile(path.join(__dirname + "/views/products/productDetail.html"));
 });
 
