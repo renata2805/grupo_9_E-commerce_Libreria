@@ -34,6 +34,9 @@ app.get("/productCart",(req,res)=>{
 app.get("/productDetail",(req,res) => {
     res.sendFile(path.join(__dirname + "/views/products/productDetail.html"));
 });
+app.get("/indexAdmin",(req,res) => {
+    res.sendFile(path.join(__dirname + "/views/users/indexAdmin.html"));
+});
 
 
 
