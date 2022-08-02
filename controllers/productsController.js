@@ -11,6 +11,9 @@ const productsController = {
        },
     edit: (req, res) => {
         res.render('productEditForm');
+        },
+    store: (req, res) => {
+        res.render('products');
         }
 }
 

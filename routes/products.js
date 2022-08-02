@@ -7,7 +7,9 @@ const productsController= require('../controllers/productsController');
 router.get('/productCart', productsController.productCart);
 router.get('/productDetail', productsController.productDetail);
 router.get('/productCreateForm', productsController.create);
-router.get('/productEditForm', productsController.edit)  
+router.get('/productEditForm', productsController.edit);
+router.get('/products', productsController.store)
+
 
 // router.get("/productCart",(req,res)=>{
 //    res.sendFile(path.resolve(__dirname + "/views/products/productCart.ejs"));

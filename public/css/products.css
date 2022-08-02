@@ -1,0 +1,80 @@
+:root{
+    --bs-azul: #3452b2;
+    --bs-azulClaro: #6486f2;
+    --bs-naranja: #ff7700;
+    --bs-oscuro: #040615;
+    --bs-gris: #f2f4f5;
+    --bs-blanco: #ffffff;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Istok Web', sans-serif;
+    box-sizing: border-box;
+}
+
+.iFooter {
+    margin-top: 50px;
+    width: 100% !important;
+    height: 340px !important;
+}
+
+.iHeader {
+    width: 100% !important;
+    height: 78px;
+}
+
+body {
+    background-color: rgb(236, 236, 236);
+}
+
+.recomendadosNovedades{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--bs-blanco);
+}
+
+.recomendados{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    padding-left: 50px;
+}
+
+
+.menu > li {
+    position: relative;
+    display: inline-block;
+}
+
+.menu > li > a {
+padding: 15px 15px;
+color: var(--bs-azul);
+text-decoration: none;
+}
+
+.menu li a:hover {
+    color: var(--bs-naranja);
+    border-bottom: #ff7700 solid 2px;
+    transition: 0.2s;
+
+}
+
+.imagenesRecomendados{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+
+}
+.cajaImg {
+    width: 15%;
+    background-color: #ff7700;
+    height: 300px;
+
+    
+}
+.cajaImg:hover{
+    background-color: rgba(44, 30, 240, 0.5);
+}
