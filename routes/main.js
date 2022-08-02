@@ -8,7 +8,7 @@ router.get('/', mainController.index);
 
 // router.get("/",(req,res)=>{
 //    res.render(path.resolve(__dirname + "/views/index.ejs"));
-// });
+//});
 
 
 

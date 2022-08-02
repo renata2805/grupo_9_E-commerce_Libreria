@@ -12,9 +12,9 @@ app.use (express.static(publicPath));
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
 
-app.use("/productos", productsRoutes);
-app.use("/users", usersRoutes);
-app.use("/main", mainRoutes)
+app.use("/", productsRoutes);
+app.use("/", usersRoutes);
+app.use("/", mainRoutes)
 
 app.listen(3000, ()=> {
     console.log("Servidor Funcionando")
@@ -27,27 +27,27 @@ app.listen(3000, ()=> {
 //     res.render(path.resolve(__dirname + "/views/index.ejs"));
 // });
 
-app.get("/login",(req,res)=>{
-    res.render(path.resolve(__dirname + "/views/users/login.ejs"));
-});
+// app.get("/login",(req,res)=>{
+//     res.render(path.resolve(__dirname + "/views/users/login.ejs"));
+// });
 
-app.get("/register",(req,res)=>{
-    res.render(path.resolve(__dirname + "/views/users/register.ejs"));
-});
+// app.get("/register",(req,res)=>{
+//     res.render(path.resolve(__dirname + "/views/users/register.ejs"));
+// });
 
-app.get("/productCart",(req,res)=>{
-    res.render(path.resolve(__dirname + "/views/products/productCart.ejs"));
-});
+// app.get("/productCart",(req,res)=>{
+//     res.render(path.resolve(__dirname + "/views/products/productCart.ejs"));
+// });
 
-app.get("/productDetail",(req,res) => {
-    res.render(path.join(__dirname + "/views/products/productDetail.ejs"));
-});
-app.get("/indexAdmin",(req,res) => {
-    res.render(path.join(__dirname + "/views/users/indexAdmin.ejs"));
-});
-app.get("/productCreateForm",(req,res) => {
-    res.render(path.join(__dirname + "/views/products/productCreateForm.ejs"));
-});
+// app.get("/productDetail",(req,res) => {
+//     res.render(path.join(__dirname + "/views/products/productDetail.ejs"));
+// });
+// app.get("/indexAdmin",(req,res) => {
+//     res.render(path.join(__dirname + "/views/users/indexAdmin.ejs"));
+// });
+// app.get("/productCreateForm",(req,res) => {
+//     res.render(path.join(__dirname + "/views/products/productCreateForm.ejs"));
+// });
 
 
 
