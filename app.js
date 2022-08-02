@@ -2,9 +2,9 @@ const express = require ("express");
 const path = require("path")
 const app = express();
 const publicPath = path.resolve(__dirname,"./public");
-//const productsRoutes = require ("./routes/productsRoutes")
-//const mainRoutes = require ("./routes/mainRoutes")
-//const usersRoutes = require ("./routes/usersRoutes")
+const productsRoutes = require ("./routes/products")
+const mainRoutes = require ("./routes/main")
+const usersRoutes = require ("./routes/users")
 
 app.use (express.static(publicPath));
 
@@ -12,9 +12,9 @@ app.use (express.static(publicPath));
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
 
-//app.use("/productos", productsRoutes);
-//app.use("/users", usersRoutes);
-//app.use("/main", mainRoutes)
+app.use("/productos", productsRoutes);
+app.use("/users", usersRoutes);
+app.use("/main", mainRoutes)
 
 app.listen(3000, ()=> {
     console.log("Servidor Funcionando")
@@ -23,30 +23,30 @@ app.listen(3000, ()=> {
 
 //A los siguientes get correspondería borrarlos, porque ya fueron reemplazados por los router.get detallados en cada archivo de rutas
 
-app.get("/",(req,res)=>{
-    res.sendFile(path.resolve(__dirname + "/views/index.html"));
-});
+// app.get("/",(req,res)=>{
+//     res.render(path.resolve(__dirname + "/views/index.ejs"));
+// });
 
 app.get("/login",(req,res)=>{
-    res.sendFile(path.resolve(__dirname + "/views/users/login.html"));
+    res.render(path.resolve(__dirname + "/views/users/login.ejs"));
 });
 
 app.get("/register",(req,res)=>{
-    res.sendFile(path.resolve(__dirname + "/views/users/register.html"));
+    res.render(path.resolve(__dirname + "/views/users/register.ejs"));
 });
 
 app.get("/productCart",(req,res)=>{
-    res.sendFile(path.resolve(__dirname + "/views/products/productCart.html"));
+    res.render(path.resolve(__dirname + "/views/products/productCart.ejs"));
 });
 
 app.get("/productDetail",(req,res) => {
-    res.sendFile(path.join(__dirname + "/views/products/productDetail.html"));
+    res.render(path.join(__dirname + "/views/products/productDetail.ejs"));
 });
 app.get("/indexAdmin",(req,res) => {
-    res.sendFile(path.join(__dirname + "/views/users/indexAdmin.html"));
+    res.render(path.join(__dirname + "/views/users/indexAdmin.ejs"));
 });
 app.get("/productCreateForm",(req,res) => {
-    res.sendFile(path.join(__dirname + "/views/products/productCreateForm.html"));
+    res.render(path.join(__dirname + "/views/products/productCreateForm.ejs"));
 });
 
 
