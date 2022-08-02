@@ -1,4 +1,4 @@
-Breve retrospectiva del primer sprint - Exposición en modelo estrella
+<!-- Breve retrospectiva del PRIMER sprint - Exposición en modelo estrella -->
 
 1) Comenzar a hacer
 //Giovanny: Realizar el registro en Trello de las actividades realizadas del Plan de Trabajo
@@ -18,11 +18,33 @@ Breve retrospectiva del primer sprint - Exposición en modelo estrella
 5) Dejar de hacer
 // Giovanny: Cambios sin documentar el codigo
 
-Breve retrospectiva del segundo sprint - Exposición en modelo estrella
+<!-- Breve retrospectiva del SEGUNDO sprint - Exposición en modelo estrella -->
 
 1) Comenzar a hacer
 
 2) Hacer más
+
+Reuniones semanales de seguimiento para puesta en común
+Revisar en conjunto los elementos más complejos
+
+
+3) Continuar haciendo
+
+4) Hacer menos
+
+5) Dejar de hacer
+
+
+<!-- Breve retrospectiva del TERCER sprint - Exposición en modelo estrella -->
+
+1) Comenzar a hacer
+
+Planificar correctamente las reuniones
+
+2) Hacer más
+
+Reuniones semanales de seguimiento para puesta en común
+Revisar en conjunto los elementos más complejos
 
 3) Continuar haciendo
 
