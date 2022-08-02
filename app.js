@@ -45,6 +45,9 @@ app.get("/productDetail",(req,res) => {
 app.get("/indexAdmin",(req,res) => {
     res.sendFile(path.join(__dirname + "/views/users/indexAdmin.html"));
 });
+app.get("/productCreateForm",(req,res) => {
+    res.sendFile(path.join(__dirname + "/views/products/productCreateForm.html"));
+});
 
 
 

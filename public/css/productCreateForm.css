@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Istok Web', sans-serif;
+  
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    background-color: #fff;
+}
+
+div h2 {
+        font-size: 1.0em;
+        color: #464646;
+        text-transform: uppercase;
+}
+
+div.form-container-label {
+    position: relative;
+    width: 250px;
+    margin: 15px;
+}
+
+div.form-container-label input.form-input{
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #464646;
+    background: none;
+    border-radius: 5px;
+    outline: none;
+    color: #464646;
+    transition: 0.5s;
+ 
+}
+div.form-container-label input:focus {
+    border: 2px solid #ff7700;
+}
+
+
+div.form.container-label select{
+    padding: 10px;
+    border: 2px solid #464646;
+    background: none;
+    border-radius: 5px;
+    outline: none;
+    color: #464646;
+    transition: 0.5s;
+}
+
+div.form-container-label label.form-label{
+    font-size: 1.0em;
+    color: #464646;
+    text-transform: uppercase;
+
+}
+
+.boton1 {
+    width: 60%;
+    padding: 10px;
+    border: 2px solid #3452b2;
+    background: #3452b2;
+    border-radius: 5px;
+    outline: none;
+    color: #fff;
+    font-size: 1em;
+    transition: 0.5s;  
+    margin-left: 50px;  
+}
+
+.boton1:hover{
+    border: 2px solid #ff7700;
+    color: #ff7700;
+    background: none;
+}

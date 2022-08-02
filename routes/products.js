@@ -1,10 +1,11 @@
 const express= require('express');
 const router= express.Router();
 
-const productsController= require('../controllers/productsController.js'); 
+const productsController= require('../controllers/productsController.js');
 
 router.get('/productCart', productsController.productCart);
 router.get('/productDetail', productsController.productDetail);
+router.get('/productCreateForm', productsController.create) 
 
 //router.get("/productCart",(req,res)=>{
 //    res.sendFile(path.resolve(__dirname + "/views/products/productCart.html"));
