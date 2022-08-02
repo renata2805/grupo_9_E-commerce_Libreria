@@ -9,6 +9,9 @@ const productsController = {
     create: (req, res) => {
         res.render ('productCreateForm'); // como parametros va el nombre del archivo dentro views
        },
+    edit: (req, res) => {
+        res.render('productEditForm');
+        }
 }
 
 module.exports= productsController;
