@@ -57,7 +57,7 @@ body {
 	padding: 0;
 	width: 400%;
 	animation: slide 5s infinite alternate ease-in-out;
-	-webkit-animation: slide 7s infinite alternate ease-in-out;
+	-webkit-animation: slide 5s infinite alternate ease-in-out;
 }
 
 .slider-frame li {
