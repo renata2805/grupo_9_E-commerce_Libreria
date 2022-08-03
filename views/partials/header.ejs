@@ -1,49 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <link rel="icon" type="image/svg" href="/images/favicon.svg"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/css/header.css">
-</head>
+    <link rel="icon" type="image/svg" href="/images/favicon.svg" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/header.css" />
+  </head>
 
-<body>
+  <body>
     <header id="headerMenu">
-        
-        <div class="inner-width">
-            <div>
-                <a href="/views/header.ejs"><img class="logo" src="/images/favicon.svg" alt=""></a>
-                <span class="Book">Book</span>
-                <span class="Express">Express</span>
-            </div>
-            <div class="menu-icon">
-                <i class="fas fa-bars"></i>
-            </div>
+      <div class="inner-width">
+        <div>
+          <a href="/views/index.ejs"
+            ><img class="logoIMG" src="/images/favicon.svg" alt="icono bookexpress"
+          /></a>
+          <span class="Book">Book</span>
+          <span class="Express">Express</span>
         </div>
+        <div class="menu-icon">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
     </header>
 
     <div class="navigation-menu">
-        <nav>
-            <li><a href="/views/index.ejs">Inicio</a></li>
-            <li><a href="#">Tienda</a></li>
-            <li><a href="/views/login.ejs">Acceder</a></li>
-            <li><a href="/views/register.ejs">Registrarse</a></li>
-            <li><a href="/views/productCart.ejs">Carrito Compras</a></li>
-        </nav>
+      <nav>
+        <li><a href="/views/index.ejs">Inicio</a></li>
+        <li><a href="#">Tienda</a></li>
+        <li><a href="/views/login.ejs">Acceder</a></li>
+        <li><a href="/views/register.ejs">Registrarse</a></li>
+        <li><a href="/views/productCart.ejs">Carrito Compras</a></li>
+      </nav>
     </div>
 
     <script>
-        $(".menu-icon").click(function () {
-            $(this).toggleClass("active");
-            $(".navigation-menu").toggleClass("active");
-            $(".menu-icon i").toggleClass("fa-times");
-        });
+      $(".menu-icon").click(function () {
+        $(this).toggleClass("active");
+        $(".navigation-menu").toggleClass("active");
+        $(".menu-icon i").toggleClass("fa-times");
+      });
     </script>
-
-</body>
+  </body>
 </html>
