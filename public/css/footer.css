@@ -1,3 +1,12 @@
+:root{
+    --bs-azul: #3452b2;
+    --bs-azulClaro: #6486f2;
+    --bs-naranja: #ff7700;
+    --bs-oscuro: #040615;
+    --bs-gris: #f2f4f5;
+    --bs-blanco: #ffffff;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -6,7 +15,8 @@
 }
 
 .footer {
-    background-color: rgb(224, 224, 224);
+    background: rgb(52,82,178);
+    background: linear-gradient(0deg, rgba(52,82,178,1) 41%, rgba(100,134,242,1) 100%);
     width: 100%;
     display: flex;
     justify-content: center;
@@ -30,26 +40,26 @@
 
 .fi-brands-github {
     width: 100px;
-    color: #3452b2;
+    color: var(--bs-blanco);
 }
 .fi-brands-facebook {
     width: 100px;
-    color: #3452b2;
+    color: var(--bs-blanco);
     
 }
 
 .fi-brands-instagram {
     width: 100px;
-    color: #3452b2;
+    color: var(--bs-blanco);
 }
 
 
 .footBox2 {
-    background-color: rgb(224, 224, 224);
+    background-color: var(--bs-azul);
     width: 100%;
     display: flex;
     justify-content: center;
-    border-top: solid 2px rgb(201, 201, 201);
+    border-top: solid 1px var(--bs-azulClaro);
     padding: 10px;
 }
 
@@ -59,13 +69,19 @@ li {
 }
 a {
     text-decoration: none;
-    color: #3452b2;
+    color: var(--bs-blanco);
 }
 
 a:hover {
+    transition: 0.4s;
     color: #f84904;
+
 }
 
 .copy {
-    color: #f84904;
+    color: var(--bs-naranja);
+}
+
+.copyW {
+    color: var(--bs-blanco);
 }

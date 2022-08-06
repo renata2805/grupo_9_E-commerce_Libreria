@@ -16,9 +16,14 @@
     box-sizing: border-box;
 }
 
-.header {
-    background-color: #ffffff;
+
+.headerM {
+    background: var(--bs-blanco);
+    width: 100%;
+    position: absolute;
+    z-index: 10;
 }
+
 
 .inner-width {
     max-width: 80%;
@@ -28,6 +33,7 @@
     padding: 14px 20px;
     margin: auto;
     color: #f1f1f1;
+   
 }
 
 .menu-icon {
@@ -99,14 +105,7 @@
     width: 100%;
 }
 
-p {
-    max-width: 80%;
-    margin: auto;
-    padding: 40px 0;
-    font-size: 18px;
-    line-height: 1.4em;
-    text-align: justify;
-}
+
 
 .menu-icon.active {
     background: #f1f1f1;

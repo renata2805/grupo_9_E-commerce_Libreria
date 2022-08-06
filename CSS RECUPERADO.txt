@@ -1,0 +1,126 @@
+.uno{
+    border: 1px solid grey;
+    width: 160px;
+    position: relative;
+    left:1050px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-border-radius:;
+    -moz-border-radius:;
+    -ms-border-radius:;
+    -o-border-radius:;
+}
+
+
+.dos{
+    border: 1px solid grey;
+    width: 160px;
+    position: relative;
+    left:10%;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tres{
+    border: 1px solid grey;
+    width: 160px;
+    position: relative;
+    left: 1400px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cuatro{
+    border: 1px solid grey;
+    width: 160px;
+    position: relative;
+    left:330px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cinco{
+    border: 1px solid grey;
+    width: 160px;
+    position: relative;
+    left:700px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.seis{
+    border: 1px solid grey;
+    width: 160px;
+    position: relative;
+    left:1600px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.siete{
+    border: 1px solid grey;
+    width: 160px;
+    position: relative;
+    left:50px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ocho{
+    border: 1px solid grey;
+    width: 160px;
+    position: relative;
+    left:1200px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nueve{
+    border: 1px solid grey;
+    width: 160px;
+    position: relative;
+    left:300px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.diez{
+    border: 1px solid grey;
+    width: 160px;
+    position: relative;
+    left:900px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.once{
+    border: 1px solid grey;
+    width: 160px;
+    position: relative;
+    left: 573px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.doce{
+    border: 1px solid grey;
+    width: 160px;
+    position: relative;
+    left: 1300px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

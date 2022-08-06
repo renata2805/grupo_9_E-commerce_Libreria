@@ -14,27 +14,13 @@ body {
     align-items: left;
 }
 
-.inner-width {
-    background-color: rgb(224, 224, 224);
-}
+
 
 .container {
-width: 1200px;
+width: 100%;
 }
 
-.iFooter {
-  margin-top: 50px;
-  width: 100% !important;
-  height: 310px !important;
-}
-.logoBox{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.logo1{
-    width: 100px;
-}
+
 
 .menu {
     display: inline-block;
