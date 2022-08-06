@@ -13,5 +13,207 @@
         "mas-vendidos": false,
         "novedades": true,
         "imagen": "Book_Cover_Mockup.jpg"
+},
+
+
+{
+        "id": 2,
+        "nombreLibro": "Historia visual de la segunda guerra mundial",
+        "autor":"Vicent Bernard",
+        "editorial": "Critica",
+        "origen": "Español",
+        "numero-paginas": 300,
+        "fecha-publicacion": "15/10/2022",
+        "reseña": "Una visión realmente innovadora del conflicto más importante de la historia.",
+        "categoria": "Historia",
+        "precio": 8,
+        "recomendados": false,
+        "mas-vendidos": false,
+        "novedades": true,
+        "imagen": "Book_Cover_Mockup.jpg"
+},
+
+
+{
+        "id": 3,
+        "nombreLibro": "Sapiens. De animales a dioses: Una breve historia de la humanidad",
+        "autor":"Yuval Noah Harari",
+        "editorial": "Debate",
+        "origen": "Español",
+        "numero-paginas": 621,
+        "fecha-publicacion": "4/09/2014",
+        "reseña": "¿Cómo logró nuestra especie imponerse en la lucha por la existencia? ¿Por qué nuestros ancestros recolectores se unieron para crear ciudades y reinos? ¿Cómo llegamos a creer en dioses, en naciones o en los derechos humanos; a confiar en el dinero, en los libros o en las leyes? ¿Cómo acabamos sometidos a la burocracia, a los horarios y al consumismo? ¿Y cómo será el mundo en los milenios venideros?",
+        "categoria": "Historia",
+        "precio": 11,
+        "recomendados": false,
+        "mas-vendidos": false,
+        "novedades": true,
+        "imagen": "Book_Cover_Mockup.jpg"
+},
+
+
+{
+        "id": 4,
+        "nombreLibro": "Infografías de la antigua Roma ",
+        "autor":"Milan Melocco",
+        "editorial": "Critica",
+        "origen": "Español",
+        "numero-paginas": 400,
+        "fecha-publicacion": "15/09/2021",
+        "reseña": "En un riguroso enfoque histórico y a partir de las mejores fuentes internacionales pero con la constante preocupación por la claridad, los autores ofrecen un libro único, tan importante por la masa de datos que recoge como por su excepcional propuesta gráfica.",
+        "categoria": "Historia",
+        "precio": 8,
+        "recomendados": false,
+        "mas-vendidos": false,
+        "novedades": true,
+        "imagen": "Book_Cover_Mockup.jpg"
+},
+
+
+{
+        "id": 5,
+        "nombreLibro": "Geología Física Y Geología Histórica De Sudamérica ",
+        "autor":" Edward Revollo",
+        "editorial": "Xlibris US",
+        "origen": "Español",
+        "numero-paginas": 619,
+        "fecha-publicacion": "15/09/2021",
+        "reseña": "Este libro tiene el objetivo de dar una introducción a los principios y conceptos básicos de la geología, para todos aquellos que están interesados en aprender sobre todos los procesos que formaron y dieron forma a la Tierra, desde su formación alrededor de 4.800 millones de años antes del presente (A.P.).",
+        "categoria": "Historia",
+        "precio": 4,
+        "recomendados": false,
+        "mas-vendidos": false,
+        "novedades": true,
+        "imagen": "Book_Cover_Mockup.jpg"
+},
+
+
+{
+        "id": 6,
+        "nombreLibro": "Violeta ",
+        "autor":"Isabel Allende",
+        "editorial": "Plaza y janes",
+        "origen": "Español",
+        "numero-paginas": 345,
+        "fecha-publicacion": "25/01/2022",
+        "reseña": "La épica y emocionante historia de una mujer cuya vida abarca los momentos históricos más relevantes del siglo XX. Desde 1920 -con la llamada «gripe española»- hasta la pandemia de 2020, la vida de Violeta será mucho más que la historia de un siglo.",
+        "categoria": "Literatura",
+        "precio": 13,
+        "recomendados": false,
+        "mas-vendidos": false,
+        "novedades": true,
+        "imagen": "Book_Cover_Mockup.jpg"
+},
+
+
+{
+        "id": 7,
+        "nombreLibro": "El Principito ",
+        "autor":"Antoine De Saint-Exupéry",
+        "editorial": "Babelcube Inc",
+        "origen": "Español",
+        "numero-paginas": 78,
+        "fecha-publicacion": "01/02/2017",
+        "reseña": "Desde un pequeño asteroide, muy lejos de este planeta que se debate por sobrevivir, destella la imagen de este dulce niño tratando de rescatar los mejores sentimientos humanos olvidados o relegados. Saint-Exupéry escribe este canto de amor y ternura inigualable dirigido a los adultos, aunque quizá sean los nños los que puedan entender su hermosisimo mensaje.",
+        "categoria": "Literatura",
+        "precio": 3,
+        "recomendados": false,
+        "mas-vendidos": false,
+        "novedades": true,
+        "imagen": "Book_Cover_Mockup.jpg"
+},
+
+
+{
+        "id": 8,
+        "nombreLibro": "100 años de soledad ",
+        "autor":"Gabriel Garcia Marquez",
+        "editorial": "Vintaje Español",
+        "origen": "Español",
+        "numero-paginas": 271,
+        "fecha-publicacion": "15/10/2014",
+        "reseña": "Millones de ejemplares de Cien años de soledad leídos en todas las lenguas y el Premio Nobel de Literatura coronando una obra que se había abierto paso a boca a boca como gusta decir el escritor son la más palpable demostración de que la aventura fabulosa de la familia Buendía-Iguarán, con sus milagros, fantasías, obsesiones, tragedias, incestos, adulterios, rebeldías, descubrimientos y condenas, representaba al mismo tiempo el mito y la historia, la tragedia y el amor del mundo entero.",
+        "categoria": "Literatura",
+        "precio": 10,
+        "recomendados": false,
+        "mas-vendidos": false,
+        "novedades": true,
+        "imagen": "Book_Cover_Mockup.jpg"
+
+
+},
+
+
+
+
+{
+        "id": 8,
+        "nombreLibro": "100 años de soledad ",
+        "autor":"Gabriel Garcia Marquez",
+        "editorial": "Vintaje Español",
+        "origen": "Español",
+        "numero-paginas": 271,
+        "fecha-publicacion": "15/10/2014",
+        "reseña": "Millones de ejemplares de Cien años de soledad leídos en todas las lenguas y el Premio Nobel de Literatura coronando una obra que se había abierto paso a boca a boca como gusta decir el escritor son la más palpable demostración de que la aventura fabulosa de la familia Buendía-Iguarán, con sus milagros, fantasías, obsesiones, tragedias, incestos, adulterios, rebeldías, descubrimientos y condenas, representaba al mismo tiempo el mito y la historia, la tragedia y el amor del mundo entero.",
+        "categoria": "Literatura",
+        "precio": 10,
+        "recomendados": false,
+        "mas-vendidos": false,
+        "novedades": true,
+        "imagen": "Book_Cover_Mockup.jpg"
+
+        
+},
+
+
+
+{
+        "id": 9,
+        "nombreLibro": "El Alquimista  ",
+        "autor":"Paulo Coelho",
+        "editorial": " Sant Jordi Asociados",
+        "origen": "Español",
+        "numero-paginas": 139,
+        "fecha-publicacion": "19/03/2018",
+        "reseña": " Ésta es la historia de Santiago, un joven pastor andaluz que viaja desde su tierra natal hacia el desierto egipcio en busca de un tesoro oculto en las pirámides. Nadie sabe lo que contiene, ni si Santiago será capaz de superar los obstáculos del camino.",
+        "categoria": "Literatura",
+        "precio": 6,
+        "recomendados": false,
+        "mas-vendidos": false,
+        "novedades": true,
+        "imagen": "Book_Cover_Mockup.jpg"
+
+        
+},
+
+
+
+{
+        "id": 10,
+        "nombreLibro": "Cometas en el cielo ",
+        "autor":"Khaled Hosseini",
+        "editorial": " Salamandra",
+        "origen": "Español",
+        "numero-paginas": 405,
+        "fecha-publicacion": "06/12/2011",
+        "reseña": " Sobre el telón de fondo de un Afganistán respetuoso de sus ricas tradiciones ancestrales, la vida en Kabul durante el invierno de 1975 se desarrolla con toda la intensidad, la pujanza y el colorido de una ciudad confiada en su futuro e ignorante de que se avecina uno de los períodos más cruentos que han padecido los milenarios pueblos que la habitan.",
+        "categoria": "Literatura",
+        "precio": 5,
+        "recomendados": false,
+        "mas-vendidos": false,
+        "novedades": true,
+        "imagen": "Book_Cover_Mockup.jpg"
+
+        
 }
+
 ]
+
+
+
+
+
+
+
+
+
