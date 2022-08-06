@@ -1,0 +1,17 @@
+[{
+        "id": 1,
+        "nombreLibro": "Breve historia de la revolución industrial",
+        "autor":"Luis E. Iñigo Fernandez",
+        "editorial": "Nowtilus",
+        "origen": "Español",
+        "numero-paginas": 230,
+        "fecha-publicacion": "6/8/2022",
+        "reseña": "La Revolución Industrial es el proceso más determinante de la historia reciente: una narración vibrante plagada de victorias para la humanidad, pero también de víctimas. Nadie duda que las guerras o los enfrentamientos cambian el curso de la historia, pero no es menos importante, para nuestra historia reciente, el impacto que tuvo la Revolución Industrial tanto en la economía como en la política o la estrategia militar de las naciones.",
+        "categoria": "Historia",
+        "precio": 7,
+        "recomendados": false,
+        "mas-vendidos": false,
+        "novedades": true,
+        "imagen": "Book_Cover_Mockup.jpg"
+}
+]

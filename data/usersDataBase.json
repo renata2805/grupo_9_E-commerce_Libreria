@@ -1,0 +1,10 @@
+[{
+    "id": 1,
+    "nombre": "Marina",
+    "apellido": "Siches",
+    "email": "marinaisiches@gmail.com",
+    "fecha-de-nacimiento": "12/09/1991",
+    "contraseña": "libros123",
+    "categoria": 1,
+    "imagen": "fotomaru.jpg"
+}]
