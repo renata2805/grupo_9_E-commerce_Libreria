@@ -7,4 +7,17 @@
     "contraseña": "libros123",
     "categoria": 1,
     "imagen": "fotomaru.jpg"
-}]
+},
+
+{
+    "id": 2,
+    "nombre": "Renata",
+    "apellido": "Soria",
+    "email": "renata.soria.arg@gmail.com",
+    "fecha-de-nacimiento": "28/05/1987",
+    "contraseña": "libros456",
+    "categoria": 1,
+    "imagen": "fotorena.jpg"
+}
+
+]
