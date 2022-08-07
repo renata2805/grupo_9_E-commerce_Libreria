@@ -448,6 +448,91 @@
         "mas-vendidos": false,
         "novedades": false,
         "imagen": "AstronomiaParaSerEntendida.jpg"
+},
+
+{
+        "id": 26,
+        "nombreLibro": "El libro de las matemáticas",
+        "autor":"DK",
+        "editorial": "DK",
+        "origen": "España",
+        "numero-paginas": 352,
+        "fecha-publicacion": "20/10/2020",
+        "reseña": "Escrito en un lenguaje accesible, El libro de las matemáticas presenta explicaciones claras y concisas que desbrozan la jerga especializada, diagramas que plasman complejas teorías, citas memorables e ingeniosas ilustraciones que juegan con nuestras ideas acerca de los números.",
+        "categoria": "Matemáticas",
+        "precio": 18.99,
+        "recomendados": false,
+        "mas-vendidos": false,
+        "novedades": false,
+        "imagen": "ElLibroDeLasMatematicas.jpg"
+},
+
+{
+        "id": 27,
+        "nombreLibro": "Matematica Del Poker: Estrategias simples, efectivas y avanzadas para utilizar En las Matemáticas del Poker en el mundo del póker ",
+        "autor":"Mr Kevin Bailey",
+        "editorial": "CreateSpace Independent Publishing Platform",
+        "origen": "España",
+        "numero-paginas": 50,
+        "fecha-publicacion": "13/07/2018",
+        "reseña": "Cuando se trata de jugar al poker de la manera más efectiva posible, hay dos tipos de jugadores, aquellos que juegan con sus entrañas y aquellos que usan las matemáticas detrás del juego de póker para desarrollar estrategias que se destacan para los jugadores de todos los niveles de habilidad. Huelga decir que el segundo tipo siempre superará al primero. Si quieres asegurarte que estás en el lado ganador la próxima vez que te sientas en una mesa, entonces matemáticas del poker es el libro para ti.",
+        "categoria": "Matemáticas",
+        "precio": 19.95,
+        "recomendados": false,
+        "mas-vendidos": false,
+        "novedades": false,
+        "imagen": "MatematicaDelPoker.jpg"
+},
+
+{
+        "id": 28,
+        "nombreLibro": "El lenguaje de las matemáticas. Historia de sus símbolos (Ciencia para todos)",
+        "autor":"Raúl Rojas González",
+        "editorial": "Fondo de Cultura Económica",
+        "origen": "España",
+        "numero-paginas": 260,
+        "fecha-publicacion": "28/11/2018",
+        "reseña": "El lenguaje de las matemáticas: historia de sus símbolos es una compilación de cultura, historia y referencias matemáticas. Con 54 capítulos, como cápsulas de diversas extensiones, narra la procedencia de algún símbolo o concepto matemático, de caracteres como la raíz cuadrada, el uso de números arábigos y letras latinas y griegas en el lenguaje del álgebra, así como el surgimiento del símbolo de adición, entre muchos otros fascinantes componentes del lenguaje de esta disciplina.",
+        "categoria": "Matemáticas",
+        "precio": 14.00,
+        "recomendados": false,
+        "mas-vendidos": false,
+        "novedades": false,
+        "imagen": "ElLenguajeDeLasMatematicas.jpg"
+},
+
+{
+        "id": 29,
+        "nombreLibro": "¿Y tú? ¿Lo sabes?: Acertijos, juegos de lógica, puzles matemáticos y otros retos mentales.",
+        "autor":"Samuel Fox",
+        "editorial": "CreateSpace Independent Publishing Platform",
+        "origen": "España",
+        "numero-paginas": 108,
+        "fecha-publicacion": "22/04/2016",
+        "reseña": "En este libro encontrarás una recopilación de algunos de los más clásicos retos mentales.Haz que tu cerebro saque humo, resolviendo acertijos, juegos de lógica, puzles matemáticos, enigmas…Reta a tus amigos y familiares a encontrar las soluciones.¿Y tú? ¿Lo sabes?",
+        "categoria": "Matemáticas",
+        "precio": 21.99,
+        "recomendados": false,
+        "mas-vendidos": false,
+        "novedades": false,
+        "imagen": "YTuLoSabes.jpg"
+},
+
+{
+        "id": 30,
+        "nombreLibro": "100 Días de Sumas y Restas - Libro de Trabajo: Ejercicios de práctica para niños de 5 a 8 años",
+        "autor":"Miriam Murillo Llarnas",
+        "editorial": "Independently published",
+        "origen": "España",
+        "numero-paginas": 104,
+        "fecha-publicacion": "30/08/2021",
+        "reseña": "Este cuaderno es esencial para que los principiantes practiquen la suma y la resta paso a paso. Encontrarás 100 páginas repletas de muchos ejercicios de práctica.",
+        "categoria": "Matemáticas",
+        "precio": 6.19,
+        "recomendados": false,
+        "mas-vendidos": false,
+        "novedades": false,
+        "imagen": "100DiasDeSumasYRestas.jpg"
 }
 
 ]
