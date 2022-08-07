@@ -75,7 +75,7 @@
 .precio {
     height: 30px;
     width: 80px;
-    background-color: #3452b2;
+    background-color: var(--bs-azul);
     color: #fff;
     border-radius: 5px;
     transition: 0.4s;
@@ -83,13 +83,10 @@
     margin-bottom: 20px;
 }
 
-
 .reseña {
     text-align: justify;
     width: 100%;
 }
-
-
 
 .botones{
     margin-top: 10px;
