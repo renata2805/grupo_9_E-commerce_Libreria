@@ -16,7 +16,7 @@
 
 .footer {
     background: rgb(52,82,178);
-    background: linear-gradient(0deg, rgba(52,82,178,1) 41%, rgba(100,134,242,1) 100%);
+    /* background: linear-gradient(0deg, rgba(52,82,178,1) 41%, rgba(100,134,242,1) 100%); */
     width: 100%;
     display: flex;
     justify-content: center;

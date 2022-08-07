@@ -270,140 +270,57 @@ text-decoration: none;
 
 /* FEEDBACK */
 .feedback{
-    border: 3px solid grey;
+    margin-top: 50px;
+    margin-bottom: 50px;
     width: 100%;
     height: auto;
-    margin-top: 3px;
-    margin-bottom: 3px;
 }
-.docente{
-    border: 3px solid grey;
-    width: 350px;
-    height: 370px;
-    margin-top: 3px;
-    margin-bottom: 3px;
+.feedContainer{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    border-radius: 10px;
+    width: 100%;
 }
-.alumna{
-    border: 3px solid grey;
-    width: 350px;
-    height: 370px;
-    margin-top: 10px;
-    margin-bottom: 3px;
+.articleBox{
+    margin: 25px;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+}
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px;
- }
- .alumno{
-    border: 3px solid grey;
-    width: 350px;
-    height: 370px;
-    margin-top: 3px;
-    margin-bottom: 3px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px;
- }
- .docente2{
-    border: 2px solid grey;
-    width: 200px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 5px;
+
+.boxImgAlumna{
+    width: 100%;
+    height: auto;
 }
- .textDocente{
-    border: 2px solid grey;
-    width: 300px;
-    position: relative;
-    bottom: 180px;
-    left: 150px;
+
+
+.desFeedBox{
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 5px;
-}
-.textAlumna{
-    border: 2px solid grey;
-    width: 300px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 5px;
    
-
 }
 
-.alumna2{
-    border: 2px solid grey;
-    width: 200px;
+.tituloFeedBox{
+    width: 100%;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 5px;
+    justify-content: left;
 }
-.alumno2{
-    border: 2px solid grey;
-    width: 200px;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 5px;
+.tituloFeed{
+    color: var(--bs-azul);
 }
-.textAlumno{
-    border: 2px solid grey;
+
+.textFeed{
+    color: var(--bs-naranja);    
+}
+
+.FeedImg{
+    border-radius: 10px;
     width: 300px;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 5px;
-}
-
-
-
-.subtext{
-    color: #ff7700;
-    
-    
-
-}
-.subTitle{
-color: #3452b2;
-
-}
-
-
-
-.alumno-img{
-    border-radius: 5px;
-   width: 300px;
-   height: 350px;
-}
-.alumna-img{
-    border-radius: 5px;
-   width: 300px;
-   height: 350px;
-}
-.docente-img{
-    border-radius: 5px;
-   width: 300px;
-   height: 350px;
-}
-.pic-destacados{
-    border-radius: 5px;
-    width: 260px;
-    height: 260px;
-    position: relative;
-    top: 10px;
-    left: 20px;
-position: relative;
+    height: 350px;
 
 }

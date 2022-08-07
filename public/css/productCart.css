@@ -5,44 +5,13 @@
     font-family: 'Istok Web', sans-serif;
 }
 
-body {
+
+.container{
     display: flex;
-    margin: 1%;
-    min-height: 35vh;
     flex-direction: column;
-    background-color: #fff;
-    align-items: left;
-}
-
-
-
-.container {
-width: 100%;
-}
-
-
-
-.menu {
-    display: inline-block;
-    padding: 10px;
-    width: 150px;
-    font-size: 16px;
-    border-radius: 5px;
-    color: solid #fff;
-    background-color: #ff7700;
-    align-items: center;
-    margin-left: 50px;
-}
-
-.menu li {
-    display: block;
-    color: #fff;
-    font-size:large;
-} 
-
-li {
-    list-style: none;
-    text-align: center;
+    align-content: center;
+    width: 100%;
+    height: auto;
 }
 
 .botonBox {
@@ -53,7 +22,7 @@ li {
     width: fit-content;
 }
 
-.boton {
+.boton{
     width: 100%;
     padding: 10px;
     margin-left: 50px;
@@ -78,9 +47,7 @@ li {
 }
 
 table {
-    table-layout: fixed;
-    margin-left: 50px;
-    width: 80%;
+    width: 90%;
     border-collapse:inherit;
     border: 3px solid  #3452b2;
     border-radius: 5px;
