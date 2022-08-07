@@ -363,6 +363,91 @@
         "mas-vendidos": false,
         "novedades": true,
         "imagen": "Geologia.jpg"
+},
+
+{
+        "id": 21,
+        "nombreLibro": "El libro dorado de Urania: Tratado de Astronomía Clásica",
+        "autor":"Juan Carlos Alba Delgado",
+        "editorial": "Independently published",
+        "origen": "España",
+        "numero-paginas": 134,
+        "fecha-publicacion": "24/10/2019",
+        "reseña": "Urania, musa de la Astronomía, encargada de custodiar los cielos y las historias que hay en ellos. El presente volumen muestra un panorama de la concepción del Universo y los cielos, desde el punto de vista de los antiguos griegos. Está centrado en los mitos que explican los hechos naturales que hoy en día conocemos científicamente, de forma que se pueda leer en los dos sentidos; constituyendo un tratado tanto de Astronomía como de Mitología.",
+        "categoria": "Astronomía",
+        "precio": 27.76,
+        "recomendados": false,
+        "mas-vendidos": false,
+        "novedades": false,
+        "imagen": "ElLibroDoradoDeUrania.jpg"
+},
+
+{
+        "id": 22,
+        "nombreLibro": "El futuro de la humanidad",
+        "autor":"Michio Kaku",
+        "editorial": "Debate",
+        "origen": "España",
+        "numero-paginas": 416,
+        "fecha-publicacion": "26/03/2019",
+        "reseña": "Nuestro destino yace en las estrellas, no por nuestra curiosidad o pasión por los viajes, sino para asegurarnos nuestra propia supervivencia. Las edades de hielo, los impactos de asteroides, la capacidad de carga finita de la Tierra e incluso la futura muerte del sol son algunas de las amenazas existenciales que pueden destruir a la humanidad. Así que, o abandonamos la Tierra o deberemos asumir la idea de nuestra inevitable extinción como especie.",
+        "categoria": "Astronomía",
+        "precio": 19.25,
+        "recomendados": false,
+        "mas-vendidos": false,
+        "novedades": false,
+        "imagen": "ElFuturoDeLaHumanidad.jpg"
+},
+
+{
+        "id": 23,
+        "nombreLibro": "Astronomía. Guía para principiantes",
+        "autor":"Arthwr Bass",
+        "editorial": "Vanessa Lozada Gil",
+        "origen": "España",
+        "numero-paginas": 102,
+        "fecha-publicacion": "10/02/2017",
+        "reseña": "En la astronomía moderna los aficionados aún pueden jugar un papel activo de aporte y crecimiento para esta ciencia, especialmente en el descubrimiento y seguimiento de cuerpos estelares como asteroides o cometas.",
+        "categoria": "Astronomía",
+        "precio": 10.85,
+        "recomendados": false,
+        "mas-vendidos": false,
+        "novedades": false,
+        "imagen": "AstronomiaGuiaParaPrincipantes.jpg"
+},
+
+{
+        "id": 24,
+        "nombreLibro": "Extraterrestre: La humanidad ante el primer signo de vida inteligente más allá de la Tierra",
+        "autor":"Avi Noeb",
+        "editorial": "Editorial Planeta S.A.U",
+        "origen": "España",
+        "numero-paginas": 256,
+        "fecha-publicacion": "03/02/2021",
+        "reseña": "En octubre de 2017, científicos del observatorio Haleakala, en Hawái, detectaron un objeto interestelar en movimiento próximo a la Tierra. Primero fue catalogado de cometa, pero esta hipótesis fue descartada.",
+        "categoria": "Astronomía",
+        "precio": 22.35,
+        "recomendados": false,
+        "mas-vendidos": false,
+        "novedades": false,
+        "imagen": "Extraterrestre.jpg"
+},
+
+{
+        "id": 25,
+        "nombreLibro": "Astronomía para ser entendida: Misterios del Universo",
+        "autor":"Oscar Eduardo Costa",
+        "editorial": "Independently published",
+        "origen": "España",
+        "numero-paginas": 256,
+        "fecha-publicacion": "03/02/2021",
+        "reseña": "En esta obra podremos encontrar información y explicaciones acerca del Universo, galaxias, estrellas, nebulosas, agujeros negros, planetas, la teoría del Big Bang, cáusares entre otros.",
+        "categoria": "Astronomía",
+        "precio": 11.99,
+        "recomendados": false,
+        "mas-vendidos": false,
+        "novedades": false,
+        "imagen": "AstronomiaParaSerEntendida.jpg"
 }
 
 ]
