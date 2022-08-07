@@ -202,9 +202,87 @@
         "recomendados": false,
         "mas-vendidos": false,
         "novedades": true,
-        "imagen": "Book_Cover_Mockup.jpg"
-
-        
+        "imagen": "Book_Cover_Mockup.jpg"   
+},
+{
+        "id": 11,
+        "nombreLibro": "Caminito del mundo",
+        "autor":"Marcelo Briem Stamm",
+        "editorial": "Booktime",
+        "origen": "Argentina",
+        "numero-paginas": 32,
+        "fecha-publicacion": "28/08/2021",
+        "reseña": "Este libro es un increíble viaje al pasado, que indaga a fondo sobre la creación del famoso museo a cielo abierto Caminito, y el tango que lleva el mismo nombre. Luego del prólogo, se conocerán los orígenes de la ciudad de Buenos Aires, el barrio de La Boca, la historia del famoso pintor Benito Quinquela Martín, los desconocidos inicios del tango, cómo se creó el tango Caminito y finalmente un tour dedicado, lleno de recomendaciones, para conocer Caminito en la actualidad..",
+        "categoria": "Arte",
+        "precio": 12,
+        "recomendados": false,
+        "mas-vendidos": false,
+        "novedades": true,
+        "imagen": "quinquela.jpg"
+},
+{
+        "id": 12,
+        "nombreLibro": "Ana Mercedes Hoyo Retrospectiva",
+        "autor":"Angel Kalenberg",
+        "editorial": "Villegas Editores",
+        "origen": "",
+        "numero-paginas": 255,
+        "fecha-publicacion": "1/11/2002",
+        "reseña": "La proliferación y difusión de los temas mestizos se han vuelto universales... Inspirándose en la realidad histórica y cultural de Colombia y en la mejor tradición latinoamericana, Ana Mercedes Hoyos desarrolla su obra en el laberinto del mestizaje pictórico, un mestizaje de imágenes. En estas palabras del emocionante ensayo crítico que abre este libro, Ángel Kalenberg describe la evolución de esta gran artista colombiana y su lugar en el arte mundial.",
+        "categoria": "Arte",
+        "precio": 65,
+        "recomendados": true,
+        "mas-vendidos": false,
+        "novedades": false,
+        "imagen": "hoyo.jpg"
+},
+{
+        "id": 13,
+        "nombreLibro": "The Worlds of Joaquin Torres-Garcia",
+        "autor":"William R. Acquavella",
+        "editorial": "Rizzoli",
+        "origen": "EEUU",
+        "numero-paginas": 400,
+        "fecha-publicacion": "4/09/2018",
+        "reseña": "Con 70 pinturas, esculturas y obras en papel, esta es la muestra más grande del trabajo de Torres-García que se exhibe en una galería estadounidense desde que Joaquín Torres-García comisarió su propia exposición en la Galería Sidney Janis en 1950. El libro incluye previamente textos inéditos del artista y obras icónicas que fueron guardadas por la familia como ejemplos representativos de distintos momentos de su carrera, primero del artista y luego de familiares que los heredaron en conjunto.",
+        "categoria": "Arte",
+        "precio": 48,
+        "recomendados": false,
+        "mas-vendidos": false,
+        "novedades": true,
+        "imagen": "torres-garcia.jpg"
+},
+{
+        "id": 14,
+        "nombreLibro": "Frida Kahlo. Obras Maestras",
+        "autor":"Roxana Velaszquez",
+        "editorial": "Ediciones El Viso, S.A.",
+        "origen": "España",
+        "numero-paginas": 224,
+        "fecha-publicacion": "26/07/2021",
+        "reseña": "El presente volumen supone una introducción ideal para dar a conocer la obra de la artista mexicana Frida Kahlo. En él se incluyen sus 75 mejores pinturas, tanto las piezas más populares como pinturas procedentes de colecciones particulares que rara vez se muestran en público, lo cual hace que el contenido de este libro resulte novedoso, variado y cautivador..",
+        "categoria": "Arte",
+        "precio": 44,
+        "recomendados": false,
+        "mas-vendidos": false,
+        "novedades": true,
+        "imagen": "kahlo.jpg"
+},
+{
+        "id": 15,
+        "nombreLibro": "Van Gogh. La obra completa - pintura",
+        "autor":"Rainer Metzger",
+        "editorial": "BOLSAS",
+        "origen": "España",
+        "numero-paginas": 744,
+        "fecha-publicacion": "26/06/2015",
+        "reseña": "La historia de Vincent van Gogh es una de las más irónicas de la historia del arte. Hoy en día, es celebrado en todo el mundo como uno de los pintores más importantes de todos los tiempos, reconocido con espectáculos con entradas agotadas, museos festejados y precios récord de decenas de millones de dólares en subastas.Este completo estudio de Vincent van Gogh (1853–1890) combina una monografía detallada sobre su vida y arte con un catálogo completo de sus 871 pinturas.",
+        "categoria": "Arte",
+        "precio": 34,
+        "recomendados": false,
+        "mas-vendidos": false,
+        "novedades": true,
+        "imagen": "Van-Gogh.jpg"
 }
 
 ]
