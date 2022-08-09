@@ -5,24 +5,25 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" type="image/svg" href="/images/favicon.svg"/>
-        <link href="/css/productCart.css" rel="stylesheet" type="text/css">
         <link href="/css/productCreateForm.css" rel="stylesheet" type="text/css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
         <title>Formulario de creación de un producto</title>
     </head>
+
 <body>
 
-    <header>
+    <header class="menuM">
         <%- include('./partials/header') %>
     </header>
 
     <div class="principal">
-        <div class="row">
+        <div class="">
             <h2 class="title-form-create">Formulario de creación de productos</h2>
         </div>
     </div>
+    
     <div class="title-form-create">
         <form action="/" method="POST" enctype="multipart/form-data">
             <div class="product-form-container">
@@ -48,11 +49,11 @@
             </div>
             <div class="form-container-label">
                 <!-- <label for="numero de paginas" class="form-label">Numero de páginas:</label> -->
-                <input type="text" id="paginas" class="form-input" name="paginas" placeholder="NUMERO DE PAGINAS">
+                <input type="number" id="paginas" class="form-input" name="paginas" placeholder="NUMERO DE PAGINAS">
             </div>
             <div class="form-container-label">
                 <!-- <label for="fecha-publicacion" class="form-label">Fecha de publicación:</label> -->
-                <input type="text" id="fecha" class="form-input" name="fecha" placeholder="FECHA PUBLICACIÓN">
+                <input type="date" id="fecha" class="form-input" name="fecha" placeholder="FECHA PUBLICACIÓN">
             </div>
             <div class="form-container-label">
                 <label for="categoria" class="form-label">SELECCIONE CATEGORIA</label>

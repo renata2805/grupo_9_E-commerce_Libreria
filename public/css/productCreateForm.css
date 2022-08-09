@@ -1,9 +1,21 @@
+:root{
+    --bs-azul: #3452b2;
+    --bs-azulClaro: #6486f2;
+    --bs-naranja: #ff7700;
+    --bs-oscuro: #040615;
+    --bs-gris: #f2f4f5;
+    --bs-blanco: #ffffff;
+}
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Istok Web', sans-serif;
   
+}
+.menuM{
+    width: 100%;
 }
 
 body {
@@ -13,6 +25,10 @@ body {
     min-height: 100vh;
     flex-direction: column;
     background-color: #fff;
+}
+
+.principal{
+    margin-top: 80px;
 }
 
 div h2 {

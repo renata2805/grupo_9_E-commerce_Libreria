@@ -173,12 +173,12 @@ text-decoration: none;
 .hrCategorias{
     width: 50%; 
     margin: 0 25% 0 25%;
-    border: 2px solid white;
-    background-color: white;
+    border: 2px solid var(--bs-naranja);
+    background-color: var(--bs-naranja);
     height: auto;
 }
 .categoria-de-estudio{
-    background-color:  rgb(80, 80, 156);
+    background-color: var(--bs-azulClaro);
     width: 100%;
     height: auto;
     margin-top: 50px;
@@ -191,7 +191,7 @@ text-decoration: none;
 
 .title{
     padding: 25px;
-    color: var(--bs-naranja);
+    color: var(--bs-blanco);
     font-weight: bold;
     font-size: 2em;
     display: flex;
@@ -315,7 +315,7 @@ text-decoration: none;
 }
 
 .textFeed{
-    color: var(--bs-naranja);    
+    color: var(--bs-oscuro);    
 }
 
 .FeedImg{
