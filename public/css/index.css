@@ -3,7 +3,7 @@
     --bs-azulClaro: #6486f2;
     --bs-naranja: #ff7700;
     --bs-oscuro: #040615;
-    --bs-gris: #f2f4f5;
+    --bs-gris: #616161;
     --bs-blanco: #ffffff;
 }
 
@@ -14,19 +14,8 @@
     box-sizing: border-box;
 }
 
-.iFooter {
-    margin-top: 50px;
-    width: 100% !important;
-    height: 340px !important;
-}
-
-.iHeader {
-    width: 100% !important;
-    height: 78px;
-}
-
 body {
-    background-color: rgb(236, 236, 236);
+    background-color: var(--bs-blanco);
 }
 
 
@@ -57,7 +46,7 @@ body {
 	padding: 0;
 	width: 400%;
 	animation: slide 5s infinite alternate ease-in-out;
-	-webkit-animation: slide 7s infinite alternate ease-in-out;
+	-webkit-animation: slide 5s infinite alternate ease-in-out;
 }
 
 .slider-frame li {
@@ -71,7 +60,7 @@ body {
 
 /* FIN SLIDER */
 
-/* RECOMENDADOS NOVEDADES MAS VENDIDOS  */
+/* RECOMENDADOS NOVEDADES MAS VENDIDOS Y RECIENTES  */
 .recomendadosNovedades{
     width: 100%;
     display: flex;
@@ -124,281 +113,140 @@ text-decoration: none;
 
 
 
-/*  FIN RECOMENDADOS NOVEDADES MAS VENDIDOS  */
+/*  FIN RECOMENDADOS NOVEDADES MAS VENDIDOS  Y RECIENTES */
 
-
+/* QUIENES SOMOS */
 .quienes-somos{
-    border: 3px solid grey;
-    width: auto;
-    height: 180px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: var(--bs-azulClaro);
+    width: 100%;
+    height: auto;
+    display: flex;
 }
+.somos-container{
+    width: 50%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
 .titulo{
-    border: 1px solid grey;
-    width: 300px;
-    border-radius: 5px;
-    position: relative;
-    top: 50px;
-    left: 50px;
+  margin-top: 50px;
+  color: var(--bs-blanco);
+  font-weight: bold;
+}
+
+.text-container {
+    max-width: 80%;
+    margin: auto;
+    padding-top:20px;
+    padding-bottom: 60px;
+    font-size: 18px;
+    line-height: 1.4em;
+    text-align: left;
+    color: var(--bs-blanco);
     display: flex;
+}
+
+
+
+.imgBox{
+    display: flex;
+    width: 50%;
     justify-content: center;
     align-items: center;
-    transition: all 2s;
 }
-.titulo:hover{
-border-radius: 20px;
-background-color: orange;
-position: relative;
-top: 25px;
-}
-.texto{
-    border: 1px solid grey;
-    width: 500px;
-    position: relative;
-    left: 30%;
-    top: 30px;
-    border-radius: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(80, 80, 156);
-    }
-    .texto-contenido{
-      color: white;
-      size: 20px;
-    }
-.mas{
-    border: 1px solid grey;
-    width: 80px;
-    position: relative;
-    left: 80%;
-    top: 10px;
-    border-radius: 5px;
-   
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    width: 40px;
-    height: 40px;
-    cursor: pointer;
 
-}
-.mas-img{
-    border-radius: 5px;
-    width: 40px;
-    height: 40px;
-
-
-
-
+.imgSomos{
+    margin: 30px 0;
+    width: 30%;
+    height: auto;
 }
 
 
+/* FIN QUIENES SOMOS */
+
+
+/* CATEGORIAS */
+.hrCategorias{
+    width: 50%; 
+    margin: 0 25% 0 25%;
+    border: 2px solid var(--bs-naranja);
+    background-color: var(--bs-naranja);
+    height: auto;
+}
 .categoria-de-estudio{
-    border: 3px solid grey;
-    width: auto;
-    margin-top: 3px;
-    border-radius: 5px;
-    height: 800px;
+    background-color: var(--bs-azulClaro);
+    width: 100%;
+    height: auto;
+    margin-top: 50px;
+    padding-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
+
 .title{
-    border: 3px solid grey;
-    width: 300px;
-    margin-top: 3px;
-    margin-left: 3px;
-    margin-right: 3px;
-    position: relative;
-    left: 40%;
-    top: 20px;
-    border-radius: 5px;
+    padding: 25px;
+    color: var(--bs-blanco);
+    font-weight: bold;
+    font-size: 2em;
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: all 2s;
+
 }
-.title:hover{
-    border-radius: 20px;
-    background-color: orange;
-    position: relative;
-    left: 600px;
-    }
-    
+
 .main-items-container{
-    border: 3px solid grey;
-    width:auto;
-    border-radius: 5px;
-    position: relative;
-    top: 60px;
-    background-color:  rgb(80, 80, 156); 
-}
-.uno{
-    border: 1px solid grey;
-width: 160px;
-position: relative;
-left:1050px;
-border-radius: 5px;
-display: flex;
+    width:100%;
+    display: flex;
     justify-content: center;
     align-items: center;
 }
+.colum{
+    text-align: center;
+    margin-top: 30px ;
+    width: 33%;
+}
+
+.colum2{
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.CategoriaText{
+    margin: 40px;
+}
+
+
 .estilo{
+    border: var(--bs-gris) 2px solid;
+    padding: 6px;
+    border-radius: 7px;
     color: white;
-    transition: all 2s;
+    font-size: 1.5em;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
 }
+
 .estilo:hover{
-    border-radius: 20px;
-    background-color: orange;
-    position: relative;
-    right: 5px;
-    color: rgb(22, 21, 21) ;
-    size: 50px;
-    }
-.dos{
-    border: 1px solid grey;
-    width: 160px;
-    position: relative;
-    left:10%;
-    border-radius: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
 }
-.tres{
-    border: 1px solid grey;
-    width: 160px;
-    position: relative;
-    left: 1400px;
-    border-radius: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.cuatro{
-    border: 1px solid grey;
-    width: 160px;
-    position: relative;
-    left:330px;
-    border-radius: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.cinco{
-    border: 1px solid grey;
-    width: 160px;
-    position: relative;
-    left:700px;
-    border-radius: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.seis{
-    border: 1px solid grey;
-    width: 160px;
-    position: relative;
-    left:1600px;
-    border-radius: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.siete{
-    border: 1px solid grey;
-    width: 160px;
-    position: relative;
-    left:50px;
-    border-radius: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.ocho{
-    border: 1px solid grey;
-    width: 160px;
-    position: relative;
-    left:1200px;
-    border-radius: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.nueve{
-    border: 1px solid grey;
-    width: 160px;
-    position: relative;
-    left:300px;
-    border-radius: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.diez{
-    border: 1px solid grey;
-    width: 160px;
-    position: relative;
-    left:900px;
-    border-radius: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.once{
-    border: 1px solid grey;
-    width: 160px;
-    position: relative;
-    left: 573px;
-    border-radius: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.doce{
-    border: 1px solid grey;
-    width: 160px;
-    position: relative;
-    left: 1300px;
-    border-radius: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.trece{
-    border: 1px solid grey;
-    width: 160px;
-    position: relative;
-    left:30px;
-    border-radius: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.catorce{
-    border: 1px solid grey;
-    width: 160px;
-    position: relative;
-    left: 300px;
-    border-radius: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.quince{
-    border: 1px solid grey;
-    width: 160px;
-    position: relative;
-    left:200px;
-    border-radius: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+
+
 .titulo2{
     border: 1px solid grey;
     width: 300px;
     margin-top:4px ;
-    position: relative;
-    left: 40%;
-    top: 70px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -408,175 +256,71 @@ display: flex;
 .titulo2:hover{
     border-radius: 20px;
     background-color: orange;
-    position: relative;
-    right: 470px;
     color: rgb(22, 21, 21) ;
-     }
+}
+
 .libro-destacado{
-    border: 1px solid grey;
     width: 300px;
     height: 280px;
     margin-top:30px;
     margin-bottom: 30px;
-    position: relative;
-    left: 33%;
-    top: 50px;
-    border-radius: 10px;
+  
+
 }
+
+/* FEEDBACK */
 .feedback{
-    border: 3px solid grey;
-    width: auto;
-    height: 1500px;
-    margin-top: 3px;
-    margin-bottom: 3px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 100%;
+    height: auto;
 }
-.docente{
-    border: 3px solid grey;
-    width: 350px;
-    height: 370px;
-    margin-top: 3px;
-    margin-bottom: 3px;
-    position: relative;
-    left: 500px;
+.feedContainer{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    border-radius: 10px;
+    width: 100%;
 }
-.alumna{
-    border: 3px solid grey;
-    width: 350px;
-    height: 370px;
-    margin-top: 10px;
-    margin-bottom: 3px;
-    position: relative;
-    left: 700px;
-    bottom: 0px;
+.articleBox{
+    margin: 25px;
+    width: 25%;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px;
- }
- .alumno{
-    border: 3px solid grey;
-    width: 350px;
-    height: 370px;
-    margin-top: 3px;
-    margin-bottom: 3px;
-    position: relative;
-    left: 650px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px;
- }
- .docente2{
-    border: 2px solid grey;
-    width: 200px;
-    position: relative;
-    bottom: 200px;
-    left: 180px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 5px;
+    flex-direction: column;
 }
- .textDocente{
-    border: 2px solid grey;
-    width: 300px;
-    position: relative;
-    bottom: 180px;
-    left: 150px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 5px;
+
+
+.boxImgAlumna{
+    width: 100%;
+    height: auto;
 }
-.textAlumna{
-    border: 2px solid grey;
-    width: 300px;
-    position: relative;
-    bottom: 0px;
-    left: 1000px;
+
+
+.desFeedBox{
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 5px;
    
-
 }
 
-.alumna2{
-    border: 2px solid grey;
-    width: 200px;
-    position: relative;
-    bottom: 40px;
-    left: 1080px;
+.tituloFeedBox{
+    width: 100%;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 5px;
+    justify-content: left;
 }
-.alumno2{
-    border: 2px solid grey;
-    width: 200px;
-    position: relative;
-    bottom: 180px;
-    left: 1030px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 5px;
+
+.tituloFeed{
+    color: var(--bs-azul);
 }
-.textAlumno{
-    border: 2px solid grey;
+
+.textFeed{
+    color: var(--bs-oscuro);    
+}
+
+.FeedImg{
+    border-radius: 10px;
     width: 300px;
-    position: relative;
-    bottom: 150px;
-    left: 1020px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 5px;
-}
-
-
-
-.subtext{
-    color: #ff7700;
-    
-    
-
-}
-.subTitle{
-color: #3452b2;
-
-}
-
-
-
-.alumno-img{
-    border-radius: 5px;
-   width: 300px;
-   height: 350px;
-}
-.alumna-img{
-    border-radius: 5px;
-   width: 300px;
-   height: 350px;
-}
-.docente-img{
-    border-radius: 5px;
-   width: 300px;
-   height: 350px;
-}
-.pic-destacados{
-    border-radius: 5px;
-    width: 260px;
-    height: 260px;
-    position: relative;
-    top: 10px;
-    left: 20px;
-position: relative;
+    height: 350px;
 
 }

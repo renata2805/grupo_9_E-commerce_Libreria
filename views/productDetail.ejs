@@ -6,98 +6,109 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-    />
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
     <link rel="icon" type="image/svg" href="/images/favicon.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-      rel="stylesheet"
-    />
+      rel="stylesheet"/>
     <script
       src="https://kit.fontawesome.com/1bd3b3afa4.js"
-      crossorigin="anonymous"
-    ></script>
+      crossorigin="anonymous"></script>
     <link href="/css/productDetail.css" rel="stylesheet" />
     <title>Detalle del Producto</title>
   </head>
+
+
   <body>
 
+    <!-- <header>
+      <%- include('./partials/header') %>
+    </header> -->
 
-    <header>
-      <%- include('./partials/header') %>   
-    </header>
+    <section class="BoxBox">
 
-    <main> 
-      <div class="bookImage">
-         <img src="/images/Book_Cover_Mockup.jpg" alt="Breve historia revolución industrial" />
-       
-       <article> 
-         <section class="libro">
-         
-           <h1>Breve historia de la revolución industrial </h1>
-             <p class="clasificacion">7 calificaciones</p>
-             <p>
-               <button class="precio" type="button">7 USD</button>
-               <br>
-               <a href="">Agregar al carrito de compras</a>
-             </p>
-             <p class="reseña"> 
-             La Revolución Industrial es el proceso más determinante de la historia reciente: 
-             una narración vibrante plagada de victorias para la humanidad, 
-             pero también de víctimas. 
-             Nadie duda que las guerras o los enfrentamientos cambian el curso de la historia, 
-             pero no es menos importante, para nuestra historia reciente, 
-             el impacto que tuvo la Revolución Industrial tanto en la economía como en la política 
-             o la estrategia militar de las naciones. 
-             </p>
-         </section>
-         <section class="detalles">
-           <p>número de paginas</p>
-           <p>orígen</p>
-           <p>editorial</p>
-           <p>fecha de públicación</p>
-         </section>    
-         <section class="botones">  
-           <button>agregar icono</button>
-           <button>agregar icono</button> 
-           <button>agregar icono</button>
-           <button>agregar icono</button>
-         </section>
-         <section class="informacion">
-           <p>230 páginas</p>
-           <p>español</p>
-           <p>nowtilus</p>
-           <p>18 de octubre de 2012</p>
-         </section>  
-          
-          <section class="opinion"> 
-            <h2>
-             Opiniones Editoriales
-            </h2>
-           <h3>
-             Sobre el autor
-           </h3>
-           <p>
-             Luis E. Íñigo Fernández (Guadalajara, 1966),licenciado en Geografía e Historia por la Universidad
-             Complutense de Madrid, Doctor en Historia por la UNED,
-            ha recibido el Premio al Colegiado de Mejor Expediente Universitario del Ilustre Colegio de 
-            Doctores y Licenciados en Filosofía y Letras y en Ciencias de Madrid.
-            En la actualidad trabaja como Inspector de Educación tras casi dos décadas de experiencia
-            en la Enseñanza Secundaria en diferentes puestos.
-            </p>
-           </section>
-         </article>
+      <section class="boxContainer">
+
+      <div class="bookImageBox">
+        <img class="bookImg" src="/images/Book_Cover_Mockup.jpg"
+          alt="Breve historia revolución industrial"/>
+      </div>
+
+        <div class="libro">
+          <h2 class="titulo-libro">Breve historia de la revolución industrial</h2>
+          <p class="calificacion">7 calificaciones</p>
+          <div>
+            <button class="precio" type="button">7 USD</button>
           </div>
-         
-          </main>
+          <p class="reseña">
+            La Revolución Industrial es el proceso más determinante de la
+            historia reciente: una narración vibrante plagada de victorias para
+            la humanidad, pero también de víctimas. Nadie duda que las guerras o
+            los enfrentamientos cambian el curso de la historia, pero no es
+            menos importante, para nuestra historia reciente, el impacto que
+            tuvo la Revolución Industrial tanto en la economía como en la
+            política o la estrategia militar de las naciones.
+          </p>
+          <a href=""><button class="botones">Comprar</button></a>
+        </div>
 
-          <footer>
-            <%- include('./partials/footer') %>
-          </footer>
-       
-     </body>
+      </section>
 
-</html>
+        <section class="detallesBox"> 
+
+        <div class="detalles">
+          <div class="deta">
+            <p>Número de paginas</p>
+            <i class="fi fi-bs-book-alt"></i>
+            <p>230 Páginas</p>
+          </div>
+
+          <div class="deta">
+            <p>Orígen</p>
+            <i class="fi fi-bs-book-alt"></i>
+            <p>Español</p>
+          </div>
+
+          <div class="deta">
+            <p>Editorial</p>
+            <i class="fi fi-bs-book-alt"></i>
+            <p>Nowtilus</p>
+          </div>
+
+
+          <div class="deta">
+            <p>Fecha de públicación</p>
+            <i class="fi fi-bs-book-alt"></i>
+            <p>18 de Octubre de 2012</p>
+          </div>
+        
+
+        </div>
+
+        </section>
+
+
+
+        <section class="opinion">
+          <div class="textOpinion">
+          <h2>Opiniones Editoriales</h2>
+          <h4>Sobre el autor</h4>
+          <p class="reseña">
+            Luis E. Íñigo Fernández (Guadalajara, 1966),licenciado en Geografía
+            e Historia por la Universidad Complutense de Madrid, Doctor en
+            Historia por la UNED, ha recibido el Premio al Colegiado de Mejor
+            Expediente Universitario del Ilustre Colegio de Doctores y
+            Licenciados en Filosofía y Letras y en Ciencias de Madrid. En la
+            actualidad trabaja como Inspector de Educación tras casi dos décadas
+            de experiencia en la Enseñanza Secundaria en diferentes puestos.
+          </p>
+        </div>
+        </section>
     
+    </section>
+
+    <footer><%- include('./partials/footer') %></footer>
+  </body>
+</html>

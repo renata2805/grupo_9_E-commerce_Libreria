@@ -1,28 +1,64 @@
+:root{
+    --bs-azul: #3452b2;
+    --bs-azulClaro: #6486f2;
+    --bs-naranja: #ff7700;
+    --bs-oscuro: #040615;
+    --bs-gris: #f2f4f5;
+    --bs-blanco: #ffffff;
+}
+
+
 *{
+    margin: 0;
+    padding: 0;
     font-family: 'Istok Web', sans-serif;
     box-sizing: border-box;
 }
 
-.iFooter {
-    margin-top: 50px;
-    width: 100% !important;
-    height: 340px !important;
-}
-
-.iHeader {
-    width: 100% !important;
-    height: 78px;
-}
-
-
-
-.columna1{
+.boxContainer{
+    width: 100%;
     display: flex;
-    flex-wrap: wrap;
-    justify-items: center;
-    justify-content: space-around;
-    /*border: 1px solid #000;*/
-    padding: auto;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.bookImageBox {
+    width: 40%;
+}
+
+.bookImg{
+    display: flex;
+    height: 300px;
+}
+
+.libro{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+ }
+ 
+.detallesBox{
+    width: 100%;
+    display: flex;
+}
+
+.detalles{
+    margin-top: 30px;
+    display: flex;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.deta{
+    font-weight: bold;
+    width: 15%;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
 }
 
 .titulo-libro{
@@ -30,48 +66,67 @@
     text-decoration: solid;
 }
 
-.autor-libro{
-    color:#1a1b1b;
+
+.calificacion {
+    font-size: large;
+    text-align: left;
+    margin-bottom: 10px;
 }
 
-.fila2 div{
-    display:flex;
-    justify-content: space-between;
+.precio {
+    height: 30px;
+    width: 80px;
+    background-color: var(--bs-azul);
+    color: #fff;
+    border-radius: 5px;
+    transition: 0.4s;
+    border: #3452b2 2px solid;
+    margin-bottom: 20px;
 }
 
-.columna2{
-    position: relative;
-    display: flex;
-    flex-wrap: wrap;    
-    justify-items: center;
-    justify-content: space-around;
-    /*border: 1px solid #000;*/
-    padding: 5%;
+.reseña {
+    text-align: justify;
+    width: 100%;
 }
 
-.titulo-columna2-libro{
-    color: burlywood;
+.botones{
+    margin-top: 10px;
+    height: 30px;
+    width: 80px;
+    background-color: var(--bs-naranja);
+    color: #fff;
+    border-radius: 5px;
+    transition: 0.4s;
+    border: var(--bs-naranja) 4px solid;
 }
 
-.precio-libro{
-    font-size: 20px;
-    color: red;
+.botones:hover {
+    background-color: #fff;
+    border: #ff7700 2px solid;
+    color: #ff7700;
 }
 
-.detail-product{
-    padding: 5%;
-    max-width: 100%;
-    margin-top: 2px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content:space-around;
-}
 
-.iFooter {
+
+.opinion {
     margin-top: 50px;
-    width: 100% !important;
-    height: 340px !important;
+    width: 100%;
+    background-color: lightgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+.textOpinion{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 80%;
+}
+.icono{
+    width: 100px;
+    color:#ff7700;
+}
+
 
 @media (min-width:768px){
       
@@ -79,91 +134,4 @@
 
 @media (min-width:1000px){
 
-}
-
-.bookImage {
-    margin-left: 30px;
-    display: flex;
-    height: 450px;
-}
-
-.libro {
-   margin-left: 100px;
-   display: block;
-}
-
-.libro p {
-    flex-direction: column;
-}
-
-h1{
-    text-align: center;
-    font-size: x-large;
-}
-
-.clasificacion {
-    font-size: large;
-    text-align: center;
-}
-
-.precio {
-    height: 30px;
-    width: 80px;
-    background-color: #3452b2;
-    color: #fff;
-    border-radius: 5px;
-    transition: 0.4s;
-    border: #3452b2 2px solid;
-}
-
-.precio:hover {
-    background-color: #fff;
-    border: #ff7700 2px solid;
-    color: #ff7700;
-}
-
-.reseña {
-    text-align: justify;
-    width: 700px;
-}
-
-.detalles p {
-    display: inline-block;
-    margin-left: 100px;
-    width: 110px;
-    text-align: center;
-}
-
-.botones button{
-    display: inline-block;
-    margin-left: 100px;
-    width: 110px;
-    background-color: lightslategray;
-    color: #fff;
-    height: 30px;
-    border-color: lightslategray;
-    border-radius: 5px;
-    font-weight: 1000;
-}
-
-.informacion p{
-    display: inline-block;
-    margin-left: 100px;
-    width: 110px;
-    text-align: center;
-}
-
-.opinion {
-    margin: 20px;
-    padding: 10px;
-    display: block;
-    position: absolute;
-    left: 10px;
-    border-radius: 2%;
-    border-style: double;
-    background-color: lightgray;
-}
-
-.opinion p {
-    width: 900px;
 }

@@ -1,51 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/svg" href="/images/favicon.svg" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"/>
-    <link rel="stylesheet" href="/css/index.css" />
-    <script  src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 
-    <title>Inicio - BookExpress</title>
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/svg" href="/images/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="/css/index.css" />
+  <script src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 
-  <body>
-    <!-- MENU -->
-    <%- include('./partials/header') %>
-    
-    <!-- FIN MENU -->
+  <title>Inicio - BookExpress</title>
+</head>
+
+<body>
+
+  <header>
+      <!-- MENU -->
+  <%- include('./partials/header') %>
+
+  <!-- FIN MENU -->
+  </header>
+
 
     <!-- SLIDER -->
-        <section id="container-slider">	
-            <div class="slider-frame">
-              <ul>
-                  <li><img src="./images/libroAbierto.png" alt=""></li>
-                  <li><img src="./images/libros.png" alt=""></li>
-                  <li><img src="./images/lectores.png" alt=""></li>
-                  <li><img src="./images/libros.png" alt=""></li>
-              </ul>
-          </div>
-           </ul>
-         </section>
+    <section id="container-slider">
+      <div class="slider-frame">
+        <ul>
+          <li><img src="./images/libroAbierto.png" alt=""></li>
+          <li><img src="./images/libros.png" alt=""></li>
+          <li><img src="./images/lectores.png" alt=""></li>
+          <li><img src="./images/libros.png" alt=""></li>
+        </ul>
+      </div>
+      </ul>
+    </section>
 
     <!-- FIN SLIDER -->
 
 
-   <!-- RECOMENDADOS NOVEDADES MAS VENDIDOS -->
-    <section class="recomendadosNovedades">
-    <div class="recomendados">
+    <!-- RECOMENDADOS NOVEDADES MAS VENDIDOS -->
+<section class="recomendadosNovedades">
+      <div class="recomendados">
         <ul class="menu">
-            <li clas><a href="#">Recomendados</a></li>
-            <li><a href="#">Novedades</a></li>
-            <li><a href="#">Más vendidos</a></li>
+          <li clas><a href="#">Recomendados</a></li>
+          <li><a href="#">Novedades</a></li>
+          <li><a href="#">Más vendidos</a></li>
         </ul>
       </div>
-      
+
+      <div class="imagenesRecomendados">
+        <div class="cajaImg">
+          <img class="imgCajaRecomendado" src="" alt="">
+          <a href="/productDetail"></a>
+        </div>
+
+        <div class="cajaImg">
+          <img class="imgCajaRecomendado" src="" alt="">
+        </div>
+
+        <div class="cajaImg">
+          <img class="imgCajaRecomendado" src="" alt="">
+        </div>
+
+        <div class="cajaImg">
+          <img class="imgCajaRecomendado" src="" alt="">
+        </div>
+
+        <div class="cajaImg">
+          <img class="imgCajaRecomendado" src="" alt="">
+        </div>
+
+
+      </div>
+
+</section>
+    <!-- FIN RECOMENDADOS NOVEDADES MAS VENDIDOS -->
+
+<!-- QUIENES SOMOS -->
+<section class="quienes-somos">
+
+  <div class="somos-container"> 
+
+    <div class="">
+      <h2 class="titulo">¿QUIENES SOMOS?</h2>
+    </div>
+
+    <div class="text-container">
+      <p class="text"> Somos una biblioteca digital, en la cual podrás encontrar
+        gran varidad de libros educaticos hasta libros de entretenimiento.
+        Somos BookExpress tu biblioteca digital de confianza.
+        Una biblioteca digital que busca conectar la comunidad 
+        entre alumnos, profesores e instituciones educativas.</p>
+    </div>
+
+  </div>
+ 
+  <div class="imgBox">
+    <img class="imgSomos" src="./images/faviconWhite.svg" alt="logo bookexpress blanco">
+  </div>
+
+</section>
+<!-- FIN QUIENES SOMOS -->
+
+
+    <!-- RECIENTES -->
+<section class="recomendadosNovedades">
+      <div class="recomendados">
+        <ul class="menu">
+          <h2 >Recientes</h2>
+        </ul>
+      </div>
+
       <div class="imagenesRecomendados">
         <div class="cajaImg">
           <figure >
@@ -71,134 +140,156 @@
           <img class="imgCajaRecomendado" src="" alt="">
         </div>
 
-        
+
       </div>
 
-    </section>
-  <!--  FIN RECOMENDADOS NOVEDADES MAS VENDIDOS -->
+</section>
+    <!-- FIN RECIENTES -->
 
-    <!-- COPIA RECOMENDADOS NOVEDADES MAS VENDIDOS -->
-    <!-- <section class="recomendadosNovedades">
-      <div class="recomendados">
-          <ul class="menu">
-              <li><a href="" #="">Recomendados</a></li>
-              <ul class="submenu">
-                  <!aquí deberíamos incluir el listado de recomendados-->
-                  <!-- <li> <a href="#"></li> -->
-              <!-- </ul> -->
-              <!-- <li><a href="" #="">Novedades</a></li>
-              <ul class="submenu">
-                  aquí deberíamos incluir el listado de novedades
-                  <li> <a href="#"></li>
-              </ul>
-              <li><a href="" #="">Más vendidos</a></li>
-              <ul class="submenu">
-                  aquí deberíamos incluir el listado de más vendidos
-                  <li> <a href="#"></li>
-              </ul>
-          </ul>
-        </div> -->
-  
-      <!-- </section> --> 
-    <!--  FIN COPIA RECOMENDADOS NOVEDADES MAS VENDIDOS -->
+  <!-- CATEGORIAS -->
 
+    <section class="categoria-de-estudio">
 
-    <section class="quienes-somos">
-      <div>  <h1 class="titulo">QUIENES SOMOS?</h1> </div>
-  
-        <!-- este h1 nos va a servir para generar un titulo -->
-        
-        <div class="texto">
-         <p class="texto-contenido">  Una biblioteca digital que busca conectar <br />
-          la comunidad entre alumnos, profesores e  instituciones educativas </p>
-        </div>  
-        
-          <div class="mas">
-              <img class="mas-img" src="/images/mas.png" alt="mas">
-          </div>
-       
-      
-       
-      
-      <!-- el icono mas nos lleva a otra pagina que detalla mision y vision  -->
-      </section>
-       
-      
-    <section class="categoria-de-estudio" >
-   
-      <div class="title" > CATEGORIAS DE ESTUDIO </div>
+      <div class="title"> 
+        <h2>CATEGORIAS DE ESTUDIO </h2>
+      </div>
+
+      <hr class="hrCategorias">
+
       <div class="main-items-container">
-        <ul >
-          <!--Lista desordenada: Sin numerar-->
-         <div class="uno">  <li><a href="#" class="estilo"> matemática  </a> </li>   </div>
-         <div class="dos"> <li> <a href="#" class="estilo">  ciencias sociales </a> </li> </div>
-         
-         <div class="tres">  <li><a href="#" class="estilo">    geografía </a></li> </div>
-         <div class="cuatro">  <li><a href="#" class="estilo">  ingles </a></li> </div>
-          <div class="cinco">   <li> <a href="# " class="estilo"> ciencias físicas </a></li> </div>
-          <!-- <div class="seis">  <li> <a href="#" class="estilo"> historia </a></li>  </div> -->
-          <div class="siete"> <li> <a href="#" class="estilo" > astronomía </a></li>  </div>
-          <div class="ocho">  <li> <a href="#" class="estilo"> informática </a></li>  </div>
-          <div class="nueve"> <li> <a href="#" class="estilo"> literatura </a></li>  </div>
-          <div class="diez"> <li> <a href="#" class="estilo"> química </a></li>  </div>
-          <div class="once"> <li> <a href="#" class="estilo"> ciencias biológicas </a></li>  </div>
-          <div class="doce"> <li> <a href="#"class="estilo"> dibujo </a></li>  </div>
-          <div class="trece"> <li> <a href="#"class="estilo"> ciencias económicas </a></li>  </div>
-          <div class="catorce"> <li> <a href="#"class="estilo"> educación física </a></li> </div>
-        </ul>
-      </div>
-       
-      <div class="titulo2"> <h1>DESTACADO DEL MES</h1>  </div>
-     
-         <div class="libro-destacado"> <img class="pic-destacados" src="/images/destacados.jpg" alt="destacado">
+
+        <div class="colum"> 
+
+          <div class="CategoriaText">
+            <li><a href="#" class="estilo"> Matemática </a> </li>
+          </div>
+          <div class="CategoriaText">
+            <li> <a href="#" class="estilo">  Sociales </a> </li>
+          </div>
+          <div class="CategoriaText">
+            <li><a href="#" class="estilo"> Geografía </a></li>
+          </div>
+          <div class="CategoriaText">
+            <li><a href="#" class="estilo"> Ingles </a></li>
+          </div>
+
+        </div>
+
+        <div class="colum">
+
+          <div class="CategoriaText">
+            <li> 
+              <a href="#" class="estilo"> Astronomía </a>
+            </li>
+          </div>
+
+          <div class="CategoriaText">
+            <li> <a href="#" class="estilo"> Informática </a></li>
+          </div>
+          <div class="CategoriaText">
+            <li> <a href="#" class="estilo">Literatura</a></li>
+          </div>
+          <div class="CategoriaText">
+            <li> <a href="#" class="estilo"> Química </a></li>
+          </div>
+
+        </div> 
+
+        <div class="colum">
+
+          <div class="CategoriaText">
+            <li> <a href="#" class="estilo"> Biologia </a></li>
+          </div>
+          <div class="CategoriaText">
+            <li> <a href="#" class="estilo"> Dibujo </a></li>
+          </div>
+          <div class="CategoriaText">
+            <li> <a href="#" class="estilo"> Economia </a></li>
+          </div>
+          <div class="CategoriaText">
+            <li> <a href="#" class="estilo"> Educación Física </a></li>
+          </div>
+
+        </div>
+        
       </div>
 
+
     </section>
+
+    <!-- FIN CATEGORIAS -->
+
+    <!-- FEEDBACK -->
 
     <section class="feedback">
-      <article>
-        <div class="alumna"><img class="alumna-img" src="/images/alumna .jpg" alt="alumna" /></div>
-        <div class="alumna2"><h1 class="subTitle">María, estudiante</h1></div>
-        <div class=" textAlumna">
-          <p class="subtext">
+
+      <div class="feedContainer">
+
+      <article class="articleBox">
+        <div class="boxImgAlumna">
+          <img class="FeedImg" src="/images/alumna .jpg" alt="alumna" />
+        </div>
+
+        <div class="tituloFeedBox">
+          <h2 class="tituloFeed">María, estudiante</h2>
+        </div>
+
+        <div class="desFeedBox">
+          <p class="textFeed">
             Gracias a bookExpress puedo conectar Con estudiantes de otros
             lugares, esta Comunidad es genial!
           </p>
         </div>
-      </article>
-      <article>
-        <div class="docente"><img class="docente-img"  src= "images/docente .jpg" alt="docente" /></div>
-        <div class="docente2">
-          <h1 class="subTitle">Claudia, docente</h1>
-        </div>
-        <div class="textDocente">
-          <p class="subtext">
-            Una herramienta muy útil para dialogar con otros colegas,<br> saber
-            dónde están los Problemas <br> y buscar soluciones colaborativas
-          </p>
-        </div>
+        
       </article>
 
-      <article>
-        <div class="alumno"><img class="alumno-img" src="/images/alumno .jpg " alt="alumno" /></div>
-        <div class="alumno2">
-          <h1 class="subTitle">Juan, estudante</h1>
+      <article class="articleBox">
+        <div class="boxImgAlumna">
+          <img class="FeedImg" src="images/docente .jpg" alt="" />
         </div>
-        <div class="textAlumno">
-          <p class="subtext">
-            ¡Nunca más a las fotocopias! <br> bookExpress me permite centralizar
-            mis libros en un solo dispositivos, y lo mas importante, <br> colaboro
+
+        <div class="tituloFeedBox">
+          <h2 class="tituloFeed">Claudia, docente</h2>
+        </div>
+
+        <div class="desFeedBox">
+          <p class="textFeed">
+            Una herramienta muy útil para dialogar con otros colegas, saber
+            dónde están los Problemas  y buscar soluciones colaborativas
+          </p>
+        </div>
+
+      </article>
+
+
+      <article class="articleBox">
+        <div class="boxImgAlumna">
+          <img class="FeedImg" src="/images/alumno .jpg " alt=""/>
+        </div>
+
+        <div class="tituloFeedBox"> 
+          <h2 class="tituloFeed">Juan, estudiante</h2>
+        </div>
+
+        <div class="desFeedBox">
+          <p class="textFeed">
+            ¡Nunca más a las fotocopias! bookExpress me permite centralizar
+            mis libros en un solo dispositivos, y lo mas importante, colaboro
             con el medio ambiente
           </p>
         </div>
+
       </article>
 
+    </div>
+
     </section>
-    <footer >
 
+    <!-- FIN FEEDBACK -->
+    <footer>
       <%- include('./partials/footer') %>
-
     </footer>
-    
-  </body>
+
+</body>
+
 </html>

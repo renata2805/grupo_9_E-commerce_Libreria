@@ -13,11 +13,11 @@
 </head>
 
 <body>
-    <header id="headerMenu">
+    <header class="headerM" id="headerMenu">
         
         <div class="inner-width">
             <div>
-                <a href="/views/header.ejs"><img class="logo" src="/images/favicon.svg" alt=""></a>
+                <a href="/"><img class="logoIMG" src="/images/favicon.svg" alt="inoco BookExpress"></a>
                 <span class="Book">Book</span>
                 <span class="Express">Express</span>
             </div>
@@ -25,17 +25,18 @@
                 <i class="fas fa-bars"></i>
             </div>
         </div>
-    </header>
 
     <div class="navigation-menu">
         <nav>
             <li><a href="/views/index.ejs">Inicio</a></li>
             <li><a href="#">Tienda</a></li>
-            <li><a href="/views/login.ejs">Acceder</a></li>
-            <li><a href="/views/register.ejs">Registrarse</a></li>
-            <li><a href="/views/productCart.ejs">Carrito Compras</a></li>
+            <li><a href="/login">Acceder</a></li>
+            <li><a href="/register">Registrarse</a></li>
+            <li><a href="/productCart">Carrito Compras</a></li>
         </nav>
     </div>
+    
+    </header>
 
     <script>
         $(".menu-icon").click(function () {
@@ -43,6 +44,7 @@
             $(".navigation-menu").toggleClass("active");
             $(".menu-icon i").toggleClass("fa-times");
         });
+
     </script>
 
 </body>

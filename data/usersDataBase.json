@@ -1,0 +1,23 @@
+[{
+    "id": 1,
+    "nombre": "Marina",
+    "apellido": "Siches",
+    "email": "marinaisiches@gmail.com",
+    "fecha-de-nacimiento": "12/09/1991",
+    "contraseña": "libros123",
+    "categoria": 1,
+    "imagen": "fotomaru.jpg"
+},
+
+{
+    "id": 2,
+    "nombre": "Renata",
+    "apellido": "Soria",
+    "email": "renata.soria.arg@gmail.com",
+    "fecha-de-nacimiento": "28/05/1987",
+    "contraseña": "libros456",
+    "categoria": 1,
+    "imagen": "fotorena.jpg"
+}
+
+]
