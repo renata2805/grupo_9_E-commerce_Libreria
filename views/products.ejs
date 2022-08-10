@@ -27,39 +27,14 @@
       <%- include('./partials/header') %>   
     </header>
     <main>
-        <section class="recomendadosNovedades">
-            <div class="recomendados">
-                <ul class="menu">
-                    <li clas><a href="#">Recomendados</a></li>
-                    <li><a href="#">Novedades</a></li>
-                    <li><a href="#">Más vendidos</a></li>
-                </ul>
+      <section>
+      <div class="allproducts">
+              <%products.forEach(function (product){product%>
+                <div class="productbox">
+                  <img class="imgCajaRecomendado" src="/images/products/<%= product.imagen%>" alt="">
+                </div>
+                <%  }) %>
               </div>
-              
-              <div class="imagenesRecomendados">
-                <div class="cajaImg">
-                  <img class="imgCajaRecomendado" src="" alt="">
-                </div>
-        
-                <div class="cajaImg">
-                  <img class="imgCajaRecomendado" src="" alt="">
-                </div>
-        
-                <div class="cajaImg">
-                  <img class="imgCajaRecomendado" src="" alt="">
-                </div>
-        
-                <div class="cajaImg">
-                  <img class="imgCajaRecomendado" src="" alt="">
-                </div>
-        
-                <div class="cajaImg">
-                  <img class="imgCajaRecomendado" src="" alt="">
-                </div>
-        
-                
-              </div>
-        
             </section>
     </main>
     <footer>

@@ -12,9 +12,11 @@ app.use (express.static(publicPath));
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
 
-app.use("/", productsRoutes);
+app.use("/products", productsRoutes);
 app.use("/", usersRoutes);
 app.use("/", mainRoutes)
+app.use(express.urlencoded({extended: false}));
+app.use(express.json());
 
 app.listen(3000, ()=> {
     console.log("Servidor Funcionando")

@@ -62,13 +62,14 @@ text-decoration: none;
 
 }
 
-.imagenesRecomendados{
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
+.allproducts{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 10px;
+      }
 
-}
-.cajaImg {
+
+.productbox {
     width: 15%;
     background-color: #ff7700;
     height: 300px;

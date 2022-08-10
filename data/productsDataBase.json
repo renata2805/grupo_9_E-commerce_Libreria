@@ -4,15 +4,17 @@
         "autor":"Luis E. Iñigo Fernandez",
         "editorial": "Nowtilus",
         "origen": "Español",
-        "numero-paginas": 230,
-        "fecha-publicacion": "6/8/2022",
+        "numeropaginas": 230,
+        "fechapublicacion": "6/8/2022",
         "reseña": "La Revolución Industrial es el proceso más determinante de la historia reciente: una narración vibrante plagada de victorias para la humanidad, pero también de víctimas. Nadie duda que las guerras o los enfrentamientos cambian el curso de la historia, pero no es menos importante, para nuestra historia reciente, el impacto que tuvo la Revolución Industrial tanto en la economía como en la política o la estrategia militar de las naciones.",
         "categoria": "Historia",
         "precio": 12,
         "recomendados": false,
         "mas-vendidos": false,
         "novedades": true,
-        "imagen": "Book_Cover_Mockup.jpg"
+        "imagen": "Book_Cover_Mockup.jpg",
+        "calificaciones": 5,
+        "sobreautor": "un señor muy interesante"
 },
 
 
@@ -22,15 +24,17 @@
         "autor":"Vicent Bernard",
         "editorial": "Critica",
         "origen": "Español",
-        "numero-paginas": 300,
-        "fecha-publicacion": "15/10/2022",
+        "numeropaginas": 300,
+        "fechapublicacion": "15/10/2022",
         "reseña": "Una visión realmente innovadora del conflicto más importante de la historia.",
         "categoria": "Historia",
         "precio": 8,
         "recomendados": false,
         "mas-vendidos": false,
         "novedades": true,
-        "imagen": "Book_Cover_Mockup.jpg"
+        "imagen": "Book_Cover_Mockup.jpg",
+        "calificaciones": 9,
+        "sobreautor": "un señor muy vago"
 },
 
 
@@ -40,15 +44,17 @@
         "autor":"Yuval Noah Harari",
         "editorial": "Debate",
         "origen": "Español",
-        "numero-paginas": 621,
-        "fecha-publicacion": "4/09/2014",
+        "numeropaginas": 621,
+        "fechapublicacion": "4/09/2014",
         "reseña": "¿Cómo logró nuestra especie imponerse en la lucha por la existencia? ¿Por qué nuestros ancestros recolectores se unieron para crear ciudades y reinos? ¿Cómo llegamos a creer en dioses, en naciones o en los derechos humanos; a confiar en el dinero, en los libros o en las leyes? ¿Cómo acabamos sometidos a la burocracia, a los horarios y al consumismo? ¿Y cómo será el mundo en los milenios venideros?",
         "categoria": "Historia",
         "precio": 11,
         "recomendados": false,
         "mas-vendidos": false,
         "novedades": true,
-        "imagen": "Book_Cover_Mockup.jpg"
+        "imagen": "Book_Cover_Mockup.jpg",
+        "calificaciones": 15,
+        "sobreautor": "un señor muy lindo"
 },
 
 
@@ -58,15 +64,17 @@
         "autor":"Milan Melocco",
         "editorial": "Critica",
         "origen": "Español",
-        "numero-paginas": 400,
-        "fecha-publicacion": "15/09/2021",
+        "numeropaginas": 400,
+        "fechapublicacion": "15/09/2021",
         "reseña": "En un riguroso enfoque histórico y a partir de las mejores fuentes internacionales pero con la constante preocupación por la claridad, los autores ofrecen un libro único, tan importante por la masa de datos que recoge como por su excepcional propuesta gráfica.",
         "categoria": "Historia",
         "precio": 8,
         "recomendados": false,
         "mas-vendidos": false,
         "novedades": true,
-        "imagen": "Book_Cover_Mockup.jpg"
+        "imagen": "Book_Cover_Mockup.jpg",
+        "calificaciones": 1,
+        "sobreautor": "un señor muy poeta"
 },
 
 
@@ -77,14 +85,16 @@
         "editorial": "Xlibris US",
         "origen": "Español",
         "numero-paginas": 619,
-        "fecha-publicacion": "15/09/2021",
+        "fechapublicacion": "15/09/2021",
         "reseña": "Este libro tiene el objetivo de dar una introducción a los principios y conceptos básicos de la geología, para todos aquellos que están interesados en aprender sobre todos los procesos que formaron y dieron forma a la Tierra, desde su formación alrededor de 4.800 millones de años antes del presente (A.P.).",
         "categoria": "Historia",
         "precio": 4,
         "recomendados": false,
         "mas-vendidos": false,
         "novedades": true,
-        "imagen": "Book_Cover_Mockup.jpg"
+        "imagen": "Book_Cover_Mockup.jpg",
+        "calificaciones": 8,
+        "sobreautor": "un señor muy entusiasta"
 },
 
 
@@ -95,14 +105,16 @@
         "editorial": "Plaza y janes",
         "origen": "Español",
         "numero-paginas": 345,
-        "fecha-publicacion": "25/01/2022",
+        "fechapublicacion": "25/01/2022",
         "reseña": "La épica y emocionante historia de una mujer cuya vida abarca los momentos históricos más relevantes del siglo XX. Desde 1920 -con la llamada «gripe española»- hasta la pandemia de 2020, la vida de Violeta será mucho más que la historia de un siglo.",
         "categoria": "Literatura",
         "precio": 13,
         "recomendados": false,
         "mas-vendidos": false,
         "novedades": true,
-        "imagen": "Book_Cover_Mockup.jpg"
+        "imagen": "Book_Cover_Mockup.jpg",
+        "calificaciones": 1,
+        "sobreautor": "una señora muy delicado"
 },
 
 
