@@ -1,5 +1,6 @@
 const fs = require('fs');
 const path = require('path');
+const multer = require('multer');
 
 const productsFilePath = path.join(__dirname, '../data/productsDataBase.json');
 const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
@@ -25,23 +26,27 @@ const productsController = {
     edit: (req, res) => {
         res.render('productEditForm');
         },
-    store: (req, res) => {
-		let image
-		console.log(req.files);
+    update: (req, res) => {
+		let imagen
 		if(req.files[0] != undefined){
-			image = req.files[0].filename
+			imagen = req.files[0].filename
 		} else {
-			image = 'default-image.png'
+			imagen = 'default-image.jpg'
 		}
 		let newProduct = {
 			id: products[products.length - 1].id + 1,
 			...req.body,
-			image: image
+			imagen: imagen
 		};
 		products.push(newProduct)
 		fs.writeFileSync(productsFilePath, JSON.stringify(products, null, ' '));
-		res.redirect('products');
+		res.redirect('/products');
 	},
+    store: (req, res) => {
+        res.render('products', {
+            products, toThousand
+        });
+        },
 }
 
 module.exports= productsController;

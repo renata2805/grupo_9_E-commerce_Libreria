@@ -29,11 +29,11 @@
     <main>
       <section>
       <div class="allproducts">
-              <%products.forEach(function (product){product%>
+              <%products.forEach(function(product){if(product.id == product.id){ %>
                 <div class="productbox">
-                  <img class="imgCajaRecomendado" src="/images/products/<%= product.imagen%>" alt="">
+                  <a href="/products/productDetail/<%=product.id%>"><img class="imgCajaRecomendado" src="/images/products/<%= product.imagen%>" alt=""></a>
                 </div>
-                <%  }) %>
+                <%  }}); %>
               </div>
             </section>
     </main>
