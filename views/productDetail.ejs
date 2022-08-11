@@ -16,7 +16,7 @@
     <script
       src="https://kit.fontawesome.com/1bd3b3afa4.js"
       crossorigin="anonymous"></script>
-    <link href="/css/productDetail.css" rel="stylesheet" />
+    <link href="/css/styles.css" rel="stylesheet" />
     <title>Detalle del Producto</title>
   </head>
 
@@ -38,7 +38,7 @@
 
         <div class="libro">
           <h2 class="titulo-libro"><%=product.nombreLibro%></h2>
-          <p class="calificaion"><%=product.calificaciones%> calificaciones</p>
+          <p class="calificaion">Precio</p>
           <div>
             <button class="precio" type="button"><%=product.precio%></button>
           </div>
@@ -46,6 +46,8 @@
             <%=product.reseña%>
           </p>
           <a href=""><button class="botones">Comprar</button></a>
+          <a href="./products/productEditForm"><button class="botones">Editar</button></a>
+          <a href=""><button class="botones">Borrar</button></a>
         </div>
 
       </section>

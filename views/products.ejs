@@ -19,7 +19,7 @@
       src="https://kit.fontawesome.com/1bd3b3afa4.js"
       crossorigin="anonymous"
     ></script>
-    <link href="/css/products.css" rel="stylesheet" />
+    <link href="/css/styles.css" rel="stylesheet" />
     <title>Todos los productos</title>
   </head>
 
@@ -41,13 +41,13 @@
                 <div class="productbox">
                   
 
-                <div class="productbox2">
-                  <a href="/products/productDetail/<%=product.id%>">
-                  <img class="imgCajaRecomendado" src="/images/products/<%= product.imagen%>" alt=""></a>
-                </div>
+                  <div class="productbox2">
+                    <a href="/products/productDetail/<%=product.id%>">
+                    <img class="imgCajaRecomendado" src="/images/products/<%= product.imagen%>" alt=""></a>
+                    <h6> $ <%= product.precio%> </h6>
+                    <h6> <%= product.nombreLibro %>  </h6> 
+                  </div>
 
-                  <!-- <h6><%=product.precio%></h6> -->
-                
                 </div>
                 <%  }); %>
 

@@ -1,0 +1,9 @@
+@import URL(footer.css);
+@import URL(header.css);
+@import URL(index.css);
+@import URL(login.css);
+@import URL(productCart.css);
+@import URL(productCreateForm.css);
+@import URL(productDetail.css);
+@import URL(products.css);
+@import URL(register.css);
