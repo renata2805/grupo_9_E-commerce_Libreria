@@ -22,21 +22,41 @@
     <link href="/css/products.css" rel="stylesheet" />
     <title>Todos los productos</title>
   </head>
+
+
+
   <body>
+
     <header>
       <%- include('./partials/header') %>   
     </header>
+
+
     <main>
+
       <section>
+
       <div class="allproducts">
-              <%products.forEach(function(product){if(product.id == product.id){ %>
+        <%products.forEach(function(product){ %>
                 <div class="productbox">
-                  <a href="/products/productDetail/<%=product.id%>"><img class="imgCajaRecomendado" src="/images/products/<%= product.imagen%>" alt=""></a>
+                  
+
+                <div class="productbox2">
+                  <a href="/products/productDetail/<%=product.id%>">
+                  <img class="imgCajaRecomendado" src="/images/products/<%= product.imagen%>" alt=""></a>
                 </div>
-                <%  }}); %>
-              </div>
-            </section>
+
+                  <!-- <h6><%=product.precio%></h6> -->
+                
+                </div>
+                <%  }); %>
+
+        </div>
+       </section>
+
     </main>
+
+
     <footer>
         <%- include('./partials/footer') %>
       </footer>
