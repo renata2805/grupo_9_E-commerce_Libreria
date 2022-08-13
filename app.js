@@ -9,7 +9,7 @@ const methodOverride = require ("method-override");
 
 
 app.use (express.static(publicPath));
-app.use(methodOverride("method"));
+app.use(methodOverride("_method"));
 
 // EJS Engine
 app.set('view engine', 'ejs');
