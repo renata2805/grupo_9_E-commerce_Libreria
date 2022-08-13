@@ -29,8 +29,11 @@ router.get('/productCart', productsController.productCart);
 router.get('/productDetail/:id', productsController.productDetail);
 router.get('/productCreateForm', productsController.create);
 router.get('/productEditForm', productsController.edit);
-router.post('/', upload.any(), productsController.update)
+router.post('/', upload.any(), productsController.update);
 router.get('/', productsController.store);
+// router.get(  "/products/:categoria", productsController.categoria);
+
+
 
 
 
