@@ -5,8 +5,11 @@ const publicPath = path.resolve(__dirname,"./public");
 const productsRoutes = require ("./routes/products")
 const mainRoutes = require ("./routes/main")
 const usersRoutes = require ("./routes/users")
+const methodOverride = require ("method-override");
+
 
 app.use (express.static(publicPath));
+app.use(methodOverride("method"));
 
 // EJS Engine
 app.set('view engine', 'ejs');
