@@ -12,7 +12,7 @@
         "recomendados": false,
         "mas-vendidos": false,
         "novedades": true,
-        "imagen": "Book_Cover_Mockup.jpg"
+        "imagen": "Breve-historia-de-la-revolucion-industrial.jpg"
 },
 
 
@@ -30,7 +30,7 @@
         "recomendados": false,
         "mas-vendidos": false,
         "novedades": true,
-        "imagen": "Book_Cover_Mockup.jpg"
+        "imagen": "de-animales-a-dioses.jpg"
 },
 
 
@@ -48,7 +48,7 @@
         "recomendados": false,
         "mas-vendidos": false,
         "novedades": true,
-        "imagen": "Book_Cover_Mockup.jpg"
+        "imagen": "de-animales-a-dioses.jpg"
 },
 
 
@@ -66,7 +66,7 @@
         "recomendados": false,
         "mas-vendidos": false,
         "novedades": true,
-        "imagen": "Book_Cover_Mockup.jpg"
+        "imagen": "infografias-de-la-antigua-roma.jpg"
 },
 
 
@@ -84,7 +84,7 @@
         "recomendados": false,
         "mas-vendidos": false,
         "novedades": true,
-        "imagen": "Book_Cover_Mockup.jpg"
+        "imagen": "historia-de-la-geología-sudamericana.jpg"
 },
 
 
@@ -102,7 +102,7 @@
         "recomendados": false,
         "mas-vendidos": false,
         "novedades": true,
-        "imagen": "Book_Cover_Mockup.jpg"
+        "imagen": "violeta.jpg"
 },
 
 
@@ -120,7 +120,7 @@
         "recomendados": false,
         "mas-vendidos": false,
         "novedades": true,
-        "imagen": "Book_Cover_Mockup.jpg"
+        "imagen": "el-principito.jpg"
 },
 
 
@@ -138,7 +138,7 @@
         "recomendados": false,
         "mas-vendidos": false,
         "novedades": true,
-        "imagen": "Book_Cover_Mockup.jpg"
+        "imagen": "100-años-de-soledad.jpg"
 
 
 },
@@ -146,24 +146,7 @@
 
 
 
-{
-        "id": 8,
-        "nombreLibro": "100 años de soledad ",
-        "autor":"Gabriel Garcia Marquez",
-        "editorial": "Vintaje Español",
-        "origen": "Español",
-        "numero-paginas": 271,
-        "fecha-publicacion": "15/10/2014",
-        "reseña": "Millones de ejemplares de Cien años de soledad leídos en todas las lenguas y el Premio Nobel de Literatura coronando una obra que se había abierto paso a boca a boca como gusta decir el escritor son la más palpable demostración de que la aventura fabulosa de la familia Buendía-Iguarán, con sus milagros, fantasías, obsesiones, tragedias, incestos, adulterios, rebeldías, descubrimientos y condenas, representaba al mismo tiempo el mito y la historia, la tragedia y el amor del mundo entero.",
-        "categoria": "Literatura",
-        "precio": 10,
-        "recomendados": false,
-        "mas-vendidos": false,
-        "novedades": true,
-        "imagen": "Book_Cover_Mockup.jpg"
 
-        
-},
 
 
 
@@ -181,7 +164,7 @@
         "recomendados": false,
         "mas-vendidos": false,
         "novedades": true,
-        "imagen": "Book_Cover_Mockup.jpg"
+        "imagen": "el-Alquimista.jpg"
 
         
 },
@@ -202,7 +185,7 @@
         "recomendados": false,
         "mas-vendidos": false,
         "novedades": true,
-        "imagen": "Book_Cover_Mockup.jpg"   
+        "imagen": "cometas-en-el-cielo.jpg"   
 },
 {
         "id": 11,

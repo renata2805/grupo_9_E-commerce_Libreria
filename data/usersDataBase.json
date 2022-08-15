@@ -18,6 +18,19 @@
     "contraseña": "libros456",
     "categoria": 1,
     "imagen": "fotorena.jpg"
+},
+
+{
+    "id": 3,
+    "nombre": "Sebastian",
+    "apellido": "Diaz",
+    "email": "diaz.sebastian1988@gmail.com",
+    "fecha-de-nacimiento": "09/08/1988",
+    "contraseña": "libros333",
+    "categoria": 1,
+    "imagen": "fotoseba.jpg"
 }
+
+
 
 ]
