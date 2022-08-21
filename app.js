@@ -5,19 +5,16 @@ const publicPath = path.resolve(__dirname,"./public");
 const productsRoutes = require ("./routes/products")
 const mainRoutes = require ("./routes/main")
 const usersRoutes = require ("./routes/users")
-<<<<<<< HEAD
 const methodOverride = require ("method-override");
 
 
 app.use (express.static(publicPath));
 app.use(methodOverride("_method"));
-=======
 //const methodOverride = require("method-override");
 
 
 app.use (express.static(publicPath));
 //app.use (methodOverride("_method"));
->>>>>>> 9599f29361d62d5626a001d3f91d6bc9065141c4
 
 // EJS Engine
 app.set('view engine', 'ejs');
