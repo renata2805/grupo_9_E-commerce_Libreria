@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="icon" type="image/svg" href="/images/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/1bd3b3afa4.js"
+      crossorigin="anonymous"
+    ></script>
+    <link href="/css/styles.css" rel="stylesheet" />
+    <title>Todos los productos</title>
+  </head>
+
+
+
+  <body>
+
+    <header>
+      <%- include('./partials/header') %>   
+    </header>
+
+
+    <main>
+
+      <section>
+
+      <div class="allproducts">
+        <%products.forEach(function(product){ %>
+                <div class="productbox">
+                  
+
+                  <div class="productbox2">
+                    <a href="/products/productDetail/<%=product.id%>">
+                    <img class="imgCajaRecomendado" src="/images/products/<%= product.imagen%>" alt=""></a>
+                    <h6> $ <%= product.precio%> </h6>
+                    <h6> <%= product.nombreLibro %>  </h6> 
+                  </div>
+
+                </div>
+                <%  }); %>
+
+        </div>
+       </section>
+
+    </main>
+
+
+    <footer>
+        <%- include('./partials/footer') %>
+      </footer>
+   
+ </body>
+
+</html>
+  </body>

@@ -1,0 +1,57 @@
+:root{
+    --bs-azul: #3452b2;
+    --bs-azulClaro: #6486f2;
+    --bs-naranja: #ff7700;
+    --bs-oscuro: #040615;
+    --bs-gris: #f2f4f5;
+    --bs-blanco: #ffffff;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Istok Web', sans-serif;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: rgb(236, 236, 236);
+}
+
+
+.allproducts{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.productbox {
+    display: flex;
+    margin: 50px;
+    width: 20%;
+    background-color: #ff7700;
+    
+
+
+    
+}
+
+.productbox2{
+    /* margin: 50px;
+    width: 20%; */
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.imgCajaRecomendado{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}

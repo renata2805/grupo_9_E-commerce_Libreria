@@ -1,4 +1,13 @@
+<<<<<<< HEAD
 var users = JSON.parse(fs.readFileSync(usersFilePath, "utf-8"))
+=======
+const fs = require('fs');
+const path = require('path');
+const multer = require('multer');
+const usersFilePath = path.join(__dirname, '../data/usersDataBase.json');
+var users = JSON.parse(fs.readFileSync(usersFilePath, "utf-8"))
+
+>>>>>>> 9599f29361d62d5626a001d3f91d6bc9065141c4
 const usersController = {
     register: (req, res) => {
         res.render ('register'); //  como parametros va el nombre del archivo dentro views
@@ -9,6 +18,13 @@ const usersController = {
     createProduct: (req, res) => {
         res.render ('indexAdmin'); // como parametros va el nombre del archivo dentro views
        },
+    edit: function(req,res) {
+      let idUser = req.params.idUser;
+
+      let userToEdit = users[idUser] 
+
+      res.render("userEdit", {userToEdit: userToEdit});
+    }   
 
        edit: function(req,res) {
         let idUser = req.params.idUser;

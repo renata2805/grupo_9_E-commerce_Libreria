@@ -5,19 +5,29 @@ const publicPath = path.resolve(__dirname,"./public");
 const productsRoutes = require ("./routes/products")
 const mainRoutes = require ("./routes/main")
 const usersRoutes = require ("./routes/users")
+<<<<<<< HEAD
 const methodOverride = require ("method-override");
 
 
 app.use (express.static(publicPath));
 app.use(methodOverride("_method"));
+=======
+//const methodOverride = require("method-override");
+
+
+app.use (express.static(publicPath));
+//app.use (methodOverride("_method"));
+>>>>>>> 9599f29361d62d5626a001d3f91d6bc9065141c4
 
 // EJS Engine
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
 
-app.use("/", productsRoutes);
+app.use("/products", productsRoutes);
 app.use("/", usersRoutes);
 app.use("/", mainRoutes)
+app.use(express.urlencoded({extended: false}));
+app.use(express.json());
 
 app.listen(3000, ()=> {
     console.log("Servidor Funcionando")

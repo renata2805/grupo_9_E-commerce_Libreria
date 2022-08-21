@@ -16,7 +16,7 @@
     <script
       src="https://kit.fontawesome.com/1bd3b3afa4.js"
       crossorigin="anonymous"></script>
-    <link href="/css/productDetail.css" rel="stylesheet" />
+    <link href="/css/styles.css" rel="stylesheet" />
     <title>Detalle del Producto</title>
   </head>
 
@@ -32,26 +32,22 @@
       <section class="boxContainer">
 
       <div class="bookImageBox">
-        <img class="bookImg" src="/images/Book_Cover_Mockup.jpg"
-          alt="Breve historia revolución industrial"/>
+        <img class="bookImg" src="/images/products/<%= product.imagen %>"
+          alt=<%product.nombreLibro%>/>
       </div>
 
         <div class="libro">
-          <h2 class="titulo-libro">Breve historia de la revolución industrial</h2>
-          <p class="calificacion">7 calificaciones</p>
+          <h2 class="titulo-libro"><%=product.nombreLibro%></h2>
+          <p class="calificaion">Precio</p>
           <div>
-            <button class="precio" type="button">7 USD</button>
+            <button class="precio" type="button"><%=product.precio%></button>
           </div>
           <p class="reseña">
-            La Revolución Industrial es el proceso más determinante de la
-            historia reciente: una narración vibrante plagada de victorias para
-            la humanidad, pero también de víctimas. Nadie duda que las guerras o
-            los enfrentamientos cambian el curso de la historia, pero no es
-            menos importante, para nuestra historia reciente, el impacto que
-            tuvo la Revolución Industrial tanto en la economía como en la
-            política o la estrategia militar de las naciones.
+            <%=product.reseña%>
           </p>
           <a href=""><button class="botones">Comprar</button></a>
+          <a href="./products/productEditForm"><button class="botones">Editar</button></a>
+          <a href=""><button class="botones">Borrar</button></a>
         </div>
 
       </section>
@@ -62,26 +58,26 @@
           <div class="deta">
             <p>Número de paginas</p>
             <i class="fi fi-bs-book-alt"></i>
-            <p>230 Páginas</p>
+            <p><%=product.numeropaginas%></p>
           </div>
 
           <div class="deta">
             <p>Orígen</p>
             <i class="fi fi-bs-book-alt"></i>
-            <p>Español</p>
+            <p><%=product.origen%></p>
           </div>
 
           <div class="deta">
             <p>Editorial</p>
             <i class="fi fi-bs-book-alt"></i>
-            <p>Nowtilus</p>
+            <p><%=product.editorial%></p>
           </div>
 
 
           <div class="deta">
             <p>Fecha de públicación</p>
             <i class="fi fi-bs-book-alt"></i>
-            <p>18 de Octubre de 2012</p>
+            <p><%=product.fechapublicacion%></p>
           </div>
         
 
@@ -96,13 +92,7 @@
           <h2>Opiniones Editoriales</h2>
           <h4>Sobre el autor</h4>
           <p class="reseña">
-            Luis E. Íñigo Fernández (Guadalajara, 1966),licenciado en Geografía
-            e Historia por la Universidad Complutense de Madrid, Doctor en
-            Historia por la UNED, ha recibido el Premio al Colegiado de Mejor
-            Expediente Universitario del Ilustre Colegio de Doctores y
-            Licenciados en Filosofía y Letras y en Ciencias de Madrid. En la
-            actualidad trabaja como Inspector de Educación tras casi dos décadas
-            de experiencia en la Enseñanza Secundaria en diferentes puestos.
+            <%=product.sobreautor%>
           </p>
         </div>
         </section>

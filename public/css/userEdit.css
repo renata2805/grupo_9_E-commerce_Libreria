@@ -1,3 +1,14 @@
+@import URL(footer.css);
+@import URL(header.css);
+@import URL(index.css);
+@import URL(login.css);
+@import URL(productCart.css);
+@import URL(productCreateForm.css);
+@import URL(productDetail.css);
+@import URL(products.css);
+@import URL(register.css);
+
+
 *{
     margin: 0;
     padding: 0;
@@ -38,7 +49,7 @@ body {
     border-radius: 5px;
     outline: none;
     color: #464646;
-    font-size: 0.5em;
+    font-size: 0.9em;
     transition: 0.5s;
  
 }
@@ -71,6 +82,10 @@ body {
 .inputBox input:focus {
     border: 2px solid #ff7700;
 }
+.inputBox input:valid ,
+.inputBox input:focus {
+    border: 2px solid #ff7700;
+}
 .botonBox {
     display: flex;
     justify-content: center;
@@ -78,7 +93,7 @@ body {
     margin-bottom: 50px;
 }
 .boton {
-    width: 70%;
+    width: 80%;
     padding: 10px;
     border: 2px solid #3452b2;
     background: #3452b2;
