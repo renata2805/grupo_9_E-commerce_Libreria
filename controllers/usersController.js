@@ -9,6 +9,14 @@ const usersController = {
         res.render ('indexAdmin'); // como parametros va el nombre del archivo dentro views
        },
 
+       edit: function(req,res) {
+        let idUser = req.params.idUser;
+  
+        let userToEdit = users[idUser] 
+  
+        res.render("userEdit", {userToEdit: userToEdit});
+      }   
+
 }
 
 module.exports= usersController;
