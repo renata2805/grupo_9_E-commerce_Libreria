@@ -36,22 +36,21 @@
 
       <section>
 
-      <div class="allproducts">
-        <%products.forEach(function(product){porduct.categoria%>
-                <div class="productbox">
-                  
-
-                  <div class="productbox2">
-                    <a href="/products/productDetail/<%=product.id%>">
-                    <img class="imgCajaRecomendado" src="/images/products/<%= product.imagen%>" alt=""></a>
-                    <h6> $ <%= product.precio%> </h6>
-                    <h6> <%= product.nombreLibro %>  </h6> 
+        <div class="allproducts">
+          
+                  <div class="productbox">
+                    
+  
+                    <div class="productbox2">
+                      <a href="/products/productDetail/<%=product.id%>">
+                      <img class="imgCajaRecomendado" src="/images/products/<%= product.imagen%>" alt=""></a>
+                      <h6> $ <%= product.precio%> </h6>
+                      <h6> <%= product.nombreLibro %>  </h6> 
+                    </div>
+  
                   </div>
-
-                </div>
-                <%  }); %>
-
-        </div>
+                  
+          </div>
        </section>
 
     </main>

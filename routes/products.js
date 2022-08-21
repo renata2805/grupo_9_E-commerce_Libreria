@@ -23,7 +23,7 @@ router.get('/productCreateForm', productsController.create);
 router.get('/productEditForm', productsController.edit);
 router.post('/', upload.any(), productsController.update);
 router.get('/', productsController.store);
-//router.get('/:categoria', productsController.categoria);
+router.get('/categorias/:categoria', productsController.categoria);
 
 
 

@@ -19,14 +19,14 @@ const productsController = {
         toThousand
     })
 },
-//      categoria: (req, res) => {
-//      let categoria = req.params.categoria  
-//      let product = products.find(product => product.categoria == categoria )
-//      res.render('products', {
-//          product,
-//          toThousand
-//      })
-//  },
+      categoria: (req, res) => {
+      let categoria = req.params.categoria  
+      let product = products.find(product => product.categoria == categoria )
+      res.render('categoria', {
+          product,
+          toThousand
+      })
+  },
     create: (req, res) => {
         res.render ('productCreateForm'); // como parametros va el nombre del archivo dentro views
        },
