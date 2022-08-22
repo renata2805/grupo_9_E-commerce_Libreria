@@ -49,7 +49,9 @@
 
         </form>
     </div>
-
+    <form method="POST" action="/users/delete/<%= userToEdit.id%>?_method=DELETE">
+        <div> <button typ="submit" class="eliminar">Eliminar Usuario</button></div>
+    </form>
 
 
 </body>
