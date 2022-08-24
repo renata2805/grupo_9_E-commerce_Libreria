@@ -31,11 +31,11 @@ const productsController = {
         res.render ('productCreateForm'); // como parametros va el nombre del archivo dentro views
        },
     edit: function(req,res) {
-        let idProduct = req.params.idProduct;
+        let id = req.params.id;
   
-        let productToEdit = products[idProduct] 
+        let productToEdit = products[id] 
   
-        res.render("edit", {productToEdit: productToEdit});
+        res.render("productEditForm", {productToEdit: productToEdit});
       },
     update: (req, res) => {
 		let imagen
