@@ -14,9 +14,9 @@
 <body>
     <div>
         <div class="logoBox">
-            <a href="./index.html"><img class="logo" src="images/favicon.svg" alt=""></a>
+            <a href="./index.ejs"><img class="logo" src="images/favicon.svg" alt=""></a>
         </div>
-        <form action="/" method="post">
+        <form action="/" method="POST" enctype="multipart/form-data">
             <div class="inputBox">
                 <input type="text" name="nombre" id="nombre" required="required">
                 <span>Nombre Completo</span>
@@ -42,6 +42,11 @@
                 <span>Confirmar Contraseña</span>
             </div>
 
+            <span>Elige una foto de perfil:</span>
+            <div class="inputBox">
+                <input type="file" name="imagen" id="imagen" required="required">
+            </div>
+
             <div class="passBox">
                 <div class="guardarContra">
                     <input class="cbox" id="guardarPass" type="checkbox" required="required">
@@ -59,7 +64,7 @@
                     <span class="guardar">Ya tienes cuenta?</span>
                 </div>
                 <div class="OlvidarContra">
-                    <a class="link" href="./login.html">Acceder</a>
+                    <a class="link" href="./login.ejs">Acceder</a>
                 </div>
             </div>
 

@@ -1,38 +1,32 @@
-[{
-    "id": 1,
-    "nombre": "Marina",
-    "apellido": "Siches",
-    "telefono": 123456789,
-    "email": "marinaisiches@gmail.com",
-    "fecha-de-nacimiento": "12/09/1991",
-    "contraseña": "libros123",
-    "categoria": 1,
-    "imagen": "fotomaru.jpg"
-},
-
-{
-    "id": 2,
-    "nombre": "Renata",
-    "apellido": "Soria",
-    "telefono": 987654321,
-    "email": "renata.soria.arg@gmail.com",
-    "fecha-de-nacimiento": "28/05/1987",
-    "contraseña": "libros456",
-    "categoria": 1,
-    "imagen": "fotorena.jpg"
-},
-
-{
-    "id": 3,
-    "nombre": "Sebastian",
-    "apellido": "Diaz",
-    "email": "diaz.sebastian1988@gmail.com",
-    "fecha-de-nacimiento": "09/08/1988",
-    "contraseña": "libros333",
-    "categoria": 1,
-    "imagen": "fotoseba.jpg"
-}
-
-
-
+[
+ {
+  "id": 1,
+  "nombre": "Marina Siches",
+  "tel": 123456789,
+  "email": "marinaisiches@gmail.com",
+  "contraseña": "libros123",
+  "confirmarContraseña": "libros123",
+  "categoria": 1,
+  "imagen": "fotomaru.jpg"
+ },
+ {
+  "id": 2,
+  "nombre": "Renata Soria",
+  "tel": 987654321,
+  "email": "renata.soria.arg@gmail.com",
+  "contraseña": "libros456",
+  "confirmarContraseña": "libros456",
+  "categoria": 1,
+  "imagen": "fotorena.jpg"
+ },
+ {
+  "id": 3,
+  "nombre": "Sebastian",
+  "tel": 6543212345,
+  "email": "diaz.sebastian1988@gmail.com",
+  "contraseña": "libros333",
+  "confirmarContraseña": "libros333",
+  "categoria": 1,
+  "imagen": "fotoseba.jpg"
+ }
 ]
