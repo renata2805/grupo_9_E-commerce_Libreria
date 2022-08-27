@@ -48,25 +48,22 @@
         </ul>
       </div>
 
+      <div class="imagenesRecomendados">
       <% products.forEach(function(product){ 
         if(product.recomendados==true){product}
       %>
-        <div class=".imagenesRecomendados">
-          <section class="cajaImg">
+          <div class="cajaImg">
+
+
+            <div class="product-box_data">
             <a href="/products/productDetail/<%= product.id %>">
-              <figure class="product-box_image">
-                <img src="/images/<%= product.image %>" alt="imagen de producto">
-              </figure>
-              <article class="product-box_data">
+                <img src="/images/<%= product.image %>" class="imgCajaRecomendado" alt="imagen de producto"></a>
                 <h2><%= toThousand(product.precio) %></h2>
                 <p><%= product.nombre %></p>
-              </article>
-            </a>
-          </section>
+              </div>
+
         </div>
       <% }) %>
-
-      </div>
 
 </section>
     <!-- FIN RECOMENDADOS NOVEDADES MAS VENDIDOS -->
@@ -170,7 +167,7 @@
 
           <div class="CategoriaText">
             <li> 
-              <a href="/products/categorias/astronomia" class="estilo"> Astronomía </a>
+              <a href="/products/categorias/:astronomia" class="estilo"> Astronomía </a>
             </li>
           </div>
 

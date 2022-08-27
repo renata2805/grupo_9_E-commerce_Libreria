@@ -21,9 +21,9 @@ const productsController = {
 },
       categoria: (req, res) => {
       let categoria = req.params.categoria  
-      let product = products.find(product => product.categoria == categoria )
+      //let product = products.find(product => product.categoria == categoria )
       res.render('categoria', {
-          product,
+          products,
           toThousand
       })
   },

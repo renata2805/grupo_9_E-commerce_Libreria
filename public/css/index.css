@@ -94,19 +94,35 @@ text-decoration: none;
 
 }
 
-.imagenesRecomendados{
+div.imagenesRecomendados{
     width: 100%;
     display: flex;
-    justify-content: space-around;
-
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
 }
+
 .cajaImg {
-    width: 15%;
+    display: flex;
+    margin: 50px;
+    width: 20%;
     background-color: #ff7700;
-    height: 300px;
-
-    
 }
+
+.product-box_data {
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+ }
+
+ .imgCajaRecomendado{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
 .cajaImg:hover{
     background-color: rgba(44, 30, 240, 0.5);
 }

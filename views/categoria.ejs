@@ -37,7 +37,9 @@
       <section>
 
         <div class="allproducts">
-          
+          <%- products.forEach(function(product){ 
+            if(product.categoria==categoria){product}
+          %>
                   <div class="productbox">
                     
   
@@ -49,7 +51,7 @@
                     </div>
   
                   </div>
-                  
+                  <% }) %>
           </div>
        </section>
 
