@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 const multer = require('multer');
 const productsFilePath = path.join(__dirname, '../data/productsDataBase.json');
-const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
+var products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
 
 const toThousand = n => n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
 
@@ -30,9 +30,13 @@ const productsController = {
     create: (req, res) => {
         res.render ('productCreateForm'); // como parametros va el nombre del archivo dentro views
        },
-    edit: (req, res) => {
-        res.render('productEditForm');
-        },
+    edit: function(req,res) {
+        let id = req.params.id;
+  
+        let productToEdit = products[id] 
+  
+        res.render("productEditForm", {productToEdit: productToEdit});
+      },
     update: (req, res) => {
 		let imagen
 		if(req.files[0] != undefined){

@@ -9,7 +9,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-        <title>Formulario de edición de un producto</title>
+        <title>Formulario de edición de producto</title>
     </head>
 <body>
 
@@ -27,35 +27,35 @@
             <div class="product-form-container">
                 <div class="form-container-label">
                     <!-- <label for="titulo" class="form-label">Titulo del Libro:</label> -->
-                    <input type="text" id="titulo" class="form-input" name="titulo"  placeholder="TITULO DEL LIBRO">
+                    <input type="text" id="titulo" class="form-input" name="titulo"  value="<%=productToEdit.nombreLibro%>">
                 </div>
             <div class="form-container-label">
                     <!-- <label for="autor" class="form-label">Autor del Libro:</label> -->
-                    <input type="text" id="autor" class="form-input" name="autor" placeholder="AUTOR DEL LIBRO">
+                    <input type="text" id="autor" class="form-input" name="autor" value="<%=productToEdit.autor%>">
             </div>
             <div class="form-container-label">
                 <!-- <label for="editorial" class="form-label">Editorial:</label> -->
-                <input type="text" id="editorial" class="form-input" name="editorial" placeholder="EDITORIAL">
+                <input type="text" id="editorial" class="form-input" name="editorial" value="<%=productToEdit.editorial%>">
             </div>
             <div class="form-container-label">
                 <!-- <label for="origen" class="form-label">Origen:</label> -->
-                <input type="text" id="origen" class="form-input" name="origen" placeholder="ORIGEN">
+                <input type="text" id="origen" class="form-input" name="origen" value="<%=productToEdit.origen%>">
             </div>
             <div class="form-container-label">
                 <!-- <label for="editorial" class="form-label">Editorial:</label> -->
-                <input type="text" id="price" class="form-input" name="price" placeholder="PRECIO">
+                <input type="text" id="price" class="form-input" name="price" value="<%=productToEdit.precio%>">
             </div>
             <div class="form-container-label">
                 <!-- <label for="numero de paginas" class="form-label">Numero de páginas:</label> -->
-                <input type="text" id="paginas" class="form-input" name="paginas" placeholder="NUMERO DE PAGINAS">
+                <input type="text" id="paginas" class="form-input" name="paginas" value="<%=productToEdit.numeropaginas%>">
             </div>
             <div class="form-container-label">
                 <!-- <label for="fecha-publicacion" class="form-label">Fecha de publicación:</label> -->
-                <input type="text" id="fecha" class="form-input" name="fecha" placeholder="FECHA PUBLICACIÓN">
+                <input type="text" id="fecha" class="form-input" name="fecha" value="<%=productToEdit.fechapublicacion%>">
             </div>
             <div class="form-container-label">
                 <label for="categoria" class="form-label">SELECCIONE CATEGORIA</label>
-                <select name="categoria" class="form-input" id="categoria" aria-placeholder="SELECCIONE CATEGORIA" style="width: 100%; border: 2px solid #464646;">
+                <select name="categoria" class="form-input" id="categoria" style="width: 100%; border: 2px solid #464646;">
                     <option value="recomendados" aria-placeholder="CATEGORIA">Recomendados</option>
                     <option value="mas vendidos">Mas vendidos</option>
                     <option value="novedades">Novedades</option>
@@ -63,7 +63,7 @@
             </div>
             <div class="form-container-label">
                 <!-- <label for="description">Descripción del libro:</label> -->
-                <textarea name="description" class="form-text" id="description" placeholder="DESCRIPCIÓN DEL LIBRO" style="width: 100%; border: 2px solid #464646;"></textarea>
+                <textarea name="description" class="form-text" id="description" value="<%=productToEdit.reseña%>" style="width: 100%; border: 2px solid #464646;"></textarea>
             </div>
             <div>
                 <label for="image" class="form-label" style="font-size: 1.0em;
@@ -79,8 +79,13 @@
             </div>
         </form>
     </div>
-
-
+</form>
+</div>
+<div>
+<form method="POST" action="/productDetail/:id/delete/<%= productToEdit.id%>?_method=DELETE">
+    <div> <button typ="submit" class="eliminar">Eliminar Producto</button></div>
+</form>
+</div>
     <footer>
         <%- include('./partials/footer') %>
     </footer>
