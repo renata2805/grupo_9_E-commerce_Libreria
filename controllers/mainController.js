@@ -2,14 +2,19 @@ const fs = require('fs');
 const path = require('path');
 
 const productsFilePath = path.join(__dirname, '../data/productsDataBase.json');
-const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
+var products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
 
 const toThousand = n => n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
-
+const recomendados = products.filter(function(product){
+	return product.categoria2 == "recomendados"
+})
+const masVendidos = products.filter(function(product){
+	return product.categoria2 == 'mas-vendidos'
+})
 const mainController = {
     
      index: (req, res) => {
-         res.render ('index', {products, toThousand}); // como parametros va el nombre del archivo dentro views
+         res.render ('index', {recomendados, masVendidos, toThousand}); // como parametros va el nombre del archivo dentro views
 
     }
     }

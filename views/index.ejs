@@ -45,19 +45,19 @@
           <li clas><a href="#">Recomendados</a></li>
           <li><a href="#">Novedades</a></li>
           <li><a href="#">Más vendidos</a></li>
+      
         </ul>
       </div>
 
       <div class="imagenesRecomendados">
-      <% products.forEach(function(product){ 
-        if(product.recomendados==true){product}
+      <%recomendados.forEach(function(product){ 
       %>
           <div class="cajaImg">
 
 
             <div class="product-box_data">
             <a href="/products/productDetail/<%= product.id %>">
-                <img src="/images/<%= product.image %>" class="imgCajaRecomendado" alt="imagen de producto"></a>
+                <img src="/images/products/<%= product.imagen%>" class="imgCajaRecomendado" alt="imagen de producto"></a>
                 <h2><%= toThousand(product.precio) %></h2>
                 <p><%= product.nombre %></p>
               </div>
