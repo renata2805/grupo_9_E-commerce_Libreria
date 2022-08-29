@@ -16,6 +16,16 @@
         <div class="logoBox">
             <a href="/"><img class="logo" src="/images/favicon.svg" alt=""></a>
         </div>
+        <% if (typeof errors != "undefined") {%>
+            <p style="color:red">ERROR</p>
+            <ul>
+                <% for (let i=0; i<errors.length; i++) { %>
+                   <li>
+                    <%=errors[i].msg%>
+                   </li>     
+               <% } %>
+            </ul>
+        <% } %>
         <form action="/" method="post">
             <div class="inputBox">
                 <input type="email" id="email" required="required">

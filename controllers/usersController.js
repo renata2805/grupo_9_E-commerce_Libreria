@@ -12,6 +12,32 @@ const usersController = {
     login: (req, res) => {
         res.render ('Login'); // como parametros va el nombre del archivo dentro views
       },
+    processLogin: (req,res) =>{
+      let errors = validationResult(req);
+      if (errors.isEmpty()){
+        if (users== " "){
+          users=[];
+        }
+        for (let i=0; i<users.length; i++){
+          if (users[i].email== req.body.email) {
+            if(bcrypt.compareSync(req.body.contraseña, users[i].contraseña)){
+              let userToLog= users[i];
+              break;
+            }
+          }
+        }
+        if(userToLog == undefined) {
+          return res.render("Login", {errors: [
+            {msg: "Credenciales Inválidas"}
+          ]})
+        }
+        req.session.userLogged = userToLog;
+      } 
+      else {
+        return res.render("Login", { errors: errors.errors});
+      }
+    },
+
     edit: function(req,res) {
       let idUser = req.params.idUser;
 

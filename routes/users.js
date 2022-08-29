@@ -18,6 +18,7 @@ const usersController= require('../controllers/usersController');
 router.get ('/register', usersController.register);
 router.post('/', upload.any(), usersController.update);
 router.get('/login', usersController.login);
+router.post("/login", usersController.processLogin);
 router.get("/users/edit/:idUser", usersController.edit);
 
 router.put("/users/edit", function (req,res) {
