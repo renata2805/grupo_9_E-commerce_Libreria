@@ -19,39 +19,39 @@
 
     <div class="principal">
         <div class="row">
-            <h2 class="title-form-create">Formulario de edición de productos</h2>
+            <h2 class="title-form-create">Estás editando el libro: <%=product.nombreLibro%></h2>
         </div>
     </div>
     <div class="title-form-create">
-        <form action="/products/productDetail/:id/editar?_method=PUT" method="POST" enctype="multipart/form-data">
+        <form method="POST" action="<%=product.id%>?_method=PATCH" enctype="multipart/form-data">
             <div class="product-form-container">
                 <div class="form-container-label">
-                    <!-- <label for="titulo" class="form-label">Titulo del Libro:</label> -->
-                    <input type="text" id="titulo" class="form-input" name="titulo"  value="<%=productToEdit.nombreLibro%>">
+                    <label for="titulo" class="form-label">Titulo del Libro:</label>
+                    <input type="text" id="titulo" class="form-input" name="titulo" placeholder="<%=product.nombreLibro%>">
                 </div>
             <div class="form-container-label">
-                    <!-- <label for="autor" class="form-label">Autor del Libro:</label> -->
-                    <input type="text" id="autor" class="form-input" name="autor" value="<%=productToEdit.autor%>">
+                    <label for="autor" class="form-label">Autor del Libro:</label>
+                    <input type="text" id="autor" class="form-input" name="autor" placeholder="<%=product.autor%>">
             </div>
             <div class="form-container-label">
-                <!-- <label for="editorial" class="form-label">Editorial:</label> -->
-                <input type="text" id="editorial" class="form-input" name="editorial" value="<%=productToEdit.editorial%>">
+                <label for="editorial" class="form-label">Editorial:</label>
+                <input type="text" id="editorial" class="form-input" name="editorial" placeholder="<%=product.editorial%>">
             </div>
             <div class="form-container-label">
-                <!-- <label for="origen" class="form-label">Origen:</label> -->
-                <input type="text" id="origen" class="form-input" name="origen" value="<%=productToEdit.origen%>">
+                <label for="origen" class="form-label">Origen:</label>
+                <input type="text" id="origen" class="form-input" name="origen"  placeholder="<%=product.origen%>">
             </div>
             <div class="form-container-label">
-                <!-- <label for="editorial" class="form-label">Editorial:</label> -->
-                <input type="text" id="price" class="form-input" name="price" value="<%=productToEdit.precio%>">
+                <label for="precio" class="form-label">Precio:</label>
+                <input type="text" id="price" class="form-input" name="price"  placeholder="<%=product.precio%>">
             </div>
             <div class="form-container-label">
-                <!-- <label for="numero de paginas" class="form-label">Numero de páginas:</label> -->
-                <input type="text" id="paginas" class="form-input" name="paginas" value="<%=productToEdit.numeropaginas%>">
+                <label for="numero de paginas" class="form-label">Numero de páginas:</label>
+                <input type="text" id="paginas" class="form-input" name="paginas" placeholder="<%=product.numeropaginas%>">
             </div>
             <div class="form-container-label">
-                <!-- <label for="fecha-publicacion" class="form-label">Fecha de publicación:</label> -->
-                <input type="text" id="fecha" class="form-input" name="fecha" value="<%=productToEdit.fechapublicacion%>">
+                <label for="fecha-publicacion" class="form-label">Fecha de publicación:</label>
+                <input type="text" id="fecha" class="form-input" name="fecha" placeholder="<%=product.fechapublicacion%>">
             </div>
             <div class="form-container-label">
                 <label for="categoria" class="form-label">SELECCIONE CATEGORIA</label>
@@ -62,8 +62,8 @@
                 </select>
             </div>
             <div class="form-container-label">
-                <!-- <label for="description">Descripción del libro:</label> -->
-                <textarea name="description" class="form-text" id="description" value="<%=productToEdit.reseña%>" style="width: 100%; border: 2px solid #464646;"></textarea>
+                <label for="description">Descripción del libro:</label>
+                <textarea name="description" class="form-text" id="description"  style="width: 100%; border: 2px solid #464646;" placeholder="<%=product.reseña%>"></textarea>
             </div>
             <div>
                 <label for="image" class="form-label" style="font-size: 1.0em;
@@ -81,11 +81,7 @@
     </div>
 </form>
 </div>
-<div>
-<form method="POST" action="/productDetail/:id/delete/<%= productToEdit.id%>?_method=DELETE">
-    <div> <button typ="submit" class="eliminar">Eliminar Producto</button></div>
-</form>
-</div>
+
     <footer>
         <%- include('./partials/footer') %>
     </footer>

@@ -52,7 +52,7 @@ const usersController = {
 
       res.render("userEdit", {userToEdit: userToEdit});
     },
-    update:  (req, res) => {
+    upload:  (req, res) => {
       let imagen
       if(req.files[0] != undefined){
         imagen = req.files[0].filename

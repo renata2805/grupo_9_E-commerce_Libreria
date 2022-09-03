@@ -11,7 +11,7 @@
   "categoria": "Historia",
   "precio": 12,
   "categoria2": "recomendados",
-  "imagen": "Book_Cover_Mockup.jpg",
+  "imagen": "breve-historia-revolucion-industrial.jpg",
   "calificaciones": 5,
   "sobreautor": "un señor muy interesante"
  },
@@ -27,7 +27,7 @@
   "categoria": "Historia",
   "precio": 8,
   "categoria2": "recomendados",
-  "imagen": "Book_Cover_Mockup.jpg",
+  "imagen": "ii-guerra-mundial.jpg",
   "calificaciones": 9,
   "sobreautor": "un señor muy vago"
  },
@@ -43,7 +43,7 @@
   "categoria": "Historia",
   "precio": 11,
   "categoria2": "recomendados",
-  "imagen": "Book_Cover_Mockup.jpg",
+  "imagen": "de-animales a dioses.jpg",
   "calificaciones": 15,
   "sobreautor": "un señor muy lindo"
  },
@@ -59,7 +59,7 @@
   "categoria": "Historia",
   "precio": 8,
   "categoria2": "recomendados",
-  "imagen": "Book_Cover_Mockup.jpg",
+  "imagen": "infografias-de-la-antigua-roma.jpg",
   "calificaciones": 1,
   "sobreautor": "un señor muy poeta"
  },
@@ -75,7 +75,7 @@
   "categoria": "Historia",
   "precio": 4,
   "categoria2": "recomendados",
-  "imagen": "Book_Cover_Mockup.jpg",
+  "imagen": "historia-de-la-geologia-sudamericana.jpg",
   "calificaciones": 8,
   "sobreautor": "un señor muy entusiasta"
  },
@@ -91,7 +91,7 @@
   "categoria": "Literatura",
   "precio": 13,
   "categoria2": "recomendados",
-  "imagen": "Book_Cover_Mockup.jpg",
+  "imagen": "violeta.jpg",
   "calificaciones": 1,
   "sobreautor": "una señora muy delicado"
  },
@@ -107,11 +107,11 @@
   "categoria": "Literatura",
   "precio": 3,
   "categoria2": "recomendados",
-  "imagen": "Book_Cover_Mockup.jpg"
+  "imagen": "el-principito.jpg"
  },
  {
   "id": 8,
-  "nombreLibro": "100 años de soledad ",
+  "nombreLibro": "100 años de soledad",
   "autor": "Gabriel Garcia Marquez",
   "editorial": "Vintaje Español",
   "origen": "Español",
@@ -121,25 +121,11 @@
   "categoria": "Literatura",
   "precio": 10,
   "categoria2": "recomendados",
-  "imagen": "Book_Cover_Mockup.jpg"
- },
- {
-  "id": 8,
-  "nombreLibro": "100 años de soledad ",
-  "autor": "Gabriel Garcia Marquez",
-  "editorial": "Vintaje Español",
-  "origen": "Español",
-  "numeropaginas": 271,
-  "fechapublicacion": "15/10/2014",
-  "reseña": "Millones de ejemplares de Cien años de soledad leídos en todas las lenguas y el Premio Nobel de Literatura coronando una obra que se había abierto paso a boca a boca como gusta decir el escritor son la más palpable demostración de que la aventura fabulosa de la familia Buendía-Iguarán, con sus milagros, fantasías, obsesiones, tragedias, incestos, adulterios, rebeldías, descubrimientos y condenas, representaba al mismo tiempo el mito y la historia, la tragedia y el amor del mundo entero.",
-  "categoria": "Literatura",
-  "precio": 10,
-  "categoria2": "recomendados",
-  "imagen": "Book_Cover_Mockup.jpg"
+  "imagen": "100-años-de-soledad.jpg"
  },
  {
   "id": 9,
-  "nombreLibro": "El Alquimista  ",
+  "nombreLibro": "El Alquimista",
   "autor": "Paulo Coelho",
   "editorial": " Sant Jordi Asociados",
   "origen": "Español",
@@ -149,11 +135,11 @@
   "categoria": "Literatura",
   "precio": 6,
   "categoria2": "masVendidos",
-  "imagen": "Book_Cover_Mockup.jpg"
+  "imagen": "el-alquimista.jpg"
  },
  {
   "id": 10,
-  "nombreLibro": "Cometas en el cielo ",
+  "nombreLibro": "Cometas en el cielo",
   "autor": "Khaled Hosseini",
   "editorial": " Salamandra",
   "origen": "Español",
@@ -163,7 +149,7 @@
   "categoria": "Literatura",
   "precio": 5,
   "categoria2": "masVendidos",
-  "imagen": "Book_Cover_Mockup.jpg"
+  "imagen": "cometas-en-el-cielo.jpg"
  },
  {
   "id": 11,
@@ -444,5 +430,18 @@
   "precio": 6.19,
   "categoria2": "novedades",
   "imagen": "100DiasDeSumasYRestas.jpg"
+ },
+ {
+  "id": 31,
+  "titulo": "Probando crear un nuevo producto",
+  "autor": "Marina",
+  "editorial": "Rompedores de codigo",
+  "origen": "Argentina",
+  "price": "43232",
+  "paginas": "34",
+  "fecha": "1991-09-12",
+  "categoria": "Matematica",
+  "description": "jlkdsjaoñdk",
+  "imagen": "image-1662231291667.jpeg"
  }
 ]

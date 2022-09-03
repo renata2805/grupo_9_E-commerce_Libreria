@@ -32,12 +32,42 @@ const productsController = {
        },
     edit: function(req,res) {
         let id = req.params.id;
-  
-        let productToEdit = products[id] 
-  
-        res.render("productEditForm", {productToEdit: productToEdit});
-      },
+        let product = products.find(product => product.id == id)
+        res.render("productEditForm", {product});
+
+
+    },
     update: (req, res) => {
+        let id = req.params.id;
+		let productToEdit = products.find(product => product.id == id)
+		let image
+
+		if(req.files[0] != undefined){
+			imagen = req.files[0].filename
+		} else {
+			imagen = productToEdit.imagen
+		}
+
+		productToEdit = {
+			id: productToEdit.id,
+			...req.body,
+			imagen: imagen,
+		};
+		
+		let newProducts = products.map(product => {
+			if (product.id == productToEdit.id) {
+				return product = {...productToEdit};
+			}
+			return product;
+		})
+
+		fs.writeFileSync(productsFilePath, JSON.stringify(newProducts, null, ' '));
+		res.redirect('/products');
+
+    },
+
+
+    upload: (req, res) => {
 		let imagen
 		if(req.files[0] != undefined){
 			imagen = req.files[0].filename

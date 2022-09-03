@@ -19,11 +19,9 @@ const productsController= require('../controllers/productsController');
 router.get('/productCart', productsController.productCart);
 router.get('/productDetail/:id', productsController.productDetail); //OK
 router.get('/productCreateForm', productsController.create); //OK
-router.post('/', upload.any(), productsController.update); //OK
-router.get('/productDetail/:id/edit', productsController.edit); //OK
-router.put("/productDetail/:id", function (req,res) {
-    res.send("¡Modificación exitosa!")
-}); //OK
+router.post('/', upload.any(), productsController.upload); //OK
+router.get('/edit/:id', productsController.edit); //OK
+router.patch('/edit/:id', upload.any(),productsController.update); //OK
 
 router.delete("/productDetail/:id", function (req,res){
     res.send("¡Eliminación exitosa!")
