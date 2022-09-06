@@ -16,19 +16,14 @@
         <div class="logoBox">
             <a href="/"><img class="logo" src="/images/favicon.svg" alt=""></a>
         </div>
-        <% if (locals.errors) {
-            errors.forEach(error => { %>
-            <p style="color:red"><%= error.msg%></p> 
-        <% })
-             } %>
         <form action="/" method="post">
             <div class="inputBox">
-                <input type="email" id="email" required="required" value="<%= locals.old && old.email ? old.email : ""%>">
+                <input type="email" id="email" name="email" required="required">
                 <span>Email</span>
             </div>
 
             <div class="inputBox">
-                <input type="password" id="contraseña" required="required" value="<%= locals.old && old.password ? old.password : ""%>">
+                <input type="password" id="contraseña" name="contraseña" required="required">
                 <span>Contraseña</span>
             </div>
 

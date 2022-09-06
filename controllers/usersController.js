@@ -2,9 +2,9 @@ const fs = require('fs');
 const path = require('path');
 const multer = require('multer');
 const usersFilePath = path.join(__dirname, '../data/usersDataBase.json');
-const validationResult = require("express-validator");
+const { validationResult }  = require("express-validator");
 var users = JSON.parse(fs.readFileSync(usersFilePath, "utf-8"));
-
+var bcrypt = require('bcryptjs')
 
 const usersController = {
     register: (req, res) => {
@@ -13,15 +13,38 @@ const usersController = {
     login: (req, res) => {
         res.render ('Login'); // como parametros va el nombre del archivo dentro views
       },
-    processLogin: (req,res) =>{
-      let errors = validationResult(req);
-      if (errors.isEmpty()){
-      let user= req.body; 
-      res.redirect("/login");}
-      else {
-      res.render("/register", {errors: errors.array(), old: req.body })  
-      }
-    },
+    processLogin: (req, res) => {
+        let userToLogin =  users.email
+                
+           if(userToLogin) {
+          let isOkThePassword = bcryptjs.compareSync(users.contraseña, userToLogin.contraseña);
+          if (isOkThePassword) {
+            delete userToLogin.password;
+            req.session.userLogged = userToLogin;
+    
+            if(req.body.remember_user) {
+              res.cookie('email', users.email, { maxAge: (1000 * 60) * 60 })
+            }
+    
+            return res.redirect('/');
+          } 
+          return res.render('login', {
+            errors: {
+              email: {
+                msg: 'Las credenciales son inválidas'
+              }
+            }
+          });
+        }
+    
+          return res.render('login', {
+            errors: {
+              email: {
+                msg: 'No se encuentra este email en nuestra base de datos'
+            }
+          }
+        });
+      },
     //      if (users== ""){
     //        users=[];
     //      }
@@ -43,7 +66,7 @@ const usersController = {
     //    else {
     //      return res.render("Login", { errors: errors.errors});
     //    }
-    // },
+    //},
 
     edit: function(req,res) {
       let idUser = req.params.idUser;

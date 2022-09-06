@@ -12,7 +12,6 @@ const validateUserLogin = [
 ];
 
 
-
 var storage = multer.diskStorage({
     destination:function(req,file,cb){
         cb(null, './public/images/users')
@@ -26,9 +25,9 @@ var upload = multer({storage: storage})
 const usersController= require('../controllers/usersController'); 
 
 router.get ('/register', usersController.register);
-router.post('/', upload.any(), usersController.upload);
-router.get('/login', usersController.login);
-router.post("/login", validateUserLogin, usersController.processLogin);
+router.post('/', upload.any(), usersController.processLogin);
+router.get('/login/', usersController.login);
+router.post("/login/", validateUserLogin, usersController.processLogin);
 
 router.get("/users/edit/:idUser", usersController.edit);
 
