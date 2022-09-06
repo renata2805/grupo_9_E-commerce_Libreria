@@ -3,7 +3,7 @@ const path = require('path');
 const multer = require('multer');
 const usersFilePath = path.join(__dirname, '../data/usersDataBase.json');
 const { validationResult }  = require("express-validator");
-var users = JSON.parse(fs.readFileSync(usersFilePath, "utf-8"));
+const users = JSON.parse(fs.readFileSync(usersFilePath, "utf-8"));
 var bcrypt = require('bcryptjs')
 
 const usersController = {
@@ -14,7 +14,7 @@ const usersController = {
         res.render ('Login'); // como parametros va el nombre del archivo dentro views
       },
     processLogin: (req, res) => {
-        let userToLogin =  users.email
+      let userToLogin = users.find(userToLogin => userToLogin.email == req.body.email)
                 
            if(userToLogin) {
           let isOkThePassword = bcryptjs.compareSync(users.contraseña, userToLogin.contraseña);
