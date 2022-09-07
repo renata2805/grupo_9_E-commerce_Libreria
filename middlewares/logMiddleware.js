@@ -1,8 +1,8 @@
-const fs= require("fs");
-
-function logMiddleware (req, res, next){
-    fs.appendFileSync("log.txt", "Se ingresó en la página" + req.url);
-    next();
+function logMiddleware(req, res, next) {
+	if (req.session.userLogged) {
+		return res.redirect('/user/profile');
+	}
+	next();
 }
 
-module.exports= logMiddleware
+module.exports = logMiddleware;
