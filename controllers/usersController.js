@@ -8,7 +8,7 @@ var users = JSON.parse(fs.readFileSync(usersFilePath, "utf-8"));
 
 const usersController = {
     register: (req, res) => {
-        res.render ('register'); //  como parametros va el nombre del archivo dentro views
+        res.render ('register'); //  como parametros va el nombre del archivo dentro viewss
        },
     login: (req, res) => {
         res.render ('Login'); // como parametros va el nombre del archivo dentro views
