@@ -2,8 +2,7 @@ const fs = require('fs');
 const path = require('path');
 const multer = require('multer');
 const usersFilePath = path.join(__dirname, '../database/users/users.json');
-const { validationResult }  = require("express-validator");
-//const users = JSON.parse(fs.readFileSync(usersFilePath, "utf-8"));
+const { validationResult }  = require('express-validator');
 const bcryptjs = require('bcryptjs');
 const User = require('../database/models/User');
 
@@ -15,7 +14,7 @@ const usersController = {
         const resultValidation = validationResult(req);
     
         if (resultValidation.errors.length > 0) {
-          return res.render('userRegisterForm', {
+          return res.render('register', {
             errors: resultValidation.mapped(),
             oldData: req.body
           });
@@ -24,7 +23,7 @@ const usersController = {
         let userInDB = User.findByField('email', req.body.email);
     
         if (userInDB) {
-          return res.render('userRegisterForm', {
+          return res.render('register', {
             errors: {
               email: {
                 msg: 'Este email ya está registrado'
@@ -36,13 +35,13 @@ const usersController = {
   
       let userToCreate = {
         ...req.body,
-        contraseña: bcryptjs.hashSync(req.body.contraseña, 8),
-        avatar: req.file.filename
+        contraseña: bcryptjs.hashSync(req.body.contraseña, 10),
+        imagen: req.file.filename
       }
   
       let userCreated = User.create(userToCreate);
   
-      return res.redirect('/user/login');
+      return res.redirect('login');
     },
     login: (req, res) => {
         res.render ('login'); // como parametros va el nombre del archivo dentro views

@@ -8,12 +8,10 @@ const {body} = require("express-validator");
 const usersController= require('../controllers/usersController'); 
 
 //Middlewares
-const validateUserLogin = [
-    body("email").isEmail().withMessage("Email Inválido"), 
-    body("contraseña").isLength({min: 8}).withMessage("La contraseña debe tener al menos 8 caracteres")
-];
-const guestMiddleware = require('../middlewares/logMiddleware')
 
+const validations = require('../middlewares/validateRegisterMiddleware');
+const guestMiddleware = require('../middlewares/guestMiddleware');
+const authMiddleware = require('../middlewares/authMiddleware');
 
 var storage = multer.diskStorage({
     destination:function(req,file,cb){
@@ -26,16 +24,16 @@ var storage = multer.diskStorage({
 var upload = multer({storage: storage})
 
 //Formulario de Registro
-router.get ('/register', usersController.register);
+router.get ('/register', guestMiddleware, usersController.register);
 
 //Procesar el Registro
-router.post('/', upload.any(), usersController.processLogin);
+router.post('/', upload.any(), validations, usersController.processRegister);
 
 //Formulario de Login
-router.get('/login/', usersController.login);
+router.get('/login/', guestMiddleware, usersController.login);
 
 //Procesar el Login
-router.post('/login/', validateUserLogin, usersController.processLogin);
+router.post('/login/', usersController.processLogin);
 
 router.get("/users/edit/:idUser", usersController.edit);
 
