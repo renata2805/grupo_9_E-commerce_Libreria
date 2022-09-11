@@ -81,15 +81,15 @@
  },
  {
   "id": 6,
-  "titulo": "",
-  "autor": "Marina",
-  "editorial": "",
-  "origen": "",
-  "price": "",
-  "paginas": "",
-  "fecha": "",
+  "titulo": "Violet bent backwards over the grass",
+  "autor": "Lana Del Rey",
+  "editorial": "Simon & Schuster Ltd",
+  "origen": "Inglaterra",
+  "price": 45,
+  "paginas": 342,
+  "fecha": "15/09/2020",
   "categoria": "recomendados",
-  "description": "",
+  "description": "Violet Bent Backwards over the Grass es el primer libro, y audiolibro, de la cantante estadounidense Lana del Rey. Tanto el libro como la versión en audio se publicó el 29 de septiembre de 2020, aunque anteriormente la cantante había anticipado algunos poemas sueltos en sus redes sociales.",
   "imagen": "violeta.jpg"
  },
  {
@@ -427,18 +427,5 @@
   "precio": 6.19,
   "categoria2": "novedades",
   "imagen": "100DiasDeSumasYRestas.jpg"
- },
- {
-  "id": 31,
-  "titulo": "Probando crear un nuevo producto",
-  "autor": "Marina",
-  "editorial": "Rompedores de codigo",
-  "origen": "Argentina",
-  "price": "43232",
-  "paginas": "34",
-  "fecha": "1991-09-12",
-  "categoria": "Matematica",
-  "description": "jlkdsjaoñdk",
-  "imagen": "image-1662231291667.jpeg"
  }
 ]
