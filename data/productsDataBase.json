@@ -80,16 +80,19 @@
   "sobreautor": "un señor muy entusiasta"
  },
  {
-  "id": 6,
-  "titulo": "Violet bent backwards over the grass",
+    "id": 6,
+  "nombreLibro": "Violet bent backwards over the grass",
   "autor": "Lana Del Rey",
   "editorial": "Simon & Schuster Ltd",
   "origen": "Inglaterra",
-  "price": 45,
-  "paginas": 342,
-  "fecha": "15/09/2020",
-  "categoria": "recomendados",
-  "description": "Violet Bent Backwards over the Grass es el primer libro, y audiolibro, de la cantante estadounidense Lana del Rey. Tanto el libro como la versión en audio se publicó el 29 de septiembre de 2020, aunque anteriormente la cantante había anticipado algunos poemas sueltos en sus redes sociales.",
+  "numeropaginas": 619,
+  "fechapublicacion": "15/09/2020",
+  "reseña": "Este libro tiene el objetivo de dar una introducción a los principios y conceptos básicos de la geología, para todos aquellos que están interesados en aprender sobre todos los procesos que formaron y dieron forma a la Tierra, desde su formación alrededor de 4.800 millones de años antes del presente (A.P.).",
+  "categoria": "Literatura",
+  "precio": 41,
+  "categoria2": "recomendados",
+  "calificaciones": 8,
+  "sobreautor": "un señor muy entusiasta",
   "imagen": "violeta.jpg"
  },
  {
