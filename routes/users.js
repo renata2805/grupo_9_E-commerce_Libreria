@@ -9,25 +9,17 @@ const usersController= require('../controllers/usersController');
 
 //Middlewares
 
+const upload = require('../middlewares/multerMiddleware');
 const validations = require('../middlewares/validateRegisterMiddleware');
 const guestMiddleware = require('../middlewares/guestMiddleware');
 const authMiddleware = require('../middlewares/authMiddleware');
 
-var storage = multer.diskStorage({
-    destination:function(req,file,cb){
-        cb(null, './public/images/users')
-    },
-    filename: function(req,file,cb){
-        cb(null, file.fieldname + '-' + Date.now() + path.extname(file.originalname))
-    }
-})
-var upload = multer({storage: storage})
 
 //Formulario de Registro
 router.get ('/register', guestMiddleware, usersController.register);
 
 //Procesar el Registro
-router.post('/', upload.any(), validations, usersController.processRegister);
+router.post('/register', upload.single("imagen"), validations, usersController.processRegister);
 
 //Formulario de Login
 router.get('/login/', guestMiddleware, usersController.login);

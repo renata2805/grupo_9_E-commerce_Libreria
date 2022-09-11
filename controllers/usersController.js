@@ -1,16 +1,16 @@
 const fs = require('fs');
 const path = require('path');
 const multer = require('multer');
-const usersFilePath = path.join(__dirname, '../database/users/users.json');
+const usersFilePath = path.join(__dirname, '../database/users.json');
 const { validationResult }  = require('express-validator');
 const bcryptjs = require('bcryptjs');
-const User = require('../database/models/User');
+const User = require('../database/users.json');
 
 const usersController = {
     register: (req, res) => {
         res.render ('register'); //  como parametros va el nombre del archivo dentro views
        },
-       processRegister: (req, res) => {
+    processRegister: (req, res) => {
         const resultValidation = validationResult(req);
     
         if (resultValidation.errors.length > 0) {
