@@ -80,20 +80,20 @@
   "sobreautor": "un señor muy entusiasta"
  },
  {
-  "id": 6,
-  "nombreLibro": "Violeta ",
-  "autor": "Isabel Allende",
-  "editorial": "Plaza y janes",
-  "origen": "Español",
-  "numeropaginas": 345,
-  "fechapublicacion": "25/01/2022",
-  "reseña": "La épica y emocionante historia de una mujer cuya vida abarca los momentos históricos más relevantes del siglo XX. Desde 1920 -con la llamada «gripe española»- hasta la pandemia de 2020, la vida de Violeta será mucho más que la historia de un siglo.",
+    "id": 6,
+  "nombreLibro": "Violet bent backwards over the grass",
+  "autor": "Lana Del Rey",
+  "editorial": "Simon & Schuster Ltd",
+  "origen": "Inglaterra",
+  "numeropaginas": 619,
+  "fechapublicacion": "15/09/2020",
+  "reseña": "Este libro tiene el objetivo de dar una introducción a los principios y conceptos básicos de la geología, para todos aquellos que están interesados en aprender sobre todos los procesos que formaron y dieron forma a la Tierra, desde su formación alrededor de 4.800 millones de años antes del presente (A.P.).",
   "categoria": "Literatura",
-  "precio": 13,
+  "precio": 41,
   "categoria2": "recomendados",
-  "imagen": "violeta.jpg",
-  "calificaciones": 1,
-  "sobreautor": "una señora muy delicado"
+  "calificaciones": 8,
+  "sobreautor": "un señor muy entusiasta",
+  "imagen": "violeta.jpg"
  },
  {
   "id": 7,
@@ -430,18 +430,5 @@
   "precio": 6.19,
   "categoria2": "novedades",
   "imagen": "100DiasDeSumasYRestas.jpg"
- },
- {
-  "id": 31,
-  "titulo": "Probando crear un nuevo producto",
-  "autor": "Marina",
-  "editorial": "Rompedores de codigo",
-  "origen": "Argentina",
-  "price": "43232",
-  "paginas": "34",
-  "fecha": "1991-09-12",
-  "categoria": "Matematica",
-  "description": "jlkdsjaoñdk",
-  "imagen": "image-1662231291667.jpeg"
  }
 ]

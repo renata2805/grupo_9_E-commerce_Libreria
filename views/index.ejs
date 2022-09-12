@@ -1,24 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="icon" type="image/svg" href="/images/favicon.svg" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="/css/styles.css" />
-  <script src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-
-  <title>Inicio - BookExpress</title>
-</head>
-
+  <%- include('./partials/head') %>
   <body>
-    <!-- MENU -->
-    <%- include('./partials/header') %>
+    <header class="menuM">
+      <%- include('./partials/header') %>
+  </header>
+    
     
     <!-- FIN MENU -->
 
@@ -152,13 +139,13 @@
             <li><a href="/products/Matemática" class="estilo"> Matemática </a> </li>
           </div>
           <div class="CategoriaText">
-            <li> <a href="#" class="estilo">  Sociales </a> </li>
+            <li> <a href="#" class="estilo">  Historia </a> </li>
           </div>
           <div class="CategoriaText">
             <li><a href="/products/categorias/geografia" class="estilo"> Geografía </a></li>
           </div>
           <div class="CategoriaText">
-            <li><a href="#" class="estilo"> Ingles </a></li>
+            <li><a href="#" class="estilo"> Inglés </a></li>
           </div>
 
         </div>
@@ -189,7 +176,7 @@
             <li> <a href="#" class="estilo"> Biologia </a></li>
           </div>
           <div class="CategoriaText">
-            <li> <a href="products/Arte" class="estilo"> Dibujo </a></li>
+            <li> <a href="products/Arte" class="estilo"> Arte </a></li>
           </div>
           <div class="CategoriaText">
             <li> <a href="#" class="estilo"> Economia </a></li>
