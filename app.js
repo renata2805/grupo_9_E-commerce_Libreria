@@ -14,7 +14,6 @@ app.use(express.static(publicPath));
 app.use(methodOverride("_method"));
 
 app.use (express.static(publicPath));
-//app.use (methodOverride("_method"));
 app.use(session({secret: "Secreto"}))
 
 // EJS Engine

@@ -16,35 +16,85 @@
         <div class="logoBox">
             <a href="./index.ejs"><img class="logo" src="images/favicon.svg" alt=""></a>
         </div>
-        <form action="/" method="POST" enctype="multipart/form-data">
+        <form action="/register" method="POST" enctype="multipart/form-data">
             <div class="inputBox">
-                <input type="text" name="nombre" id="nombre">
+                <input 
+                type="text" 
+                name="nombre" 
+                id="nombre"
+                class="form-control <%= locals.errors && errors.nombre? 'is-invalid' : null %>"
+				value="<%= locals.oldData ? oldData.nombre : null %>">
+                <% if (locals.errors && errors.nombre) { %>
+                    <div class="text-danger">
+                        <%= errors.nombre.msg %> 
+                    </div>
+                <% } %>
                 <span>Nombre Completo</span>
             </div>
 
             <div class="inputBox">
-                <input type="tel" name="tel" id="tel">
+                <input 
+                type="tel" 
+                name="tel" 
+                id="tel"
+                value="<%= locals.oldData ? oldData.tel : null %>"> 
                 <span>Celular</span>
             </div>
 
             <div class="inputBox">
-                <input type="email" name="email" id="email">
+                <input 
+                type="email" 
+                name="email" 
+                id="email"
+                class="form-control <%= locals.errors && errors.email? 'is-invalid' : null %>"
+				value="<%= locals.oldData ? oldData.email : null %>">
+                <% if (locals.errors && errors.email) { %>
+                    <div class="text-danger">
+                        <%= errors.email.msg %> 
+                    </div>
+                <% } %>
                 <span>email</span>
             </div>
 
             <div class="inputBox">
-                <input type="password" name="contraseña" id="contraseña">
+                <input 
+                type="password" 
+                name="contraseña" 
+                class="form-control <%= locals.errors && errors.contraseña? 'is-invalid' : null %>">
+                <% if (locals.errors && errors.contraseña) { %>
+                    <div class="text-danger">
+                        <%= errors.contraseña.msg %>
+                    </div>
+                <% } %>
                 <span>Contraseña</span>
             </div>
 
             <div class="inputBox">
-                <input type="password" name="confirmarContraseña" id="confirmarContraseña">
+                <input 
+                type="password" 
+                name="confirmarContraseña" 
+                class="form-control <%= locals.errors && errors.contraseña? 'is-invalid' : null %>">
+                <% if (locals.errors && errors.contraseña) { %>
+                    <div class="text-danger">
+                        <%= errors.contraseña.msg %>
+                    </div>
+                <% } %>
                 <span>Confirmar Contraseña</span>
             </div>
 
             <span>Elige una foto de perfil:</span>
             <div class="inputBox">
-                <input type="file" name="imagen" id="imagen">
+                <input 
+                type="file" 
+                name="imagen" 
+                id="imagen"
+                class="form-control <%= locals.errors && errors.imagen ? 'is-invalid' : null %>"
+								>
+								<% if (locals.errors && errors.imagen) { %>
+									<div class="text-danger">
+										<%= errors.imagen.msg %>
+									</div>
+								<% } %>
             </div>
 
             <div class="passBox">
@@ -64,7 +114,7 @@
                     <span class="guardar">Ya tienes cuenta?</span>
                 </div>
                 <div class="OlvidarContra">
-                    <a class="link" href="./login.ejs">Acceder</a>
+                    <a class="link" href="./login">Acceder</a>
                 </div>
             </div>
 
