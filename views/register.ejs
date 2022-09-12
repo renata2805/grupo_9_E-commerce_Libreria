@@ -6,7 +6,7 @@
         <div class="logoBox">
             <a href="./index.ejs"><img class="logo" src="images/favicon.svg" alt=""></a>
         </div>
-        <form action="/register" method="POST" enctype="multipart/form-data">
+        <form method="POST" action="./register" enctype="multipart/form-data">
             <div class="inputBox">
                 <input 
                 type="text" 
@@ -49,11 +49,11 @@
             <div class="inputBox">
                 <input 
                 type="password" 
-                name="contraseña" 
-                class="form-control <%= locals.errors && errors.contraseña? 'is-invalid' : null %>">
-                <% if (locals.errors && errors.contraseña) { %>
+                name="password" 
+                class="form-control <%= locals.errors && errors.password? 'is-invalid' : null %>">
+                <% if (locals.errors && errors.password) { %>
                     <div class="text-danger">
-                        <%= errors.contraseña.msg %>
+                        <%= errors.password.msg %>
                     </div>
                 <% } %>
                 <span>Contraseña</span>
@@ -62,11 +62,11 @@
             <div class="inputBox">
                 <input 
                 type="password" 
-                name="confirmarContraseña" 
-                class="form-control <%= locals.errors && errors.contraseña? 'is-invalid' : null %>">
-                <% if (locals.errors && errors.contraseña) { %>
+                name="confirmPassword" 
+                class="form-control <%= locals.errors && errors.password? 'is-invalid' : null %>">
+                <% if (locals.errors && errors.password) { %>
                     <div class="text-danger">
-                        <%= errors.contraseña.msg %>
+                        <%= errors.password.msg %>
                     </div>
                 <% } %>
                 <span>Confirmar Contraseña</span>
