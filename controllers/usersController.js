@@ -23,7 +23,7 @@ const usersController = {
         let userInDB = User.findByField('email', req.body.email);
 
         if (userInDB) {
-          return res.render('/register', {
+          return res.render('register', {
             errors: {
               email: {
                 msg: 'Este email ya está registrado'
@@ -35,7 +35,7 @@ const usersController = {
     
         let userToCreate = {
           ...req.body,
-          contraseña: bcryptjs.hashSync(req.body.contraseña, 10),
+          password: bcryptjs.hashSync(req.body.password, 10),
           imagen: req.file.filename
         }
     
