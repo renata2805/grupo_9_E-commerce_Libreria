@@ -40,9 +40,8 @@ const usersController = {
           password: bcryptjs.hashSync(req.body.password, 10),
           imagen: req.file.filename
         }
-    
         let userCreated = User.create(userToCreate);
-    
+        
         return res.redirect('/login');
     },
     login: (req, res) => {
