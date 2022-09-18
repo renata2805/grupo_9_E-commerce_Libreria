@@ -1,10 +1,12 @@
-//const fs = require('fs');
-//const path = require('path');
-//const multer = require('multer');
-//const usersFilePath = path.join(__dirname, '../database/users.json');
-const bcryptjs = require('bcryptjs');
+const fs = require('fs');
+const path = require('path');
+const multer = require('multer');
+const usersFilePath = path.join(__dirname, '../data/usersDataBase.json');
+var users = JSON.parse(fs.readFileSync(usersFilePath, 'utf-8'));
 const { validationResult }  = require('express-validator');
+const bcryptjs = require('bcryptjs');
 const User = require('../models/User');
+
 
 const usersController = {
     register: (req, res) => {
@@ -20,7 +22,7 @@ const usersController = {
           });
         }
     
-        let userInDB = User.findByField('email', req.body.email);
+        let userInDB = User.findByField("email", req.body.email);
 
         if (userInDB) {
           return res.render('register', {
@@ -32,7 +34,7 @@ const usersController = {
             oldData: req.body
           });
         }
-    
+        
         let userToCreate = {
           ...req.body,
           password: bcryptjs.hashSync(req.body.password, 10),
@@ -47,7 +49,7 @@ const usersController = {
         res.render ('login'); // como parametros va el nombre del archivo dentro views
       },
     processLogin: (req, res) => {
-      let userToLogin = User.findByField('email', req.body.email);
+      let userToLogin = users.findByField('email', req.body.email);
                 
            if(userToLogin) {
           let isOkThePassword = bcryptjs.compareSync(req.body.contraseña, userToLogin.hashSync);
