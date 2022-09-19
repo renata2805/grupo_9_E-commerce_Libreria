@@ -48,7 +48,7 @@ const usersController = {
         res.render ('login'); // como parametros va el nombre del archivo dentro views
       },
     processLogin: (req, res) => {
-      let userToLogin = users.findByField('email', req.body.email);
+      let userToLogin = User.findByField('email', req.body.email);
                 
            if(userToLogin) {
           let isOkThePassword = bcryptjs.compareSync(req.body.contraseña, userToLogin.hashSync);
