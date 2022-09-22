@@ -32,7 +32,7 @@ app.use((req,res,next) =>{
 
 
 app.listen(3000, ()=> {
-    console.log("Servidor Funcionando")
+    console.log("El servidor http://localhost:3000/ está funcionando")
 });
 
 
