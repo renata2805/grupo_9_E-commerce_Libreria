@@ -40,16 +40,15 @@ const usersController = {
           password: bcryptjs.hashSync(req.body.password, 10),
           imagen: req.file.filename
         }
-    
         let userCreated = User.create(userToCreate);
-        function ejecucion(){ userCreated}
+        
         return res.redirect('/login');
     },
     login: (req, res) => {
         res.render ('login'); // como parametros va el nombre del archivo dentro views
       },
     processLogin: (req, res) => {
-      let userToLogin = users.findByField('email', req.body.email);
+      let userToLogin = User.findByField('email', req.body.email);
                 
            if(userToLogin) {
           let isOkThePassword = bcryptjs.compareSync(req.body.contraseña, userToLogin.hashSync);

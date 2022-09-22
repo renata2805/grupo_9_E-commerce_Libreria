@@ -8,7 +8,7 @@ const usersRoutes = require ("./routes/users");
 const methodOverride = require ("method-override");
 var session = require("express-session");
 
-app.use(express.urlencoded({ extended:false}))
+app.use(express.urlencoded({ extended: false}));
 app.use(express.json());
 app.use(express.static(publicPath));
 app.use(methodOverride("_method"));
@@ -21,7 +21,7 @@ app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
 
 app.use("/products", productsRoutes);
-app.use("/", usersRoutes);
+app.use("/users", usersRoutes);
 app.use("/", mainRoutes)
 app.use(express.urlencoded({extended: false}));
 app.use(express.json());
