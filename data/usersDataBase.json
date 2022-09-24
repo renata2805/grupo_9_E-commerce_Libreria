@@ -6,7 +6,7 @@
   "email": "marinaisiches@gmail.com",
   "password": "libros123",
   "confirmPassword": "libros123",
-  "categoria": 1,
+  "role": 0,
   "imagen": "fotomaru.jpg"
  },
  {
@@ -16,7 +16,7 @@
   "email": "diaz.sebastian1988@gmail.com",
   "password": "libros333",
   "confirmPassword": "libros333",
-  "categoria": 1,
+  "role": 0,
   "imagen": "fotoseba.jpg"
  }
 ]
