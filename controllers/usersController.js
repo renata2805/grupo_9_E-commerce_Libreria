@@ -14,9 +14,8 @@ const usersController = {
        },
     processRegister: (req, res) => {
         const resultValidation = validationResult(req);
-    
         if (resultValidation.errors.length > 0) {
-          return res.render('register', {
+         return res.render('register', {
             errors: resultValidation.mapped(),
             oldData: req.body
           });
@@ -36,13 +35,17 @@ const usersController = {
         }
         
         let userToCreate = {
-          ...req.body,
+          /* ...req.body, */
+          nombre: req.body.nombre,
+          tel: req.body.tel,
+          email: req.body.email,
           password: bcryptjs.hashSync(req.body.password, 10),
-          imagen: req.file.filename
+          imagen: req.file.filename,
+          categoria: 0
         }
         let userCreated = User.create(userToCreate);
         
-        return res.redirect('/login');
+        return res.redirect('/users/login');
     },
     login: (req, res) => {
         res.render ('login'); // como parametros va el nombre del archivo dentro views
