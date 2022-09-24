@@ -20,7 +20,7 @@ const productsController = {
     })
 },
       categoria: (req, res) => {
-      let categoria = req.params.categoria  
+      let categoria = req.params.category 
       //let product = products.find(product => product.categoria == categoria )
       res.render('categoria', {
           products,
@@ -68,16 +68,16 @@ const productsController = {
 
 
     upload: (req, res) => {
-		let imagen
+		let image
 		if(req.files[0] != undefined){
-			imagen = req.files[0].filename
+			image = req.files[0].filename
 		} else {
-			imagen = 'default-image.jpg'
+			image = 'default-image.jpg'
 		}
 		let newProduct = {
 			id: products[products.length - 1].id + 1,
 			...req.body,
-			imagen: imagen
+			image: image
 		};
 		products.push(newProduct)
 		fs.writeFileSync(productsFilePath, JSON.stringify(products, null, ' '));
