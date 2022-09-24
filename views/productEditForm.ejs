@@ -27,35 +27,35 @@
             <div class="product-form-container">
                 <div class="form-container-label">
                     <label for="titulo" class="form-label">Titulo del Libro:</label>
-                    <input type="text" id="nombreLibro" class="form-input" name="nombreLibro" placeholder="<%=product.nombreLibro%>">
+                    <input type="text" id="nombreLibro" class="form-input" name="nombreLibro" value="<%=product.nombreLibro%>">
                 </div>
             <div class="form-container-label">
                     <label for="autor" class="form-label">Autor del Libro:</label>
-                    <input type="text" id="autor" class="form-input" name="autor" placeholder="<%=product.autor%>">
+                    <input type="text" id="autor" class="form-input" name="autor" value="<%=product.autor%>">
             </div>
             <div class="form-container-label">
                 <label for="editorial" class="form-label">Editorial:</label>
-                <input type="text" id="editorial" class="form-input" name="editorial" placeholder="<%=product.editorial%>">
+                <input type="text" id="editorial" class="form-input" name="editorial" value="<%=product.editorial%>">
             </div>
             <div class="form-container-label">
                 <label for="origen" class="form-label">Origen:</label>
-                <input type="text" id="origen" class="form-input" name="origen"  placeholder="<%=product.origen%>">
+                <input type="text" id="origen" class="form-input" name="origen"  value="<%=product.origen%>">
             </div>
             <div class="form-container-label">
                 <label for="numero de paginas" class="form-label">Numero de páginas:</label>
-                <input type="text" id="numeropaginas" class="form-input" name="numeropaginas" placeholder="<%=product.numeropaginas%>">
+                <input type="text" id="numeropaginas" class="form-input" name="numeropaginas" value="<%=product.numeropaginas%>">
             </div>
             <div class="form-container-label">
                 <label for="fecha-publicacion" class="form-label">Fecha de publicación:</label>
-                <input type="text" id="fechapublicacion" class="form-input" name="fechapublicacion" placeholder="<%=product.fechapublicacion%>">
+                <input type="text" id="fechapublicacion" class="form-input" name="fechapublicacion" value="<%=product.fechapublicacion%>">
             </div>
             <div class="form-container-label">
                 <label for="description">Descripción del libro:</label>
-                <textarea name="reseña" class="form-text" id="reseña"  style="width: 100%; border: 2px solid #464646;" placeholder="<%=product.reseña%>"></textarea>
+                <textarea name="reseña" class="form-text" id="reseña"  style="width: 100%; border: 2px solid #464646;" value="<%=product.descripcion%>"><%=product.descripcion%></textarea>
             </div>
             <div class="form-container-label">
                 <label for="categoria" class="form-label">SELECCIONE CATEGORIA</label>
-                <select name="categoria" aria-placeholder="CATEGORIA" class="form-input" id="categoria" style="width: 100%; border: 2px solid #464646;">
+                <select name="categoria" aria-placeholder="CATEGORIA" class="form-input" id="categoria" style="width: 100%; border: 2px solid #464646;" value="<%=product.categoria%>">
                     <option value="Literatura" >Literatura</option>
                     <option value="Historia">Historia</option>
                     <option value="Arte">Arte</option>
@@ -72,12 +72,12 @@
             </div>
             <div class="form-container-label">
                 <label for="precio" class="form-label">Precio:</label>
-                <input type="text" id="precio" class="form-input" name="precio"  placeholder="<%=product.precio%>">
+                <input type="text" id="precio" class="form-input" name="precio"  value="<%=product.precio%>">
             </div>
         </div>
         <div class="form-container-label">
             <label for="categoria" class="form-label">CATEGORIA DE VENTA</label>
-            <select name="categoria2" aria-placeholder="CATEGORIA" class="form-input" id="categoria2" style="width: 100%; border: 2px solid #464646;">
+            <select name="categoria2" aria-placeholder="CATEGORIA" class="form-input" id="categoria2" style="width: 100%; border: 2px solid #464646;" value="<%=product.categoria2%>">
                 <option value="recomendados" >Recomendados</option>
                 <option value="masVendidos">Mas Vendidos</option>
                 <option value="novedades">Novedades</option>
