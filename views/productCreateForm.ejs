@@ -16,43 +16,44 @@
         <form action="/products" method="POST" enctype="multipart/form-data">
             <div class="product-form-container">
                 <div class="form-container-label">
-                    <!-- <label for="titulo" class="form-label">Titulo del Libro:</label> -->
-                    <input type="text" id="titulo" class="form-input" name="titulo"  placeholder="TITULO DEL LIBRO">
+                    <input type="text" id="title" class="form-input" name="title"  placeholder="TITULO DEL LIBRO">
                 </div>
             <div class="form-container-label">
-                    <!-- <label for="autor" class="form-label">Autor del Libro:</label> -->
-                    <input type="text" id="autor" class="form-input" name="autor" placeholder="AUTOR DEL LIBRO">
+                    <input type="text" id="author" class="form-input" name="author" placeholder="AUTOR DEL LIBRO">
             </div>
             <div class="form-container-label">
-                <!-- <label for="editorial" class="form-label">Editorial:</label> -->
                 <input type="text" id="editorial" class="form-input" name="editorial" placeholder="EDITORIAL">
             </div>
             <div class="form-container-label">
-                <!-- <label for="origen" class="form-label">Origen:</label> -->
-                <input type="text" id="origen" class="form-input" name="origen" placeholder="ORIGEN">
+                <input type="text" id="origin" class="form-input" name="origin" placeholder="ORIGEN">
             </div>
             <div class="form-container-label">
-                <!-- <label for="editorial" class="form-label">Editorial:</label> -->
                 <input type="text" id="price" class="form-input" name="price" placeholder="PRECIO">
             </div>
             <div class="form-container-label">
-                <!-- <label for="numero de paginas" class="form-label">Numero de páginas:</label> -->
-                <input type="number" id="paginas" class="form-input" name="paginas" placeholder="NUMERO DE PAGINAS">
+                <input type="number" id="pages" class="form-input" name="pages" placeholder="NUMERO DE PAGINAS">
             </div>
             <div class="form-container-label">
-                <!-- <label for="fecha-publicacion" class="form-label">Fecha de publicación:</label> -->
-                <input type="date" id="fecha" class="form-input" name="fecha" placeholder="FECHA PUBLICACIÓN">
+                <input type="date" id="published_date" class="form-input" name="published_date" placeholder="FECHA PUBLICACIÓN">
             </div>
             <div class="form-container-label">
                 <label for="categoria" class="form-label">SELECCIONE CATEGORIA</label>
-                <select name="categoria" class="form-input" id="categoria" aria-placeholder="SELECCIONE CATEGORIA" style="width: 100%; border: 2px solid #464646;">
-                    <option value="Matematica" aria-placeholder="CATEGORIA">Matematica</option>
-                    <option value="Dibujo">Dibujo</option>
+                <select name="category" class="form-input" id="category" aria-placeholder="SELECCIONE CATEGORIA" style="width: 100%; border: 2px solid #464646;">
+                    <option value="Literatura" >Literatura</option>
                     <option value="Historia">Historia</option>
+                    <option value="Arte">Arte</option>
+                    <option value="Astronomia">Astronomía</option>
+                    <option value="Matemáticas">Matemáticas</option>
+                    <option value="Geografía">Geografía</option>
+                    <option value="Sociales">Sociales</option>
+                    <option value="Informatica">Informática</option>
+                    <option value="Educación Física">Educación Física</option>
+                    <option value="Edconomía">Economía</option>
+                    <option value="Biología">Biología</option>
+                    <option value="Química">Química</option>
                 </select>
             </div>
             <div class="form-container-label">
-                <!-- <label for="description">Descripción del libro:</label> -->
                 <textarea name="description" class="form-text" id="description" placeholder="DESCRIPCIÓN DEL LIBRO" style="width: 100%; border: 2px solid #464646;"></textarea>
             </div>
             <div>
