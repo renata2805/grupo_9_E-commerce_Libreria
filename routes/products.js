@@ -23,9 +23,7 @@ router.post('/', upload.any(), productsController.upload); //OK
 router.get('/edit/:id', productsController.edit); //OK
 router.patch('/edit/:id', upload.any(),productsController.update); //OK
 
-router.delete("/productDetail/:id", function (req,res){
-    res.send("¡Eliminación exitosa!")
-}); //OK
+router.delete("/delete/:id", productsController.delete); //OK
 
 
 router.get('/', productsController.store);

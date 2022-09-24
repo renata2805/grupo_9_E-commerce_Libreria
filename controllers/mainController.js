@@ -6,10 +6,10 @@ var products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
 
 const toThousand = n => n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
 const recomendados = products.filter(function(product){
-	return product.categoria2 == "recomendados"
+	return product.status == "recomendados"
 })
 const masVendidos = products.filter(function(product){
-	return product.categoria2 == 'mas-vendidos'
+	return product.status == 'mas-vendidos'
 })
 const mainController = {
     

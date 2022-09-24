@@ -17,22 +17,24 @@
       <section class="boxContainer">
 
       <div class="bookImageBox">
-        <img class="bookImg" src="/images/products/<%= product.imagen %>"
+        <img class="bookImg" src="/images/products/<%= product.image %>"
           alt=<%product.nombreLibro%>/>
       </div>
 
         <div class="libro">
-          <h2 class="titulo-libro"><%=product.nombreLibro%></h2>
+          <h2 class="titulo-libro"><%=product.title%></h2>
           <p class="calificaion">Precio</p>
           <div>
-            <button class="precio" type="button"><%=product.precio%></button>
+            <button class="precio" type="button"><%=product.price%></button>
           </div>
           <p class="reseña">
-            <%=product.reseña%>
+            <%=product.description%>
           </p>
           <a href=""><button class="botones">Comprar</button></a>
           <a href="../edit/<%=product.id%>"><button class="botones">Editar</button></a>
-          <a href=""><button class="botones">Borrar</button></a>
+          <form method="POST" action="/products/delete/<%=product.id%>?_method=DELETE">
+            <a href=""><button class="botones" type="submit">Borrar</button></a>
+          </form>
         </div>
 
       </section>
@@ -43,13 +45,13 @@
           <div class="deta">
             <p>Número de paginas</p>
             <i class="fi fi-bs-book-alt"></i>
-            <p><%=product.numeropaginas%></p>
+            <p><%=product.pages%></p>
           </div>
 
           <div class="deta">
             <p>Orígen</p>
             <i class="fi fi-bs-book-alt"></i>
-            <p><%=product.origen%></p>
+            <p><%=product.origin%></p>
           </div>
 
           <div class="deta">
@@ -62,7 +64,7 @@
           <div class="deta">
             <p>Fecha de públicación</p>
             <i class="fi fi-bs-book-alt"></i>
-            <p><%=product.fechapublicacion%></p>
+            <p><%=product.published_date%></p>
           </div>
         
 
@@ -77,7 +79,7 @@
           <h2>Opiniones Editoriales</h2>
           <h4>Sobre el autor</h4>
           <p class="reseña">
-            <%=product.sobreautor%>
+            <%=product.about_author%>
           </p>
         </div>
         </section>
