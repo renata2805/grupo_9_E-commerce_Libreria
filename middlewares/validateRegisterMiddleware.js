@@ -6,11 +6,10 @@ const validations = [
 	body('email')
 		.notEmpty().withMessage('Debes escribir un correo electrónico').bail()
 		.isEmail().withMessage('Debes escribir un formato de email válido'),
-	body('contraseña').notEmpty().withMessage('Debes escribir una contraseña'),
+	body('password').notEmpty().withMessage('Debes escribir una contraseña'),
 	body('imagen').custom((value, { req }) => {
 		let file = req.file;
 		let acceptedExtensions = ['.jpg', '.JPG','.png', '.gif'];
-
 		if (!file) {
 			throw new Error('Debes subir una imagen');
 		} else {
