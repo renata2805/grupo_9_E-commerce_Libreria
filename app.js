@@ -14,14 +14,18 @@ app.use(express.static(publicPath));
 app.use(methodOverride("_method"));
 
 app.use (express.static(publicPath));
-app.use(session({secret: "Secreto"}))
+app.use(session({
+    secret: "Secreto",
+    resave: false,
+    saveUninitialized: false
+}))
 
 // EJS Engine
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
 
 app.use("/products", productsRoutes);
-app.use("/users", usersRoutes);
+app.use("/", usersRoutes);
 app.use("/", mainRoutes)
 app.use(express.urlencoded({extended: false}));
 app.use(express.json());
