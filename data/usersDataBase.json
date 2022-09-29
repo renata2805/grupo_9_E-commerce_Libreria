@@ -18,5 +18,14 @@
   "confirmPassword": "libros333",
   "role": 0,
   "imagen": "fotoseba.jpg"
+ },
+ {
+  "id": 3,
+  "nombre": "Renata Soria",
+  "tel": "99999999",
+  "email": "renata.soria.arg@gmail.com",
+  "password": "$2a$10$bF526LTJl7cmDaocj1pamuEkVslrwxoUI5P41/uk7ORNgyF3hSB/u",
+  "imagen": "imagen-1664407235642.JPG",
+  "categoria": 0
  }
 ]

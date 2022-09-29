@@ -48,39 +48,23 @@ const usersController = {
     login: (req, res) => {
         res.render ('login'); // como parametros va el nombre del archivo dentro views
       },
-    processLogin: (req, res) => {
-      let userToLogin = User.findByField('email', req.body.email);
-                
-           if(userToLogin) {
-          let isOkThePassword = bcryptjs.compareSync(req.body.password, userToLogin.hashSync);
-          if (isOkThePassword) {
-            delete userToLogin.password;
-            req.session.userLogged = userToLogin;
-    
-            if(req.body.remember_user) {
-              res.cookie('email', User.email, { maxAge: (1000 * 60) * 60 })
-            }
-    
-            return res.redirect('/user/profile');
-          } 
-          return res.render('login', {
-            errors: {
-              email: {
-                msg: 'Las credenciales son inválidas'
-              }
-            }
-          });
-        }
-    
-          return res.render('login', {
-            errors: {
-              email: {
-                msg: 'No se encuentra este email en nuestra base de datos'
-            }
+
+    processLogin: (req,res) => {
+      let userToLogIn = User.findByField("email", req.body.email)
+      
+      if(userToLogIn) {
+
+      }
+      
+      return res.render("indexUser", {
+        errors: {
+          email: {
+            msg: "Este email no se encuentra registrado"
           }
-        });
-      },
-    
+        }
+      }) ;
+    },
+        
     edit: function(req,res) {
       let idUser = req.params.idUser;
 
