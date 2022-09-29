@@ -4,6 +4,17 @@ const multer = require('multer');
 const { validationResult }  = require('express-validator');
 const bcryptjs = require('bcryptjs');
 const User = require('../models/User');
+const toThousand = n => n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+const productsFilePath = path.join(__dirname, '../data/productsDataBase.json');
+var products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
+const recomendados = products.filter(function(product){
+	return product.status == "recomendados"
+})
+const masVendidos = products.filter(function(product){
+	return product.status == 'mas-vendidos'
+})
+
+
 
 
 const usersController = {
@@ -80,6 +91,10 @@ const usersController = {
             }
           }
         });
+      },
+
+      profile: (req, res) => {
+        return res.render('index', {recomendados, masVendidos, toThousand, user: req.session.userLogged})
       },
         
     edit: function(req,res) {
