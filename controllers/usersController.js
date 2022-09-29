@@ -1,8 +1,6 @@
 const fs = require('fs');
 const path = require('path');
 const multer = require('multer');
-const usersFilePath = path.join(__dirname, '../data/usersDataBase.json');
-var users = JSON.parse(fs.readFileSync(usersFilePath, 'utf-8'));
 const { validationResult }  = require('express-validator');
 const bcryptjs = require('bcryptjs');
 const User = require('../models/User');
@@ -45,7 +43,7 @@ const usersController = {
         }
         let userCreated = User.create(userToCreate);
         
-        return res.redirect('/users/login');
+        return res.redirect('/login');
     },
     login: (req, res) => {
         res.render ('login'); // como parametros va el nombre del archivo dentro views
@@ -54,13 +52,13 @@ const usersController = {
       let userToLogin = User.findByField('email', req.body.email);
                 
            if(userToLogin) {
-          let isOkThePassword = bcryptjs.compareSync(req.body.contraseña, userToLogin.hashSync);
+          let isOkThePassword = bcryptjs.compareSync(req.body.password, userToLogin.hashSync);
           if (isOkThePassword) {
-            delete userToLogin.contraseña;
+            delete userToLogin.password;
             req.session.userLogged = userToLogin;
     
             if(req.body.remember_user) {
-              res.cookie('email', users.email, { maxAge: (1000 * 60) * 60 })
+              res.cookie('email', User.email, { maxAge: (1000 * 60) * 60 })
             }
     
             return res.redirect('/user/profile');

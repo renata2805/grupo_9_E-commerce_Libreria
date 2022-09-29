@@ -18,23 +18,5 @@
   "confirmPassword": "libros333",
   "role": 0,
   "imagen": "fotoseba.jpg"
- },
- {
-  "id": 3,
-  "nombre": "Renata Soria",
-  "tel": "99999999",
-  "email": "renata.soria.arg@gmail.com",
-  "password": "$2a$10$f59WUBEEOI0IIaQcF3vTqe7//89USdBhxc/MtZi1hzKzChDwAkhJe",
-  "confirmPassword": "66666666",
-  "imagen": "imagen-1664023586054.JPG"
- },
- {
-  "id": 4,
-  "nombre": "Alicia Barabraham",
-  "tel": "987654321",
-  "email": "bardesor@hotmail.com",
-  "password": "$2a$10$kwFFuuQahjiKVEcDDiaX9OvoMJrwzBVfAafSBSoAQlWlHgPcdoV06",
-  "imagen": "imagen-1664024602911.JPG",
-  "categoria": 0
  }
 ]
