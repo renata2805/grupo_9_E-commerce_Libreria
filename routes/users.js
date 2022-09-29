@@ -25,7 +25,7 @@ router.post('/register', upload.single("imagen"), validations, usersController.p
 router.get('/login/', guestMiddleware, usersController.login);
 
 //Procesar el Login
-router.post('/login/', usersController.processLogin);
+router.post('/login/', usersController.loginProcess);
 
 router.get("/users/edit/:idUser", usersController.edit);
 

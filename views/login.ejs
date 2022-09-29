@@ -9,11 +9,16 @@
         <form action="/login" method="post">
             <div class="inputBox">
                 <input type="text" id="email" name="email" required="required">
+                <% if (locals.errors && errors.email) { %>
+                    <div class="text-danger">
+                        <%= errors.email.msg %>
+                    </div>
+                <% } %>
                 <span>Email</span>
             </div>
 
             <div class="inputBox">
-                <input type="password" id="contraseña" name="contraseña" required="required">
+                <input type="password" id="password" name="password" required="required">
                 <span>Contraseña</span>
             </div>
 
