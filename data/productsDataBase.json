@@ -122,7 +122,7 @@
   "category": "Literatura",
   "price": 10,
   "status": "recomendados",
-  "imagen": "100-años-de-soledad.jpg"
+  "image": "100-años-de-soledad.jpg"
  },
  {
   "id": 9,
@@ -136,7 +136,7 @@
   "category": "Literatura",
   "price": 6,
   "status": "masVendidos",
-  "imagen": "el-alquimista.jpg"
+  "image": "el-alquimista.jpg"
  },
  {
   "id": 10,
@@ -150,7 +150,7 @@
   "category": "Literatura",
   "price": 5,
   "status": "masVendidos",
-  "imagen": "cometas-en-el-cielo.jpg"
+  "image": "cometas-en-el-cielo.jpg"
  },
  {
   "id": 11,
@@ -161,10 +161,10 @@
   "pages": 32,
   "published_date": "28/08/2021",
   "description": "Este libro es un increíble viaje al pasado, que indaga a fondo sobre la creación del famoso museo a cielo abierto Caminito, y el tango que lleva el mismo nombre. Luego del prólogo, se conocerán los orígenes de la ciudad de Buenos Aires, el barrio de La Boca, la historia del famoso pintor Benito Quinquela Martín, los desconocidos inicios del tango, cómo se creó el tango Caminito y finalmente un tour dedicado, lleno de recomendaciones, para conocer Caminito en la actualidad..",
-  "category": "Arte",
+  "category": "arte",
   "price": 12,
   "status": "masVendidos",
-  "imagen": "quinquela.jpg"
+  "image": "quinquela.jpg"
  },
  {
   "id": 12,
@@ -175,10 +175,10 @@
   "pages": 255,
   "published_date": "1/11/2002",
   "description": "La proliferación y difusión de los temas mestizos se han vuelto universales... Inspirándose en la realidad histórica y cultural de Colombia y en la mejor tradición latinoamericana, Ana Mercedes Hoyos desarrolla su obra en el laberinto del mestizaje pictórico, un mestizaje de imágenes. En estas palabras del emocionante ensayo crítico que abre este libro, Ángel Kalenberg describe la evolución de esta gran artista colombiana y su lugar en el arte mundial.",
-  "category": "Arte",
+  "category": "arte",
   "price": 65,
   "status": "masVendidos",
-  "imagen": "hoyo.jpg"
+  "image": "hoyo.jpg"
  },
  {
   "id": 13,
@@ -189,10 +189,10 @@
   "pages": 400,
   "published_date": "4/09/2018",
   "description": "Con 70 pinturas, esculturas y obras en papel, esta es la muestra más grande del trabajo de Torres-García que se exhibe en una galería estadounidense desde que Joaquín Torres-García comisarió su propia exposición en la Galería Sidney Janis en 1950. El libro incluye previamente textos inéditos del artista y obras icónicas que fueron guardadas por la familia como ejemplos representativos de distintos momentos de su carrera, primero del artista y luego de familiares que los heredaron en conjunto.",
-  "category": "Arte",
+  "category": "arte",
   "price": 48,
   "status": "masVendidos",
-  "imagen": "torres-garcia.jpg"
+  "image": "torres-garcia.jpg"
  },
  {
   "id": 14,
@@ -203,10 +203,10 @@
   "pages": 224,
   "published_date": "26/07/2021",
   "description": "El presente volumen supone una introducción ideal para dar a conocer la obra de la artista mexicana Frida Kahlo. En él se incluyen sus 75 mejores pinturas, tanto las piezas más populares como pinturas procedentes de colecciones particulares que rara vez se muestran en público, lo cual hace que el contenido de este libro resulte novedoso, variado y cautivador..",
-  "category": "Arte",
+  "category": "arte",
   "price": 44,
   "status": "masVendidos",
-  "imagen": "kahlo.jpg"
+  "image": "kahlo.jpg"
  },
  {
   "id": 15,
@@ -217,10 +217,10 @@
   "pages": 744,
   "published_date": "26/06/2015",
   "description": "La historia de Vincent van Gogh es una de las más irónicas de la historia del arte. Hoy en día, es celebrado en todo el mundo como uno de los pintores más importantes de todos los tiempos, reconocido con espectáculos con entradas agotadas, museos festejados y prices récord de decenas de millones de dólares en subastas.Este completo estudio de Vincent van Gogh (1853–1890) combina una monografía detallada sobre su vida y arte con un catálogo completo de sus 871 pinturas.",
-  "category": "Arte",
+  "category": "arte",
   "price": 34,
   "status": "recomendados",
-  "imagen": "van-gogh.jpg"
+  "image": "van-gogh.jpg"
  },
  {
   "id": 16,
@@ -234,7 +234,7 @@
   "category": "geografia",
   "price": 43,
   "status": "recomendados",
-  "imagen": "atlas.jpg"
+  "image": "atlas.jpg"
  },
  {
   "id": 17,
@@ -248,7 +248,7 @@
   "category": "geografia",
   "price": 23,
   "status": "recomendados",
-  "imagen": "rios.jpg"
+  "image": "rios.jpg"
  },
  {
   "id": 18,
@@ -262,7 +262,7 @@
   "category": "geografia",
   "price": 15,
   "status": "masVendidos",
-  "imagen": "arrecifes.jpg"
+  "image": "arrecifes.jpg"
  },
  {
   "id": 19,
@@ -276,7 +276,7 @@
   "category": "geografia",
   "price": 8,
   "status": "masVendidos",
-  "imagen": "geografia.jpg"
+  "image": "geografia.jpg"
  },
  {
   "id": 20,
@@ -290,7 +290,7 @@
   "category": "geografia",
   "price": 36,
   "status": "masVendidos",
-  "imagen": "Geologia.jpg"
+  "image": "Geologia.jpg"
  },
  {
   "id": 21,
@@ -304,7 +304,7 @@
   "category": "astronomia",
   "price": 27.76,
   "status": "masVendidos",
-  "imagen": "ElLibroDoradoDeUrania.jpg"
+  "image": "ElLibroDoradoDeUrania.jpg"
  },
  {
   "id": 22,
@@ -318,7 +318,7 @@
   "category": "astronomia",
   "price": 19.25,
   "status": "masVendidos",
-  "imagen": "ElFuturoDeLaHumanidad.jpg"
+  "image": "ElFuturoDeLaHumanidad.jpg"
  },
  {
   "id": 23,
@@ -332,7 +332,7 @@
   "category": "astronomia",
   "price": 10.85,
   "status": "masVendidos",
-  "imagen": "AstronomiaGuiaParaPrincipantes.jpg"
+  "image": "AstronomiaGuiaParaPrincipantes.jpg"
  },
  {
   "id": 24,
@@ -346,7 +346,7 @@
   "category": "astronomia",
   "price": 22.35,
   "status": "novedades",
-  "imagen": "Extraterrestre.jpg"
+  "image": "Extraterrestre.jpg"
  },
  {
   "id": 25,
@@ -360,7 +360,7 @@
   "category": "astronomia",
   "price": 11.99,
   "status": "novedades",
-  "imagen": "AstronomiaParaSerEntendida.jpg"
+  "image": "AstronomiaParaSerEntendida.jpg"
  },
  {
   "id": 26,
@@ -374,7 +374,7 @@
   "category": "Matemáticas",
   "price": 18.99,
   "status": "novedades",
-  "imagen": "ElLibroDeLasMatematicas.jpg"
+  "image": "ElLibroDeLasMatematicas.jpg"
  },
  {
   "id": 27,
@@ -385,10 +385,10 @@
   "pages": 50,
   "published_date": "13/07/2018",
   "description": "Cuando se trata de jugar al poker de la manera más efectiva posible, hay dos tipos de jugadores, aquellos que juegan con sus entrañas y aquellos que usan las matemáticas detrás del juego de póker para desarrollar estrategias que se destacan para los jugadores de todos los niveles de habilidad. Huelga decir que el segundo tipo siempre superará al primero. Si quieres asegurarte que estás en el lado ganador la próxima vez que te sientas en una mesa, entonces matemáticas del poker es el libro para ti.",
-  "category": "Matemáticas",
+  "category": "matematicas",
   "price": 19.95,
   "status": "novedades",
-  "imagen": "MatematicaDelPoker.jpg"
+  "image": "MatematicaDelPoker.jpg"
  },
  {
   "id": 28,
@@ -399,10 +399,10 @@
   "pages": 260,
   "published_date": "28/11/2018",
   "description": "El lenguaje de las matemáticas: historia de sus símbolos es una compilación de cultura, historia y referencias matemáticas. Con 54 capítulos, como cápsulas de diversas extensiones, narra la procedencia de algún símbolo o concepto matemático, de caracteres como la raíz cuadrada, el uso de números arábigos y letras latinas y griegas en el lenguaje del álgebra, así como el surgimiento del símbolo de adición, entre muchos otros fascinantes componentes del lenguaje de esta disciplina.",
-  "category": "Matemáticas",
+  "category": "matematicas",
   "price": 14,
   "status": "novedades",
-  "imagen": "ElLenguajeDeLasMatematicas.jpg"
+  "image": "ElLenguajeDeLasMatematicas.jpg"
  },
  {
   "id": 29,
@@ -413,10 +413,10 @@
   "pages": 108,
   "published_date": "22/04/2016",
   "description": "En este libro encontrarás una recopilación de algunos de los más clásicos retos mentales.Haz que tu cerebro saque humo, resolviendo acertijos, juegos de lógica, puzles matemáticos, enigmas…Reta a tus amigos y familiares a encontrar las soluciones.¿Y tú? ¿Lo sabes?",
-  "category": "Matemáticas",
+  "category": "matematicas",
   "price": 21.99,
   "status": "novedades",
-  "imagen": "YTuLoSabes.jpg"
+  "image": "YTuLoSabes.jpg"
  },
  {
   "id": 30,
@@ -427,9 +427,9 @@
   "pages": 104,
   "published_date": "30/08/2021",
   "description": "Este cuaderno es esencial para que los principiantes practiquen la suma y la resta paso a paso. Encontrarás 100 páginas repletas de muchos ejercicios de práctica.",
-  "category": "Matemáticas",
+  "category": "matematicas",
   "price": 6.19,
   "status": "novedades",
-  "imagen": "100DiasDeSumasYRestas.jpg"
+  "image": "100DiasDeSumasYRestas.jpg"
  }
 ]

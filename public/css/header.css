@@ -16,6 +16,9 @@
     box-sizing: border-box;
 }
 
+.menuM{
+    width: 100%;
+}
 
 .headerM {
     background: var(--bs-blanco);

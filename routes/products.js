@@ -27,7 +27,7 @@ router.delete("/delete/:id", productsController.delete); //OK
 
 
 router.get('/', productsController.store);
-router.get('/categorias/:categoria', productsController.categoria);
+router.get('/:category', productsController.category);
 
 
 

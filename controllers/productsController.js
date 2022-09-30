@@ -19,11 +19,11 @@ const productsController = {
         toThousand
     })
 },
-      categoria: (req, res) => {
-      let categoria = req.params.category 
-      let product = products.find(product => product.category == category )
-      res.render('categoria', {
-          product,
+      category: (req, res) => {
+      let category = req.params.category 
+      let product = products.filter(product => product.category == category )
+      res.render('category', {
+            product,
           toThousand
       })
   },
