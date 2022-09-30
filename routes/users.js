@@ -28,7 +28,7 @@ router.get('/login/', guestMiddleware, usersController.login);
 router.post('/login/', usersController.loginProcess);
 
 // Perfil de Usuario
-router.get('/', authMiddleware, usersController.profile);
+router.get('/profile', authMiddleware, usersController.profile);
 
 router.get("/users/edit/:idUser", usersController.edit);
 

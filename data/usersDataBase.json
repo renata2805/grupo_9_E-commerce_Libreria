@@ -27,5 +27,14 @@
   "password": "$2a$10$bF526LTJl7cmDaocj1pamuEkVslrwxoUI5P41/uk7ORNgyF3hSB/u",
   "imagen": "imagen-1664407235642.JPG",
   "categoria": 0
+ },
+ {
+  "id": 4,
+  "nombre": "Marina",
+  "tel": "1130811308",
+  "email": "maru_siches@hotmail.com",
+  "password": "$2a$10$M8JVnU2TXBXO7zpmIyuYvuYDz84r0bFRrZOmc6AVW8/sHGHFIqM5e",
+  "imagen": "imagen-1664507309874.jpg",
+  "categoria": 0
  }
 ]

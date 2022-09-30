@@ -73,7 +73,7 @@ const usersController = {
               res.cookie('userEmail', req.body.email, { maxAge: (1000 * 60) * 60 })
             }
     
-            return res.redirect('/');
+            return res.redirect('/profile');
           } 
           return res.render('login', {
             errors: {
@@ -94,7 +94,7 @@ const usersController = {
       },
 
       profile: (req, res) => {
-        return res.render('index', {recomendados, masVendidos, toThousand, user: req.session.userLogged})
+        return res.render('profile', {user: req.session.userLogged})
       },
         
     edit: function(req,res) {
