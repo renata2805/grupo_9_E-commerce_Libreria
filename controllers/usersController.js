@@ -78,7 +78,7 @@ const usersController = {
           return res.render('login', {
             errors: {
               email: {
-                msg: 'Las credenciales son inválidas'
+                msg: 'Credenciales inválidas'
               }
             }
           });
