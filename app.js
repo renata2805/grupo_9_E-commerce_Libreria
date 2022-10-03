@@ -7,6 +7,7 @@ const mainRoutes = require ("./routes/main");
 const usersRoutes = require ("./routes/users");
 const methodOverride = require ("method-override");
 var session = require("express-session");
+const userLoggedMiddleware = require("./middlewares/userLoggedMiddleware")
 
 app.use(express.urlencoded({ extended: false}));
 app.use(express.json());
@@ -18,7 +19,8 @@ app.use(session({
     secret: "Secreto",
     resave: false,
     saveUninitialized: false
-}))
+}));
+app.use(userLoggedMiddleware);
 
 // EJS Engine
 app.set('view engine', 'ejs');
