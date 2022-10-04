@@ -15,6 +15,7 @@
     "nodemon": "^2.0.20",
     "package.json": "^0.0.0",
     "pkg": "^5.8.0",
-    "sequelize": "^5.22.5"
+    "sequelize": "^5.22.5",
+    "sequelize-cli": "^6.5.1"
   }
 }
