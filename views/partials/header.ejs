@@ -10,20 +10,26 @@
             </div>
         </div>
 
-    <div class="navigation-menu">
-        <nav>
-            <li><a href="/views/index.ejs">Inicio</a></li>
-            <li><a href="#">Tienda</a></li>
-            <li><a href="/login">Acceder</a></li>
-            <li><a href="/register">Registrarse</a></li>
-            <li><a href="/productCart">Carrito Compras</a></li>
+    <div class="options-menu">
+        <nav class="nav">
+            <ul class="list">
+            <li class="list__item">
+                <div class="list__button"><a href="/">Inicio</a>
+                </div>
+            </li>
+            <li class="list__item">
+                <div class="list__button--click">
+                    <i class="fa-thin fa-chevron-right"></i>
+                    <a href="/">Categorias</a>
+                </div>
+            </li>
+            <li class="list__item">
+                <div class="list__button"><a href="/login">Acceder</a>
+            </div></li>
+            <li class="list__item">
+                <div class="list__button"><a href="/register">Registrarse</a></div></li>
+        </ul>
         </nav>
 
-    <script>
-        $(".menu-icon").click(function () {
-            $(".menu-icon").toggleClass("active");
-            $(".navigation-menu").toggleClass("active");
-            $(".menu-icon i").toggleClass("fa-times");
-        });
-    </script>
+   
 
