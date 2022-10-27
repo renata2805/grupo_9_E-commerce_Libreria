@@ -107,6 +107,11 @@ const usersController = {
       fs.writeFileSync(usersFilePath, JSON.stringify(users, null, ' '));
       res.redirect('index');
     },
+
+    logout: (req,res) => {
+      req.session.destroy();
+      return res.redirect("/");
+    }
 }
 
 module.exports= usersController;
