@@ -32,7 +32,6 @@ const usersController = {
         }
         
         let userToCreate = {
-          /* ...req.body, */
           nombre: req.body.nombre,
           tel: req.body.tel,
           email: req.body.email,
@@ -57,7 +56,7 @@ const usersController = {
             delete userToLogin.password;
             req.session.userLogged = userToLogin;
     
-            if(req.body.remember_user) {
+            if(req.body.recordame) {
               res.cookie('userEmail', req.body.email, { maxAge: (1000 * 60) * 60 })
             }
     
@@ -108,6 +107,11 @@ const usersController = {
       fs.writeFileSync(usersFilePath, JSON.stringify(users, null, ' '));
       res.redirect('index');
     },
+
+    logout: (req,res) => {
+      req.session.destroy();
+      return res.redirect("/");
+    }
 }
 
 module.exports= usersController;

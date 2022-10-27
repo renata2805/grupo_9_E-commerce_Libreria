@@ -5,20 +5,27 @@
     --bs-oscuro: #040615;
     --bs-gris: #f2f4f5;
     --bs-blanco: #ffffff;
-}
+} 
 
 *{
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    text-decoration: none;
-    font-family: 'Istok Web', sans-serif;
-    list-style: none;
-    box-sizing: border-box;
+
 }
 
-.menuM{
+ul{
+    list-style-type: none;
+}
+
+a{
+text-decoration: none;
+}
+
+img{
     width: 100%;
 }
+<<<<<<< HEAD
 
 .headerM {
     background: var(--bs-blanco);
@@ -51,28 +58,36 @@
     border-radius: 10px;
     cursor: pointer;
     transition: 0.2s linear;
+=======
+.encabezado{
+   
+    
+        display: flex;
+        /* justify-content: center; */
+        width: 100% ;
+        height: 70px;
+         text-align: center; 
+    
+>>>>>>> f3e3a8b70532f6e7171805629b85e36168efee80
 
 }
 
-.menu-icon:hover {
-    opacity: 0.9;
-    transform: scale(1.1);
-    background: #3452b2;
+nav.menuIzquierdo ul li a, nav.menuDerecho ul li a {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;  
+    color: black;
+    size: 3px;
+    
+
 }
 
-.navigation-menu {
-    position: fixed;
-    width: 100%;
-    height: 100vh;
-    background: #6486f2;
-    top: 0;
-    right: -100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: 0.6s;
-}
+nav.menuIzquierdo ul li a:hover, nav.menuDerecho ul li a:hover {
+    /* text-decoration: underline; */
+    color: black;  
+    background-color: #ff7700;
+    
 
+<<<<<<< HEAD
 .navigation-menu nav {
     display: grid;
 }
@@ -106,45 +121,21 @@
 
 .navigation-menu a:hover::before {
     width: 100%;
+=======
+>>>>>>> f3e3a8b70532f6e7171805629b85e36168efee80
 }
 
 
 
-.menu-icon.active {
-    background: #f1f1f1;
-    color: #2c3a47;
-}
 
-.navigation-menu.active {
-    right: 0;
-}
 
-.navigation-menu.active a {
-    transform: translateY(0);
-    transition: 0.6s linear;
-}
+img.pequeña{
+    width: 80px;
+    height: 80px;
+    
+  }
 
-.navigation-menu.active li:nth-child(1) a {
-    transition-delay: 0.2s;
-}
-
-.navigation-menu.active li:nth-child(2) a {
-    transition-delay: 0.4s;
-}
-
-.navigation-menu.active li:nth-child(3) a {
-    transition-delay: 0.6s;
-}
-
-.navigation-menu.active li:nth-child(4) a {
-    transition-delay: 0.8s;
-}
-
-.navigation-menu.active li:nth-child(5) a {
-    transition-delay: 1s;
-}
-
-.Book {
+  .Book {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 900;
     color: #3452b2;
@@ -160,6 +151,7 @@
     font-size: 2em;
 }
 
+<<<<<<< HEAD
 .logoIMG{
     width: 2em;
     justify-content: center;
@@ -173,3 +165,67 @@
 .list__button--click a{
     color:#6486f2;
 }
+=======
+
+
+
+.menu{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.menuIzquierdo{
+
+   display: flex;
+    width: 40%;
+    align-items: center ;
+   justify-content: center;
+   
+    
+
+}
+
+.menuDerecho{
+
+    display: flex;
+   width: 30%;
+   align-items: center ;
+   justify-content: center;
+   
+     
+}
+.opcionesDerecho{
+   
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    
+   
+
+}
+
+.opcionesIzquierdo{
+   
+    display: flex;
+    justify-content: space-around;
+   width: 80%;
+   align-items: flex-end;
+   
+}
+
+nav.menuIzquierdo ul li a, nav.menuDerecho ul li a {
+        
+    font-size: 1.1ren;  
+    
+    
+
+}
+
+
+
+
+
+  
+
+>>>>>>> f3e3a8b70532f6e7171805629b85e36168efee80

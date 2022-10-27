@@ -11,26 +11,26 @@
   "category": 3,
   "price": 12,
   "status": "recomendados",
-  "image": "breve-historia-revolucion-industrial.jpg",
+  "image": "revolucion-ind.png",
   "calification": 5,
   "about_author": "un señor muy interesante"
  },
  {
-   "id": 2,
-   "title": "Historia visual de la segunda guerra mundial",
-   "author": "Vicent Bernard",
-   "editorial": "Critica",
-   "origin": "Español",
-   "pages": 300,
-   "published_date": "15/10/2022",
-   "description": "Una visión realmente innovadora del conflicto más importante de la historia.",
-   "category": 3,
-   "price": 8,
-   "status": "recomendados",
-   "image": "ii-guerra-mundial.jpg",
-   "calification": 9,
-   "about_author": "un señor muy vago"
-  },
+  "id": 2,
+  "title": "Historia visual de la segunda guerra mundial",
+  "author": "Vicent Bernard",
+  "editorial": "Critica",
+  "origin": "Español",
+  "pages": 300,
+  "published_date": "15/10/2022",
+  "description": "Una visión realmente innovadora del conflicto más importante de la historia.",
+  "category": 3,
+  "price": 8,
+  "status": "recomendados",
+  "image": "ii-guerra-mundial.png",
+  "calification": 9,
+  "about_author": "un señor muy vago"
+ },
  {
   "id": 3,
   "title": "Sapiens. De animales a dioses: Una breve historia de la humanidad",
@@ -43,7 +43,7 @@
   "category": 3,
   "price": 11,
   "status": "recomendados",
-  "image": "de-animales a dioses.jpg",
+  "image": "de-animales a dioses.png",
   "calification": 15,
   "about_author": "un señor muy lindo"
  },
@@ -59,7 +59,7 @@
   "category": 3,
   "price": 8,
   "status": "recomendados",
-  "image": "infografias-de-la-antigua-roma.jpg",
+  "image": "infografias-de-la-antigua-roma.png",
   "calification": 1,
   "about_author": "un señor muy poeta"
  },
@@ -75,7 +75,7 @@
   "category": 3,
   "price": 4,
   "status": "recomendados",
-  "image": "historia-de-la-geologia-sudamericana.jpg",
+  "image": "historia-de-la-geologia-sudamerica.png",
   "calification": 8,
   "about_author": "un señor muy entusiasta"
  },
@@ -93,7 +93,7 @@
   "status": "recomendados",
   "calification": 8,
   "about_author": "un señor muy entusiasta",
-  "image": "violeta.jpg"
+  "image": "violeta.png"
  },
  {
   "id": 7,
@@ -107,7 +107,7 @@
   "category": 7,
   "price": 3,
   "status": "recomendados",
-  "image": "el-principito.jpg",
+  "image": "el-principito.png",
   "about_author": ""
  },
  {
@@ -122,7 +122,7 @@
   "category": 7,
   "price": 10,
   "status": "recomendados",
-  "image": "100-años-de-soledad.jpg"
+  "image": "100-años-de-soledad.png"
  },
  {
   "id": 9,
@@ -136,7 +136,7 @@
   "category": 7,
   "price": 6,
   "status": "masVendidos",
-  "image": "el-alquimista.jpg"
+  "image": "el-alquimista.png"
  },
  {
   "id": 10,
@@ -144,13 +144,13 @@
   "author": "Khaled Hosseini",
   "editorial": " Salamandra",
   "origin": "Español",
-  "pages": 405,
+  "pages": "400",
   "published_date": "06/12/2011",
   "description": " Sobre el telón de fondo de un Afganistán respetuoso de sus ricas tradiciones ancestrales, la vida en Kabul durante el invierno de 1975 se desarrolla con toda la intensidad, la pujanza y el colorido de una ciudad confiada en su futuro e ignorante de que se avecina uno de los períodos más cruentos que han padecido los milenarios pueblos que la habitan.",
-  "category": 7,
-  "price": 5,
-  "status": "masVendidos",
-  "image": "cometas-en-el-cielo.jpg"
+  "categoria": "Literatura",
+  "price": "5",
+  "status": "recomendados",
+  "image": "cometas-en-el-cielo.png"
  },
  {
   "id": 11,
@@ -164,7 +164,7 @@
   "category": 10,
   "price": 12,
   "status": "masVendidos",
-  "image": "quinquela.jpg"
+  "image": "quinquela.png"
  },
  {
   "id": 12,
@@ -178,7 +178,7 @@
   "category": 10,
   "price": 65,
   "status": "masVendidos",
-  "image": "hoyo.jpg"
+  "image": "hoyo.png"
  },
  {
   "id": 13,
@@ -192,7 +192,7 @@
   "category": 10,
   "price": 48,
   "status": "masVendidos",
-  "image": "torres-garcia.jpg"
+  "image": "torres-garcia.png"
  },
  {
   "id": 14,
@@ -206,7 +206,7 @@
   "category": 10,
   "price": 44,
   "status": "masVendidos",
-  "image": "kahlo.jpg"
+  "image": "kahlo.png"
  },
  {
   "id": 15,
@@ -214,13 +214,13 @@
   "author": "Rainer Metzger",
   "editorial": "BOLSAS",
   "origin": "España",
-  "pages": 744,
+  "pages": "700",
   "published_date": "26/06/2015",
   "description": "La historia de Vincent van Gogh es una de las más irónicas de la historia del arte. Hoy en día, es celebrado en todo el mundo como uno de los pintores más importantes de todos los tiempos, reconocido con espectáculos con entradas agotadas, museos festejados y prices récord de decenas de millones de dólares en subastas.Este completo estudio de Vincent van Gogh (1853–1890) combina una monografía detallada sobre su vida y arte con un catálogo completo de sus 871 pinturas.",
-  "category": 10,
-  "price": 34,
+  "categoria": "Literatura",
+  "price": "34",
   "status": "recomendados",
-  "image": "van-gogh.jpg"
+  "image": "van-gogh.png"
  },
  {
   "id": 16,
@@ -234,7 +234,7 @@
   "category": 2,
   "price": 43,
   "status": "recomendados",
-  "image": "atlas.jpg"
+  "image": "atlas.png"
  },
  {
   "id": 17,
@@ -248,7 +248,7 @@
   "category": 2,
   "price": 23,
   "status": "recomendados",
-  "image": "rios.jpg"
+  "image": "rios.png"
  },
  {
   "id": 18,
@@ -262,7 +262,7 @@
   "category": 2,
   "price": 15,
   "status": "masVendidos",
-  "image": "arrecifes.jpg"
+  "image": "arrecifes.png"
  },
  {
   "id": 19,
@@ -276,7 +276,7 @@
   "category": 2,
   "price": 8,
   "status": "masVendidos",
-  "image": "geografia.jpg"
+  "image": "geografia.png"
  },
  {
   "id": 20,
@@ -290,7 +290,7 @@
   "category": 2,
   "price": 36,
   "status": "masVendidos",
-  "image": "Geologia.jpg"
+  "image": "Geologia.png"
  },
  {
   "id": 21,
@@ -304,7 +304,7 @@
   "category": 5,
   "price": 27.76,
   "status": "masVendidos",
-  "image": "ElLibroDoradoDeUrania.jpg"
+  "image": "ElLibroDoradoDeUrania.png"
  },
  {
   "id": 22,
@@ -318,7 +318,7 @@
   "category": 5,
   "price": 19.25,
   "status": "masVendidos",
-  "image": "ElFuturoDeLaHumanidad.jpg"
+  "image": "ElFuturoDeLaHumanidad.png"
  },
  {
   "id": 23,
@@ -332,7 +332,7 @@
   "category": 5,
   "price": 10.85,
   "status": "masVendidos",
-  "image": "AstronomiaGuiaParaPrincipantes.jpg"
+  "image": "AstronomiaGuiaParaPrincipantes.png"
  },
  {
   "id": 24,
@@ -346,7 +346,7 @@
   "category": 5,
   "price": 22.35,
   "status": "novedades",
-  "image": "Extraterrestre.jpg"
+  "image": "Extraterrestre.png"
  },
  {
   "id": 25,
@@ -360,7 +360,7 @@
   "category": 5,
   "price": 11.99,
   "status": "novedades",
-  "image": "AstronomiaParaSerEntendida.jpg"
+  "image": "AstronomiaParaSerEntendida.png"
  },
  {
   "id": 26,
@@ -374,7 +374,7 @@
   "category": 1,
   "price": 18.99,
   "status": "novedades",
-  "image": "ElLibroDeLasMatematicas.jpg"
+  "image": "ElLibroDeLasMatematicas.png"
  },
  {
   "id": 27,
@@ -388,7 +388,7 @@
   "category": 1,
   "price": 19.95,
   "status": "novedades",
-  "image": "MatematicaDelPoker.jpg"
+  "image": "MatematicaDelPoker.png"
  },
  {
   "id": 28,
@@ -402,7 +402,7 @@
   "category": 1,
   "price": 14,
   "status": "novedades",
-  "image": "ElLenguajeDeLasMatematicas.jpg"
+  "image": "ElLenguajeDeLasMatematicas.png"
  },
  {
   "id": 29,
@@ -416,7 +416,7 @@
   "category": 1,
   "price": 21.99,
   "status": "novedades",
-  "image": "YTuLoSabes.jpg"
+  "image": "YTuLoSabes.png"
  },
  {
   "id": 30,
@@ -430,6 +430,6 @@
   "category": 1,
   "price": 6.19,
   "status": "novedades",
-  "image": "100DiasDeSumasYRestas.jpg"
+  "image": "100DiasDeSumasYRestas.png"
  }
 ]

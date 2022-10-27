@@ -38,13 +38,18 @@
       <%recomendados.forEach(function(product){ 
       %>
           <div class="cajaImg">
+            <!-- <div class = "caja caja2"><img src="image/cometas-en-el-cielo.png"> <p>producto 2</p> <p> precio usd 4</p> </div> -->
 
 
-            <div class="product-box_data">
-            <a href="/products/productDetail/<%= product.id %>">
-                <img src="/images/products/<%= product.image%>" class="imgCajaRecomendado" alt="imagen de producto"></a>
-                <h2><%= toThousand(product.price) %></h2>
+            <div >
+              <a href="/products/productDetail/<%= product.id %>">
+              <img  src="/images/products/<%= product.image%>"  > </a>
+            
+                </a>
+                
+                <h2>usd  <%= toThousand(product.price) %></h2>
                 <p><%= product.title %></p>
+             
               </div>
 
         </div>
@@ -88,33 +93,7 @@
         </ul>
       </div>
 
-      <div class="imagenesRecomendados">
-        <div class="cajaImg">
-          <figure >
-            <img src="" alt="">
-            <figcaption></figcaption>
-          </figure>
-
-        </div>
-
-        <div class="cajaImg">
-          <img class="imgCajaRecomendado" src="" alt="">
-        </div>
-
-        <div class="cajaImg">
-          <img class="imgCajaRecomendado" src="" alt="">
-        </div>
-
-        <div class="cajaImg">
-          <img class="imgCajaRecomendado" src="" alt="">
-        </div>
-
-        <div class="cajaImg">
-          <img class="imgCajaRecomendado" src="" alt="">
-        </div>
-
-
-      </div>
+     
 
 </section>
     <!-- FIN RECIENTES -->
@@ -152,7 +131,7 @@
 
           <div class="CategoriaText">
             <li> 
-              <a href="/products/5" class="estilo"> Astronomía </a>
+              <a href="/products/5" class="estilo"> Astronomia </a>
             </li>
           </div>
 
@@ -163,7 +142,7 @@
             <li> <a href="products/7" class="estilo">Literatura</a></li>
           </div>
           <div class="CategoriaText">
-            <li> <a href="products/8" class="estilo"> Química </a></li>
+            <li> <a href="products/8" class="estilo"> Quimica </a></li>
           </div>
 
         </div> 

@@ -7,7 +7,9 @@ const mainRoutes = require ("./routes/main");
 const usersRoutes = require ("./routes/users");
 const methodOverride = require ("method-override");
 var session = require("express-session");
-const userLoggedMiddleware = require("./middlewares/userLoggedMiddleware")
+const userLoggedMiddleware = require("./middlewares/userLoggedMiddleware");
+const { cookie } = require("express-validator");
+const cookieParser = require("cookie-parser");
 
 app.use(express.urlencoded({ extended: false}));
 app.use(express.json());
@@ -21,6 +23,7 @@ app.use(session({
     saveUninitialized: false
 }));
 app.use(userLoggedMiddleware);
+app.use(cookieParser());
 
 // EJS Engine
 app.set('view engine', 'ejs');
