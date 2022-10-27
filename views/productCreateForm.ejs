@@ -16,25 +16,30 @@
         <form action="/products" method="POST" enctype="multipart/form-data">
             <div class="product-form-container">
                 <div class="form-container-label">
-                    <input type="text" id="title" class="form-input" name="title"  placeholder="TITULO DEL LIBRO">
+                    <input type="text" id="title" class="form-input" name="title"  placeholder="TITULO DEL LIBRO" value="<%= locals.oldData ? oldData.title : null %>">
+                    <% if (locals.errors && errors.title) { %>
+                        <div class="text-danger">
+                            <%= errors.title.msg %> 
+                        </div>
+                    <% } %>
                 </div>
             <div class="form-container-label">
-                    <input type="text" id="author" class="form-input" name="author" placeholder="AUTOR DEL LIBRO">
+                    <input type="text" id="author" class="form-input" name="author" placeholder="AUTOR DEL LIBRO" value="<%= locals.oldData ? oldData.author : null %>">
             </div>
             <div class="form-container-label">
-                <input type="text" id="editorial" class="form-input" name="editorial" placeholder="EDITORIAL">
+                <input type="text" id="editorial" class="form-input" name="editorial" placeholder="EDITORIAL" value="<%= locals.oldData ? oldData.editorial : null %>">
             </div>
             <div class="form-container-label">
-                <input type="text" id="origin" class="form-input" name="origin" placeholder="ORIGEN">
+                <input type="text" id="origin" class="form-input" name="origin" placeholder="ORIGEN" value="<%= locals.oldData ? oldData.origin : null %>">
             </div>
             <div class="form-container-label">
-                <input type="text" id="price" class="form-input" name="price" placeholder="PRECIO">
+                <input type="text" id="price" class="form-input" name="price" placeholder="PRECIO" value="<%= locals.oldData ? oldData.price : null %>">
             </div>
             <div class="form-container-label">
-                <input type="number" id="pages" class="form-input" name="pages" placeholder="NUMERO DE PAGINAS">
+                <input type="number" id="pages" class="form-input" name="pages" placeholder="NUMERO DE PAGINAS" value="<%= locals.oldData ? oldData.pages : null %>">
             </div>
             <div class="form-container-label">
-                <input type="date" id="published_date" class="form-input" name="published_date" placeholder="FECHA PUBLICACIÓN">
+                <input type="date" id="published_date" class="form-input" name="published_date" placeholder="FECHA PUBLICACIÓN" value="<%= locals.oldData ? oldData.published_date : null %>">
             </div>
             <div class="form-container-label">
                 <label for="categoria" class="form-label">SELECCIONE CATEGORIA</label>
@@ -54,7 +59,12 @@
                 </select>
             </div>
             <div class="form-container-label">
-                <textarea name="description" class="form-text" id="description" placeholder="DESCRIPCIÓN DEL LIBRO" style="width: 100%; border: 2px solid #464646;"></textarea>
+                <textarea name="description" class="form-text" id="description" placeholder="DESCRIPCIÓN DEL LIBRO" style="width: 100%; border: 2px solid #464646;" value="<%= locals.oldData ? oldData.description : null %>"></textarea>
+                <% if (locals.errors && errors.description) { %>
+                    <div class="text-danger">
+                        <%= errors.description.msg %> 
+                    </div>
+                <% } %>
             </div>
             <div>
                 <label for="image" class="form-label" style="font-size: 1.0em;
@@ -62,7 +72,13 @@
                 text-transform: uppercase;
                 display: flex;
                 margin: 2vw;">Imagen:</label>
-                <input type="file" name="image" id="image" class="form-input">
+                <input type="file" name="image" id="image" class="form-control <%= locals.errors && errors.image ? 'is-invalid' : null %>"
+                >
+                <% if (locals.errors && errors.image) { %>
+                    <div class="text-danger">
+                        <%= errors.image.msg %>
+                    </div>
+                <% } %>
             </div>
             <div class="form-container-label">
                 <button type="submit" class="boton1">Guardar producto</button>

@@ -1,6 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 const multer = require('multer');
+const { validationResult }  = require('express-validator');
 const productsFilePath = path.join(__dirname, '../data/productsDataBase.json');
 var products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
 
@@ -9,9 +10,9 @@ const toThousand = n => n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
 const productsController = {
     productCart: (req, res) => {
         res.render ('productCart'); // como parametros va el nombre del archivo dentro views
-       },
+},
 
-   productDetail: (req, res) => {
+    productDetail: (req, res) => {
     let id = req.params.id
     let product = products.find(product => product.id == id)
     res.render('productDetail', {
@@ -19,17 +20,41 @@ const productsController = {
         toThousand
     })
 },
-      category: (req, res) => {
+    category: (req, res) => {
       let category = req.params.category 
       let product = products.filter(product => product.category == category )
       res.render('category', {
             product,
           toThousand
       })
-  },
+},
     create: (req, res) => {
         res.render ('productCreateForm'); // como parametros va el nombre del archivo dentro views
        },
+    upload: (req, res) => {
+		const resultValidation = validationResult(req);
+        if (resultValidation.errors.length > 0) {
+         return res.render('productCreateForm', {
+            errors: resultValidation.mapped(),
+            oldData: req.body
+          })
+        let image
+		if(req.files[0] != undefined){
+			image = req.files[0].filename
+		} else {
+			image = 'default-image.jpg'
+		}
+		let newProduct = {
+			id: products[products.length - 1].id + 1,
+			...req.body,
+			image: image
+		};
+		products.push(newProduct)
+		fs.writeFileSync(productsFilePath, JSON.stringify(products, null, ' '));
+		res.redirect('/products');
+    }
+	},   
+ 
     edit: function(req,res) {
         let id = req.params.id;
         let product = products.find(product => product.id == id)
@@ -66,23 +91,7 @@ const productsController = {
 
     },
 
-
-    upload: (req, res) => {
-		let image
-		if(req.files[0] != undefined){
-			image = req.files[0].filename
-		} else {
-			image = 'default-image.jpg'
-		}
-		let newProduct = {
-			id: products[products.length - 1].id + 1,
-			...req.body,
-			image: image
-		};
-		products.push(newProduct)
-		fs.writeFileSync(productsFilePath, JSON.stringify(products, null, ' '));
-		res.redirect('/products');
-	},
+  
     store: (req, res) => {
         res.render('products', {
             products, toThousand
