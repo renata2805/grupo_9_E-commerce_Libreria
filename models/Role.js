@@ -1,30 +1,32 @@
+const { DATEONLY } = require("sequelize");
+
 module.exports = (sequelize, dataTypes) => {
-    let alias = 'Category'; 
+    let alias = 'Role'; 
     let cols = {
         id: {
-            type: dataTypes.BIGINT(10).UNSIGNED,
+            type: dataTypes.INT(10).UNSIGNED,
             primaryKey: true,
             allowNull: false,
             autoIncrement: true
         },
-        category: {
+        role: {
             type: dataTypes.STRING(255),
             allowNull: false
-        },
+        }
     };
     let config = {
-        tableName: "categories",
+        tableName: "roles",
         timestamps: false,
         // createdAt: 'created_at',
         // updatedAt: 'updated_at',
         // deletedAt: false
     }
-    const Category = sequelize.define(alias,cols,config);
-    Category.associate = function (models) {
-        Category.belongsToMany(models.Product, { 
-            as: "products",
-            foreignKey: "category_id"
+    const Role = sequelize.define(alias,cols,config);
+    Role.associate = function (models) {
+        Role.belongsToMany(models.User, { 
+            as: "users",
+            foreignKey: "role_id"
         })
-    }
-    return Category
+};
+    return Status
 };

@@ -56,10 +56,11 @@ module.exports = (sequelize, dataTypes) => {
         status_id: dataTypes.INT,
     };
     let config = {
-        timestamps: true,
-        createdAt: 'created_at',
-        updatedAt: 'updated_at',
-        deletedAt: false
+        tableName: "products",
+        timestamps: false,
+        // createdAt: 'created_at',
+        // updatedAt: 'updated_at',
+        // deletedAt: false
     }
     const Product = sequelize.define(alias,cols,config);
     Product.associate = function (models) {

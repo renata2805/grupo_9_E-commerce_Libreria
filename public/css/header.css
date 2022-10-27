@@ -35,7 +35,7 @@
     justify-content: space-between;
     padding: 14px 20px;
     margin: auto;
-    color: #f1f1f1;
+    color: #3452b2;
    
 }
 
@@ -43,7 +43,7 @@
     width: 50px;
     height: 50px;
     background: var(--bs-azulClaro);
-    color: #fff;
+    color: #3452b2;
     text-align: center;
     line-height: 50px;
     font-size: 16px;
@@ -83,7 +83,7 @@
 }
 
 .navigation-menu a {
-    color: #fff;
+    color: #3452b2;
     font-size: 40px;
     font-weight: 700;
     position: relative;
@@ -164,4 +164,12 @@
     width: 2em;
     justify-content: center;
     align-items: center;
+}
+
+.list__button a{
+    color:#6486f2;
+}
+
+.list__button--click a{
+    color:#6486f2;
 }
