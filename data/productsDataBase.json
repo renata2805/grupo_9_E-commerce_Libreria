@@ -431,19 +431,5 @@
   "price": 6.19,
   "status": "novedades",
   "image": "100DiasDeSumasYRestas.png"
- },
- {
-  "id": 31,
-  "title": "Libro Modificado para Pruebas",
-  "author": "Renata S",
-  "editorial": "La mia (modificada)",
-  "origin": "Argentina",
-  "pages": "200",
-  "published_date": "2022-10-29",
-  "description": "A este libro lo estoy modificando para probar el CRUD de productos",
-  "categoria": "Literatura",
-  "price": "2",
-  "status": "recomendados",
-  "image": "image-1667093679948.png"
  }
 ]

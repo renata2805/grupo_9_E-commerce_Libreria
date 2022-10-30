@@ -25,12 +25,17 @@ router.get('/productCreateForm', productsController.create);//OK
 //Procesar la creación del producto
 router.post('/', upload.single("image"), productsValidation, productsController.createProcess); //OK
 
-//Edición de Productos
-router.get('/edit/:id', productsController.editProcess); //OK
+//Formulario de edición de Productos
+router.get('/edit/:id', productsController.edit); //OK
 
-router.patch('/edit/:id', upload.any(),productsController.update); //OK
+//Procesar la edición del producto
+router.patch('/edit/:id', upload.any(),productsController.editProcess); //OK
 
-router.delete("/delete/:id", productsController.delete); //OK
+//Formulario de eliminación de Productos
+router.get('/delete/:id', productsController.delete)
+
+//Proceso de eliminación de Productos
+router.delete("/delete/:id", productsController.deleteProcess); //OK
 
 
 router.get('/', productsController.store);

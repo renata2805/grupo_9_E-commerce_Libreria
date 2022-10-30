@@ -111,11 +111,17 @@ const productsController = {
             products, toThousand
         });
         },
-    delete: (req, res) => {
-            let id = req.params.id;
-            let finalProducts = products.filter(product => product.id != id);
-            fs.writeFileSync(productsFilePath, JSON.stringify(finalProducts, null, ' '));
-            res.redirect('/products');
+    delete: (req,res) => {
+        let id = req.params.id;
+        let product = products.find(product => product.id == id)
+        res.render("productDeletionForm", {product});
+    },    
+
+    deleteProcess: (req, res) => {
+        let id = req.params.id;
+        let finalProducts = products.filter(product => product.id != id);
+        fs.writeFileSync(productsFilePath, JSON.stringify(finalProducts, null, ' '));
+        res.redirect('/products');
         }
     } 
 
