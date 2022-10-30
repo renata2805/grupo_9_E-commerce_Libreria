@@ -47,7 +47,7 @@ const usersController = {
         res.render ('login'); // como parametros va el nombre del archivo dentro views
       },
 
-      loginProcess: (req, res) => {
+    loginProcess: (req, res) => {
         let userToLogin = User.findByField('email', req.body.email);
         
         if(userToLogin) {
@@ -60,7 +60,7 @@ const usersController = {
               res.cookie('userEmail', req.body.email, { maxAge: (1000 * 60) * 60 })
             }
     
-            return res.redirect('/profile');
+            return res.redirect('/');
           } 
           return res.render('login', {
             errors: {
@@ -81,7 +81,7 @@ const usersController = {
       },
 
       profile: (req, res) => {
-        return res.render('profile', {user: req.session.userLogged})
+        return res.render('index', {user: req.session.userLogged})
       },
         
     edit: function(req,res) {
@@ -91,23 +91,7 @@ const usersController = {
 
       res.render("userEdit", {userToEdit: userToEdit});
     },
-    upload:  (req, res) => {
-      let imagen
-      if(req.files[0] != undefined){
-        imagen = req.files[0].filename
-      } else {
-        imagen = 'default-image.jpg'
-      }
-      let newUser = {
-        id: users[users.length - 1].id + 1,
-        ...req.body,
-        imagen: imagen
-      };
-      users.push(newUser)
-      fs.writeFileSync(usersFilePath, JSON.stringify(users, null, ' '));
-      res.redirect('index');
-    },
-
+    
     logout: (req,res) => {
       req.session.destroy();
       return res.redirect("/");
