@@ -4,12 +4,14 @@ const multer = require('multer');
 const { validationResult }  = require('express-validator');
 const bcryptjs = require('bcryptjs');
 const User = require('../models/User');
+const usersFilePath = path.join(__dirname, '../data/usersDataBase.json');
+var users = JSON.parse(fs.readFileSync(usersFilePath, 'utf-8'));
 
 const usersController = {
     register: (req, res) => {
         res.render ('register'); //  como parametros va el nombre del archivo dentro views
        },
-    processRegister: (req, res) => {
+    registerProcess: (req, res) => {
         const resultValidation = validationResult(req);
         if (resultValidation.errors.length > 0) {
          return res.render('register', {
@@ -41,8 +43,9 @@ const usersController = {
         }
         let userCreated = User.create(userToCreate);
         
-        return res.redirect('/login');
-    },
+        return res.redirect('/users/login');
+      },
+    
     login: (req, res) => {
         res.render ('login'); // como parametros va el nombre del archivo dentro views
       },
@@ -84,17 +87,45 @@ const usersController = {
         return res.render('index', {user: req.session.userLogged})
       },
         
-    edit: function(req,res) {
-      let idUser = req.params.idUser;
+      edit: function(req,res) {
+        let id = req.params.id;
+        let user = users.find(user => user.id == id)
+        res.render("userEdit", {user});
+      },
 
-      let userToEdit = users[idUser] 
+      editProcess: (req, res) => {
+        let id = req.params.id;
+		    let userToEdit = users.find(user => user.id == id)
+		    
+		  userToEdit = {
+			  id: userToEdit.id,
+        nombre: req.body.nombre,
+        tel: req.body.tel,
+        email: req.body.email,
+        password: req.body.password,
+      };
+		
+		let newUser = users.map(user => {
+			if (user.id == userToEdit.id) {
+				return user = {...userToEdit};
+			}
+			return user;
+		})
 
-      res.render("userEdit", {userToEdit: userToEdit});
-    },
+		  fs.writeFileSync(usersFilePath, JSON.stringify(newUser, null, ' '));
+		  res.redirect('/');
+      },
     
-    logout: (req,res) => {
+      delete: (req,res) => {
+        let id = req.params.id;
+        let finalUsers = users.filter(user => user.id != id);
+        fs.writeFileSync(usersFilePath, JSON.stringify(finalUsers, null, ' '));
+        res.redirect('/');
+      },
+
+      logout: (req,res) => {
       req.session.destroy();
-      return res.redirect("/");
+      return res.redirect('/');
     }
 }
 

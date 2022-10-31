@@ -9,29 +9,29 @@
         <div class="logoBox">
             <a href="./index.html"><img class="logo" src="/images/favicon.svg" alt=""></a>
         </div>
-        <form action="/users/edit?_method=PUT" method="POST">
+        <form action="<%=user.id%>?_method=PATCH" method="POST">
             <div class="inputBox">
-                <input type="text" name="nombre" id="nombre" required="required" value="<%= userToEdit.nombre%>">
+                <input type="text" name="nombre" id="nombre" required="required" value="<%= user.nombre%>">
                 
             </div>
 
             <div class="inputBox">
-                <input type="tel" name="tel" id="tel" required="required" value="<%=userToEdit.telefono%>">
+                <input type="tel" name="tel" id="tel" required="required" value="<%=user.tel%>">
                 
             </div>
 
             <div class="inputBox">
-                <input type="email" name="email" id="email" required="required" value="<%=userToEdit.email%>">
+                <input type="email" name="email" id="email" required="required" value="<%=user.email%>">
                 
             </div>
 
             <div class="inputBox">
-                <input type="password" name="contraseña" id="contraseña" required="required" value="<%=userToEdit.contraseña%>">
+                <input type="password" name="password" id="password" required="required" value="<%=user.password%>">
                 
             </div>
 
             <div class="inputBox">
-                <input type="password" name="confirmarContraseña" id="confirmarContraseña" required="required" value="<%=userToEdit.contraseña%>">
+                <input type="password" name="confirmPassword" id="confirmPassword" required="required" value="<%=user.password%>">
                 
             </div>
 
@@ -42,7 +42,7 @@
 
         </form>
     </div>
-    <form method="POST" action="/users/delete/<%= userToEdit.id%>?_method=DELETE">
+    <form method="POST" action="/users/delete/<%= user.id%>?_method=DELETE">
         <div> <button typ="submit" class="eliminar">Eliminar Usuario</button></div>
     </form>
 

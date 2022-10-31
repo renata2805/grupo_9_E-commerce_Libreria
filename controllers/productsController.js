@@ -32,6 +32,7 @@ const productsController = {
     create: (req, res) => {
         res.render ('productCreateForm'); // como parametros va el nombre del archivo dentro views
        },
+    
     createProcess: (req, res) => {
 		const resultValidation = validationResult(req);
         if (resultValidation.errors.length > 0) {
@@ -102,15 +103,9 @@ const productsController = {
 
 		fs.writeFileSync(productsFilePath, JSON.stringify(newProducts, null, ' '));
 		res.redirect('/products');
-
     },
 
-  
-    store: (req, res) => {
-        res.render('products', {
-            products, toThousand
-        });
-        },
+     
     delete: (req,res) => {
         let id = req.params.id;
         let product = products.find(product => product.id == id)
@@ -122,7 +117,13 @@ const productsController = {
         let finalProducts = products.filter(product => product.id != id);
         fs.writeFileSync(productsFilePath, JSON.stringify(finalProducts, null, ' '));
         res.redirect('/products');
-        }
+        },
+
+    store: (req, res) => {
+            res.render('products', {
+                products, toThousand
+            });
+            }    
     } 
 
 
