@@ -6,6 +6,7 @@ module.exports = {
       "host": "127.0.0.1",
       "dialect": "mysql",
       "operatorAliases" : false
+      //falta la conexion al puerto 3306
     },
     "test": {
       "username": "root",
