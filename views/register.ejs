@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <%- include('./partials/head') %>
-<body>
+  <body>
     <div>
         <div class="logoBox">
             <a href="./index.ejs"><img class="logo" src="images/favicon.svg" alt=""></a>
@@ -51,6 +51,7 @@
                 <input 
                 type="password" 
                 name="password" 
+                id="password"
                 class="form-input <%= locals.errors && errors.password? 'is-invalid' : null %>">
                 <% if (locals.errors && errors.password) { %>
                     <div class="text-danger">
@@ -64,6 +65,7 @@
                 <input 
                 type="password" 
                 name="confirmPassword" 
+                id="confirmPassword"
                 class="form-input <%= locals.errors && errors.password? 'is-invalid' : null %>">
                 <% if (locals.errors && errors.password) { %>
                     <div class="text-danger">
@@ -113,7 +115,7 @@
         </form>
     </div>
 
-
+    <script src="../js/script.js"></script>
 
 </body>
 </html>

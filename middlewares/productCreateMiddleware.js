@@ -7,8 +7,7 @@ const productValidations = [
 		.notEmpty().withMessage('Debes agregar una descripción').isLength(20).withMessage("La descripción debe contener al menos 20 caracteres"),
 	body('image').custom((value, { req }) => {
 		let file = req.file;
-		console.log(req.file)
-		let acceptedExtensions = ['.jpg', '.JPG', '.JPEG','.png', 'PNG', '.gif'];
+		let acceptedExtensions = ['.JPG', '.JPEG', 'PNG', '.GIF'];
 		if (!file) {
 			throw new Error('Debes subir una imagen');
 		} else {
