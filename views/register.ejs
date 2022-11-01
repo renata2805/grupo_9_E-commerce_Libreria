@@ -3,10 +3,12 @@
   <%- include('./partials/head') %>
   <body>
     <div>
+        <ul class="errores"></ul>
+        <section id="formulario">
         <div class="logoBox">
             <a href="./index.ejs"><img class="logo" src="images/favicon.svg" alt=""></a>
         </div>
-        <form method="POST" action="/users/register" enctype="multipart/form-data">
+        <form method="POST" action="/users/register" enctype="multipart/form-data" class="form">
             <div class="inputBox">
                 <input 
                 type="text" 
@@ -113,9 +115,10 @@
 
 
         </form>
+    </section>
     </div>
 
-    <script src="../js/script.js"></script>
+    <script src="/public/js/registerScript.js"></script>
 
 </body>
 </html>

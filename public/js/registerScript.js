@@ -1,10 +1,12 @@
-window.addEventListener('load', function(){
-    let form = document.querySelector('.form');
+window.onload = function(){
+    
+    
+    let formulario = document.querySelector('#formulario');
+    let form = document.querySelector('.form')
 
-    form.name.focus();
     form.addEventListener('submit', function(event) {
         
-        //Array de errores
+        //Array de errores y selectores
 
         let errors =[];
 
@@ -37,7 +39,6 @@ window.addEventListener('load', function(){
             form.password.focus();
         }
 
-       
         //Validaciones de la contraseña
         if(password.value == '') {
             errors.push("Debes seleccionar una contraseña")
@@ -47,12 +48,26 @@ window.addEventListener('load', function(){
         }
         
         //Validaciones de la imagen
-        
-        event.preventDefault();
 
-        
+        //Cri cri
+
+        //Control de errores
+        console.log(errors)
+        if (errors.length > 0) {
+            event.preventDefault();
+            let ulErrors = document.querySelector('.errores');
+            ulErrors.classList.add('alert-warning');
+            ulErrors.innerHTML = '';
+            for (let i = 0; i < errors.length; i++) {
+                ulErrors.innerHTML += `<li >  ${errors[i]} </li>`;
+            };
+        } else {
+            alert('La validación fue exitosa')
+            form.submit();
+        }
+                        
     })
-})
+}
 
 
 
