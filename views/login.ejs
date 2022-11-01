@@ -2,11 +2,11 @@
 <html lang="en">
     <%- include('./partials/head') %>
 <body>
-    <div>
+    <div id="formulario">
         <div class="logoBox">
             <a href="/"><img class="logo" src="/images/favicon.svg" alt=""></a>
         </div>
-        <form action="/users/login" method="post">
+        <form action="/users/login" method="post" class="form">
             <div class="inputBox">
                 <input type="text" id="email" name="email" required="required">
                 <% if (locals.errors && errors.email) { %>
@@ -51,6 +51,6 @@
 
         </form>
     </div>
-
+    <script src="/js/login.js"></script>
 </body>
 </html>

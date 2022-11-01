@@ -2,9 +2,9 @@
 <html lang="en">
   <%- include('./partials/head') %>
   <body>
-    <header class="menuM">
+  
       <%- include('./partials/header') %>
-  </header>
+
 
     <div class="principal">
         <div class="">
@@ -13,7 +13,14 @@
     </div>
    
                  <section id="formulario" >
-        <article class="mostrarFormulario">
+        <article class="mostrarFormulario">   
+            <!-- agregar css de mostrarFormulario -->
+
+            <!--  .formulario, .mostrarFormulario{
+  margin: auto;
+  width: 40%;
+  border-radius: 10px;
+}      -->
         <ul class="errores"></ul>
     <div class="title-form-create">
         <form action="/products" method="POST" enctype="multipart/form-data" class="form">
