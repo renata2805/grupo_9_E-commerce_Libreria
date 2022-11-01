@@ -83,10 +83,6 @@ const usersController = {
         });
       },
 
-      profile: (req, res) => {
-        return res.render('index', {user: req.session.userLogged})
-      },
-        
       edit: function(req,res) {
         let id = req.params.id;
         let user = users.find(user => user.id == id)
@@ -126,6 +122,10 @@ const usersController = {
       logout: (req,res) => {
       req.session.destroy();
       return res.redirect('/');
+    },
+
+      profile: (req, res) => {
+      return res.render('index', {user: req.session.userLogged})
     }
 }
 

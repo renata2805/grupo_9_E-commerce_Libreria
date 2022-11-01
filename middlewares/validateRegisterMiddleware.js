@@ -2,12 +2,17 @@ const path = require('path');
 const { body } = require('express-validator');
 
 const userValidations = [
-	body('nombre').notEmpty().withMessage('Debes escribir un nombre'),
+	body('nombre')
+		.notEmpty().withMessage('Debes escribir un nombre').bail()
+		.isLength(2).withMessage("Tu nombre debe tener al menos 2 caracteres"),
 	body('email')
 		.notEmpty().withMessage('Debes escribir un correo electrónico').bail()
 		.isEmail().withMessage('Debes escribir un formato de email válido'),
-	body('password').notEmpty().withMessage('Debes escribir una contraseña'),
-	body('imagen').custom((value, { req }) => {
+	body('password')
+		.notEmpty().withMessage('Debes escribir una contraseña').bail()
+		.isLength(8).withMessage("La contraseña debe tener al menos 8 caracteres"),
+	body('imagen')
+		.custom((value, { req }) => {
 		let file = req.file;
 		let acceptedExtensions = ['.jpg', '.JPG','.png', '.gif'];
 		if (!file) {
@@ -18,7 +23,6 @@ const userValidations = [
 				throw new Error(`Las extensiones de archivo permitidas son ${acceptedExtensions.join(', ')}`);
 			}
 		}
-
 		return true;
 	})
 ]

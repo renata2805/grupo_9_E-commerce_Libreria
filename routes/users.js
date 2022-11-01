@@ -33,11 +33,11 @@ router.get('/profile', authMiddleware, usersController.profile);
 //Logout
 router.get('/logout', usersController.logout);
 
-//Edición de datos de usuario
+//Edición de datos de usuario y Eliminación
 router.get('/edit/:id', usersController.edit);
 
 router.patch('/edit/:id', usersController.editProcess);
 
 router.delete('/delete/:id', usersController.delete)
 
- module.exports= router;
+module.exports= router;
