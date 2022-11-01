@@ -11,9 +11,12 @@
             <h2 class="title-form-create">Crear producto</h2>
         </div>
     </div>
-    
+   
+                 <section id="formulario" >
+        <article class="mostrarFormulario">
+        <ul class="errores"></ul>
     <div class="title-form-create">
-        <form action="/products" method="POST" enctype="multipart/form-data">
+        <form action="/products" method="POST" enctype="multipart/form-data" class="form">
             <div class="product-form-container">
                 <div class="form-container-label">
                     <input type="text" id="title" class="form-input" name="title"  placeholder="TITULO DEL LIBRO" value="<%= locals.oldData ? oldData.title : null %>">
@@ -85,6 +88,8 @@
             </div>
             </div>
         </form>
+    </article>
+                 </section>
     </div>
 
 
@@ -92,6 +97,7 @@
         <%- include('./partials/footer') %>
     </footer>
 
+    <script src="/js/validacion-front.js"></script>
 </body>
 
 
