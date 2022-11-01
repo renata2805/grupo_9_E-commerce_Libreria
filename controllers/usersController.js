@@ -4,12 +4,14 @@ const multer = require('multer');
 const { validationResult }  = require('express-validator');
 const bcryptjs = require('bcryptjs');
 const User = require('../models/User');
+const usersFilePath = path.join(__dirname, '../data/usersDataBase.json');
+var users = JSON.parse(fs.readFileSync(usersFilePath, 'utf-8'));
 
 const usersController = {
     register: (req, res) => {
         res.render ('register'); //  como parametros va el nombre del archivo dentro views
        },
-    processRegister: (req, res) => {
+    registerProcess: (req, res) => {
         const resultValidation = validationResult(req);
         if (resultValidation.errors.length > 0) {
          return res.render('register', {
@@ -41,13 +43,14 @@ const usersController = {
         }
         let userCreated = User.create(userToCreate);
         
-        return res.redirect('/login');
-    },
+        return res.redirect('/users/login');
+      },
+    
     login: (req, res) => {
         res.render ('login'); // como parametros va el nombre del archivo dentro views
       },
 
-      loginProcess: (req, res) => {
+    loginProcess: (req, res) => {
         let userToLogin = User.findByField('email', req.body.email);
         
         if(userToLogin) {
@@ -60,7 +63,7 @@ const usersController = {
               res.cookie('userEmail', req.body.email, { maxAge: (1000 * 60) * 60 })
             }
     
-            return res.redirect('/profile');
+            return res.redirect('/');
           } 
           return res.render('login', {
             errors: {
@@ -81,36 +84,48 @@ const usersController = {
       },
 
       profile: (req, res) => {
-        return res.render('profile', {user: req.session.userLogged})
+        return res.render('index', {user: req.session.userLogged})
       },
         
-    edit: function(req,res) {
-      let idUser = req.params.idUser;
+      edit: function(req,res) {
+        let id = req.params.id;
+        let user = users.find(user => user.id == id)
+        res.render("userEdit", {user});
+      },
 
-      let userToEdit = users[idUser] 
-
-      res.render("userEdit", {userToEdit: userToEdit});
-    },
-    upload:  (req, res) => {
-      let imagen
-      if(req.files[0] != undefined){
-        imagen = req.files[0].filename
-      } else {
-        imagen = 'default-image.jpg'
-      }
-      let newUser = {
-        id: users[users.length - 1].id + 1,
-        ...req.body,
-        imagen: imagen
+      editProcess: (req, res) => {
+        let id = req.params.id;
+		    let userToEdit = users.find(user => user.id == id)
+		    
+		  userToEdit = {
+			  id: userToEdit.id,
+        nombre: req.body.nombre,
+        tel: req.body.tel,
+        email: req.body.email,
+        password: req.body.password,
       };
-      users.push(newUser)
-      fs.writeFileSync(usersFilePath, JSON.stringify(users, null, ' '));
-      res.redirect('index');
-    },
+		
+		let newUser = users.map(user => {
+			if (user.id == userToEdit.id) {
+				return user = {...userToEdit};
+			}
+			return user;
+		})
 
-    logout: (req,res) => {
+		  fs.writeFileSync(usersFilePath, JSON.stringify(newUser, null, ' '));
+		  res.redirect('/');
+      },
+    
+      delete: (req,res) => {
+        let id = req.params.id;
+        let finalUsers = users.filter(user => user.id != id);
+        fs.writeFileSync(usersFilePath, JSON.stringify(finalUsers, null, ' '));
+        res.redirect('/');
+      },
+
+      logout: (req,res) => {
       req.session.destroy();
-      return res.redirect("/");
+      return res.redirect('/');
     }
 }
 

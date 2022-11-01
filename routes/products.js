@@ -4,31 +4,38 @@ const path = require("path");
 const multer = require('multer');
 const { body } = require("express-validator");
 
-//Middlewares
-
-const productsValidation= require("../middlewares/productCreateMiddleware")
-
-const storage = multer.diskStorage({
-    destination:function(req,file,cb){
-        cb(null, './public/images/products')
-    },
-    filename: function(req,file,cb){
-        cb(null, file.fieldname + '-' + Date.now() + path.extname(file.originalname))
-    }
-})
-const upload = multer({storage: storage})
-
 //Controlador
 const productsController= require('../controllers/productsController');
 
-router.get('/productCart', productsController.productCart);
-router.get('/productDetail/:id', productsController.productDetail); //OK
-router.get('/productCreateForm', productsController.create);//OK
-router.post('/', upload.any(), productsValidation, productsController.upload); //OK
-router.get('/edit/:id', productsController.edit); //OK
-router.patch('/edit/:id', upload.any(),productsController.update); //OK
+//Middlewares
 
-router.delete("/delete/:id", productsController.delete); //OK
+const upload = require('../middlewares/productsMulterMiddleware')
+const productsValidation= require("../middlewares/productCreateMiddleware")
+
+
+//Carrito de compras
+router.get('/productCart', productsController.productCart);
+
+//Product Detail
+router.get('/productDetail/:id', productsController.productDetail); //OK
+
+//Formulario de creación de productos
+router.get('/productCreateForm', productsController.create);//OK
+
+//Procesar la creación del producto
+router.post('/', upload.single("image"), productsValidation, productsController.createProcess); //OK
+
+//Formulario de edición de Productos
+router.get('/edit/:id', productsController.edit); //OK
+
+//Procesar la edición del producto
+router.patch('/edit/:id', upload.any(),productsController.editProcess); //OK
+
+//Formulario de eliminación de Productos
+router.get('/delete/:id', productsController.delete)
+
+//Proceso de eliminación de Productos
+router.delete("/delete/:id", productsController.deleteProcess); //OK
 
 
 router.get('/', productsController.store);

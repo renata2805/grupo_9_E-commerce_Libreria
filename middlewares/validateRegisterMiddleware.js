@@ -1,7 +1,7 @@
 const path = require('path');
 const { body } = require('express-validator');
 
-const validations = [
+const userValidations = [
 	body('nombre').notEmpty().withMessage('Debes escribir un nombre'),
 	body('email')
 		.notEmpty().withMessage('Debes escribir un correo electrónico').bail()
@@ -23,4 +23,4 @@ const validations = [
 	})
 ]
 
-module.exports = validations
+module.exports = userValidations

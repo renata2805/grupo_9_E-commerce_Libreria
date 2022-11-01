@@ -9,8 +9,8 @@ const usersController= require('../controllers/usersController');
 
 //Middlewares
 
-const upload = require('../middlewares/multerMiddleware');
-const validations = require('../middlewares/validateRegisterMiddleware');
+const upload = require('../middlewares/usersMulterMiddleware');
+const userValidations = require('../middlewares/validateRegisterMiddleware');
 const guestMiddleware = require('../middlewares/guestMiddleware');
 const authMiddleware = require('../middlewares/authMiddleware');
 
@@ -19,28 +19,25 @@ const authMiddleware = require('../middlewares/authMiddleware');
 router.get ('/register', guestMiddleware, usersController.register);
 
 //Procesar el Registro
-router.post('/register', upload.single("imagen"), validations, usersController.processRegister);
+router.post('/register', upload.single("imagen"), userValidations, usersController.registerProcess);
 
 //Formulario de Login
-router.get('/login/', guestMiddleware, usersController.login);
+router.get('/login', guestMiddleware, usersController.login);
 
 //Procesar el Login
-router.post('/login/', usersController.loginProcess);
+router.post('/login', usersController.loginProcess);
 
 // Perfil de Usuario
 router.get('/profile', authMiddleware, usersController.profile);
 
 //Logout
-router.get("/logout", usersController.logout);
+router.get('/logout', usersController.logout);
 
-router.get("/users/edit/:idUser", usersController.edit);
+//Edición de datos de usuario
+router.get('/edit/:id', usersController.edit);
 
-router.put("/users/edit", function (req,res) {
-    res.send("¡Modificación exitosa!")
-});
+router.patch('/edit/:id', usersController.editProcess);
 
-router.delete("/users/delete/:idUser", function (req,res){
-    res.send("¡Eliminación exitosa!")
-})
+router.delete('/delete/:id', usersController.delete)
 
  module.exports= router;

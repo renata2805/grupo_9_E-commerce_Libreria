@@ -6,7 +6,7 @@
         <div class="logoBox">
             <a href="/"><img class="logo" src="/images/favicon.svg" alt=""></a>
         </div>
-        <form action="/login" method="post">
+        <form action="/users/login" method="post">
             <div class="inputBox">
                 <input type="text" id="email" name="email" required="required">
                 <% if (locals.errors && errors.email) { %>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/svg" href="/images/favicon.svg"/>
+        <link href="/css/styles.css" rel="stylesheet" type="text/css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+        <title>Eliminar producto</title>
+    </head>
+<body>
+
+    <header>
+        <%- include('./partials/header') %>
+    </header>
+
+    <div class="principal">
+        <div class="row">
+            <h2 class="title-form-create">Estás eliminando el libro: <%=product.title%></h2>
+        </div>
+    </div>
+    <div class="title-form-create">
+        <form method="POST" action="<%=product.id%>?_method=DELETE" enctype="multipart/form-data">
+            <div class="product-form-container">
+                <div class="form-container-label">
+                    <label for="titulo" class="form-label">Titulo del Libro:</label>
+                    <input type="text" id="title" class="form-input" name="title" value="<%=product.title%>">
+                </div>
+            <div class="form-container-label">
+                    <label for="autor" class="form-label">Autor del Libro:</label>
+                    <input type="text" id="author" class="form-input" name="author" value="<%=product.author%>">
+            </div>
+            <div class="form-container-label">
+                <label for="editorial" class="form-label">Editorial:</label>
+                <input type="text" id="editorial" class="form-input" name="editorial" value="<%=product.editorial%>">
+            </div>
+            <div class="form-container-label">
+                <label for="origen" class="form-label">Origen:</label>
+                <input type="text" id="origin" class="form-input" name="origin"  value="<%=product.origin%>">
+            </div>
+            <div class="form-container-label">
+                <label for="numero de paginas" class="form-label">Numero de páginas:</label>
+                <input type="text" id="pages" class="form-input" name="pages" value="<%=product.pages%>">
+            </div>
+            <div class="form-container-label">
+                <label for="fecha-publicacion" class="form-label">Fecha de publicación:</label>
+                <input type="text" id="published_date" class="form-input" name="published_date" value="<%=product.published_date%>">
+            </div>
+        </div>
+        
+            <div class="form-container-label">
+                <button type="submit" class="boton1">Eliminar libro</button>
+            </div>
+    </div>
+        </form>
+    </div>
+</form>
+</div>
+
+    <footer>
+        <%- include('./partials/footer') %>
+    </footer>
+
+</body>
+
+
+</html>
