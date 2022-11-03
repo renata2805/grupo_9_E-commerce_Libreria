@@ -97,7 +97,7 @@ text-decoration: none;
  .imagenesRecomendados{ 
     width: 100%;
     display: flex;
-    background-color: #616161;
+   
     flex-wrap: wrap;
     justify-content: center;
     
@@ -107,12 +107,30 @@ text-decoration: none;
     /* display: flex; */
     margin: 50px;
     width: 15%;
+    box-shadow: 0px, 1px, 10px, rgba(0,0,0,0.2);
+    cursor: default;
+    transition: all 3s ease; 
+    overflow: hidden;
+   
+   
+   
+
     
     /* background-color: #ff7700; */
 }
 
+.cajaImg:hover{
+    box-shadow: 5px, 5px, 20px, rgba(0,0,0,0.4);
+    transform: translateY(-3%);
+
+}
+
+
+
 .cajaImg img{
     border-radius: 30px;
+    
+   
 }
 
 .cajaImg h2{
