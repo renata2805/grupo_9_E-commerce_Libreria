@@ -90,7 +90,7 @@ text-decoration: none;
 .menu li a:hover {
     color: var(--bs-naranja);
     border-bottom: #ff7700 solid 2px;
-    transition: 0.2s;
+    transition: 0.5s;
 
 }
 
