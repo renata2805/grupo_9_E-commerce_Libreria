@@ -32,10 +32,13 @@ body {
 .productbox {
     display: flex;
     margin: 50px;
-    width: 20%;
-    background-color: #ff7700;
+    width: 15%;
+   
     
 }
+
+
+
 
 .productbox2{
     /* margin: 50px;
@@ -46,6 +49,20 @@ body {
     align-items: center;
     flex-direction: column;
 }
+.productbox2 img{
+    border-radius: 30px;
+    
+   
+}
+.productbox2 h6{
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    margin: 30px; 
+    font-size: 20px; 
+    color:#040615
+}
+
 
 .imgCajaRecomendado{
     width: 100%;
