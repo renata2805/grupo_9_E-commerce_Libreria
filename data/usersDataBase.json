@@ -54,5 +54,14 @@
   "password": "$2a$10$TPI2GyN9ercFiUmQYZlfjevf1c8skbPP/MEhz3Zk.7GFqeaXmhN4m",
   "imagen": "imagen-1667439098520.png",
   "categoria": 0
+ },
+ {
+  "id": 8,
+  "nombre": "Sebastian",
+  "tel": "44444",
+  "email": "diaz.sebastian1988@bexpress.com",
+  "password": "$2a$10$AQbSC.d4KL7hVCtbMhBWB.gPz4yzjLU82W66IEfTyxDxJ7ktdiZSW",
+  "imagen": "imagen-1667483102814.jpg",
+  "categoria": 0
  }
 ]

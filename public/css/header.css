@@ -46,13 +46,10 @@ nav.menuIzquierdo ul li a, nav.menuDerecho ul li a {
 
 }
 
-nav.menuIzquierdo ul li a:hover, nav.menuDerecho ul li a:hover {
-    /* text-decoration: underline; */
-    color: black;  
-    background-color: #ff7700;
+
     
 
-}
+
 
 
 
