@@ -54,10 +54,6 @@ nav.menuIzquierdo ul li a:hover, nav.menuDerecho ul li a:hover {
 
 }
 
-
-
-
-
 img.pequeña{
     width: 80px;
     height: 80px;
@@ -135,6 +131,15 @@ nav.menuIzquierdo ul li a, nav.menuDerecho ul li a {
     
 
 }
+
+.imgUser {
+    display: flex;
+    width: 65px;
+    height: 65px;
+    border-color: #040615;
+    border-style: double;
+}
+
 
 
 

@@ -28,8 +28,8 @@ window.onload = function(){
         };
 
         //Validaciones del email
-        let regEmail = /\S+@\S+\.S+/;
-        if (regEmail.test(email.value)) {
+        let regEmail = /\S+@\S+\.\S+/;
+        if (!regEmail.test(email.value)) {
             errors.push("Debes ingresar un email válido");
         }
         else if (email.value == '') {

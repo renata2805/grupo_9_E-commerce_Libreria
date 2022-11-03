@@ -1,14 +1,17 @@
 window.onload = function(){
+   
+    console.log("Conectado")
+    
     let formulario = document.querySelector("#formulario")
     let form = document.querySelector(".form")
-
+    
     form.addEventListener('submit', (e) => {
 
-        form.email.focus();
-
+        
         let errores = [];
+        
         let email = document.querySelector("#email")
-        let password = documenty.querySelector("#password")
+        let password = document.querySelector("#password")
        
         let regEmail = /\S+@\S+\.S+/;
         if (regEmail.test(email.value)) {

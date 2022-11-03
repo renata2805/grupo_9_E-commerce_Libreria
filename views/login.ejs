@@ -2,16 +2,15 @@
 <html lang="en">
     <%- include('./partials/head') %>
 <body>
-    <div id="formulario">
+    <div>
+        <ul class="errores"></ul>
+        <section id="formulario">
         <div class="logoBox">
             <a href="/"><img class="logo" src="/images/favicon.svg" alt=""></a>
         </div>
-        <div>
-        <ul class="errores"></ul>
-    </div>
         <form action="/users/login" method="post" class="form">
             <div class="inputBox">
-                <input type="text" id="email" name="email" required="required">
+                <input type="text" id="email" name="email">
                 <% if (locals.errors && errors.email) { %>
                     <div class="text-danger">
                         <%= errors.email.msg %>
@@ -21,7 +20,7 @@
             </div>
 
             <div class="inputBox">
-                <input type="password" id="password" name="password" required="required">
+                <input type="password" id="password" name="password">
                 <span>Contraseña</span>
             </div>
 
@@ -44,7 +43,7 @@
                     <span class="guardar">No tienes cuenta aún?</span>
                 </div>
                 <div class="OlvidarContra">
-                    <a class="link" href="./register.html">Crear Cuenta</a>
+                    <a class="link" href="./register">Crear Cuenta</a>
                 </div>
             </div>
 
@@ -53,6 +52,7 @@
             </div>
 
         </form>
+    </section>    
     </div>
     <script src="/js/loginScript.js"></script>
 </body>
