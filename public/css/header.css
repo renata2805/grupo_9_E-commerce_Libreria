@@ -46,13 +46,14 @@ nav.menuIzquierdo ul li a, nav.menuDerecho ul li a {
 
 }
 
-nav.menuIzquierdo ul li a:hover, nav.menuDerecho ul li a:hover {
-    /* text-decoration: underline; */
-    color: black;  
-    background-color: #ff7700;
+
     
 
-}
+
+
+
+
+
 
 img.pequeña{
     width: 80px;
@@ -60,7 +61,7 @@ img.pequeña{
     
   }
 
-  .Book {
+  /* .Book {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 900;
     color: #3452b2;
@@ -74,7 +75,7 @@ img.pequeña{
     color: #6486f2;
     margin-left: -10px;
     font-size: 2em;
-}
+} */
 
 
 
@@ -88,7 +89,7 @@ img.pequeña{
 .menuIzquierdo{
 
    display: flex;
-    width: 40%;
+    width: 60%;
     align-items: center ;
    justify-content: center;
    
@@ -122,11 +123,14 @@ img.pequeña{
    width: 80%;
    align-items: flex-end;
    
+   
 }
 
 nav.menuIzquierdo ul li a, nav.menuDerecho ul li a {
         
-    font-size: 1.1ren;  
+    font-size: 1.0ren;  
+    font-family: 'Roboto Mono', monospace;
+    color: #3452b2;
     
     
 
@@ -139,6 +143,9 @@ nav.menuIzquierdo ul li a, nav.menuDerecho ul li a {
     border-color: #040615;
     border-style: double;
 }
+
+
+
 
 
 

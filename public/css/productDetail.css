@@ -25,12 +25,15 @@
 
 
 .bookImageBox {
-    width: 40%;
+ 
+  position: relative;
+  left: -30px;
 }
 
 .bookImg{
     display: flex;
     height: 300px;
+    border-radius: 16px;
 }
 
 .libro{

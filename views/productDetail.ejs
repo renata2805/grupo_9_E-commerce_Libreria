@@ -2,15 +2,13 @@
 <html lang="en">
   <%- include('./partials/head') %>
   <body>
-    <header class="menuM">
+    
       <%- include('./partials/header') %>
-  </header>
+  
 
   <body>
 
-    <!-- <header>
-      <%- include('./partials/header') %>
-    </header> -->
+   
 
     <section class="BoxBox">
 
@@ -22,10 +20,10 @@
       </div>
 
         <div class="libro">
-          <h2 class="titulo-libro"><%=product.title%></h2>
+          <h2 class="titulo-libro"> <%=product.title%></h2>
           <p class="calificaion">Precio</p>
           <div>
-            <button class="precio" type="button"><%=product.price%></button>
+            <button class="precio" type="button">usd  <%=product.price%></button>
           </div>
           <p class="reseña">
             <%=product.description%>
