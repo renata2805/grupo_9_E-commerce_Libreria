@@ -16,8 +16,16 @@
                  </nav>
                  <nav class="menuDerecho">
                     <ul class="opcionesDerecho">
+                        <% if (!locals.userLogged) { %>
                         <li><a href="users/login">acceder</a></li>
-                        <li><a href="users/register">registrarse</a></li>
+                        <li><a href="users/register">registrarse</a></li> <% } %> 
+                        <% if (locals.userLogged) { %>
+                            <h1> ¡Hola <%= locals.userLogged.nombre%> !</h1>
+                            <img class="imgUser" src="/images/users/<%= locals.userLogged.imagen ? locals.userLogged.imagen : 'default.png' %>" alt="imagen de usuario">
+                            <a href="/users/logout"> <button type="button"> Log Out</button> </a> 
+                          <%  } else { %> 
+                          <% } %>
+                     
                     </ul>
                  </nav>
                  

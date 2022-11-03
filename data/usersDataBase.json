@@ -36,5 +36,23 @@
   "password": "$2a$10$joeQ3P6tM8x5bKaORw27iOqsOShuM1k2wdVLIVgLloELGuCA7.b7.",
   "imagen": "imagen-1667236205337.png",
   "categoria": 0
+ },
+ {
+  "id": 6,
+  "nombre": "Renata Soria",
+  "tel": "99999999",
+  "email": "renata.soria.arg@gmail.com",
+  "password": "$2a$10$WxsbTwVtaXrAOMpoOF7gZ.jQNLM5alMFV6T37HEvItTL2z1md24Hu",
+  "imagen": "imagen-1667425467938.png",
+  "categoria": 0
+ },
+ {
+  "id": 7,
+  "nombre": "Renata Soria",
+  "tel": "99999999",
+  "email": "renata.soria@serviciodepago.com.ar",
+  "password": "$2a$10$TPI2GyN9ercFiUmQYZlfjevf1c8skbPP/MEhz3Zk.7GFqeaXmhN4m",
+  "imagen": "imagen-1667439098520.png",
+  "categoria": 0
  }
 ]
