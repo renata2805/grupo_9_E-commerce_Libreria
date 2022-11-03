@@ -49,7 +49,19 @@ window.onload = function(){
         
         //Validaciones de la imagen
 
-        //Cri cri
+        campoImg.addEventListener('change', (e)=> {
+
+            let extensiones = /(.jpg|.jpeg|.png|.gif|.webp)$/i.test(campoImg.value);
+    
+            if(!extensiones){
+                smallImg.innerHTML = "Solo imagenes con extension jpg, png, gif, webp"
+                campoImg.classList.add("is-invalid")
+            } else {
+                campoImg.classList.remove("is-invalid");
+                campoImg.classList.add("is-valid");
+                smallImg.innerHTML = "";
+            }
+        })
 
         //Control de errores
         console.log(errors)

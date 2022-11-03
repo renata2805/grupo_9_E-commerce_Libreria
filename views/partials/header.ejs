@@ -9,16 +9,16 @@
             <nav class="menuIzquierdo">
                 <ul class="opcionesIzquierdo">
                     <li> <a href="/">inicio</a> </li>
-                    <li> <a href="products/productCart">carrito compras</a> </li>
-                    <li> <a href="products">tienda</a> </li>
-                    <li> <a href="#footerFoot">contacto</a> </li>
+                    <li> <a href="products/productCart">Carrito Compras</a> </li>
+                    <li> <a href="products">Tienda</a> </li>
+                    <li> <a href="#footerFoot">Contacto</a> </li>
                 </ul>
                  </nav>
                  <nav class="menuDerecho">
                     <ul class="opcionesDerecho">
                         <% if (!locals.userLogged) { %>
-                        <li><a href="users/login">acceder</a></li>
-                        <li><a href="users/register">registrarse</a></li> <% } %> 
+                        <li><a href="users/login">Acceder</a></li>
+                        <li><a href="users/register">Registrarse</a></li> <% } %> 
                         <% if (locals.userLogged) { %>
                             <h1> ¡Hola <%= locals.userLogged.nombre%> !</h1>
                             <img class="imgUser" src="/images/users/<%= locals.userLogged.imagen ? locals.userLogged.imagen : 'default.png' %>" alt="imagen de usuario">
