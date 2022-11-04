@@ -10,6 +10,8 @@
             <a href="./index.html"><img class="logo" src="/images/favicon.svg" alt=""></a>
         </div>
         <form action="<%=user.id%>?_method=PATCH" method="POST">
+            <h2>Modificá tus datos y luego hacé clic en "Editar"</h2>
+        
             <div class="inputBox">
                 <input type="text" name="nombre" id="nombre" required="required" value="<%= user.nombre%>">
                 
@@ -30,20 +32,18 @@
                 
             </div>
 
-            <div class="inputBox">
-                <input type="password" name="confirmPassword" id="confirmPassword" required="required" value="<%=user.password%>">
-                
-            </div>
-
-            
+                       
             <div class="botonBox">
-                <button class="boton" id="acceder" type="submit" value="editar">Editar Usuario</button>
+                <button class="boton" id="acceder" type="submit" value="editar">Editar</button>
             </div>
 
         </form>
     </div>
     <form method="POST" action="/users/delete/<%= user.id%>?_method=DELETE">
-        <div> <button typ="submit" class="eliminar">Eliminar Usuario</button></div>
+        <div> 
+            <h2>Para eliminar tu registro, hacé clic en "Eliminar"</h2>
+            <button typ="submit" class="eliminar">Eliminar</button>
+        </div>
     </form>
 
 

@@ -27,23 +27,5 @@
   "password": "$2a$10$M8JVnU2TXBXO7zpmIyuYvuYDz84r0bFRrZOmc6AVW8/sHGHFIqM5e",
   "imagen": "imagen-1664507309874.jpg",
   "categoria": 0
- },
- {
-  "id": 5,
-  "nombre": "Renata Soria",
-  "tel": "99999999",
-  "email": "renata.soria.arg@gmail.com",
-  "password": "$2a$10$48T.JO/facVZ2NYPtr836uVPntsirDB58jeU4dfgmzcrGUqAvO8vm",
-  "imagen": "imagen-1667525409930.jpg",
-  "categoria": 0
- },
- {
-  "id": 6,
-  "nombre": "juan",
-  "tel": "777777",
-  "email": "juan@bexpress.com",
-  "password": "$2a$10$MUUQ60uIiCq.XCBqSHnOd.XJdJsWhmvjPGVgty66vLl6HYehppvZG",
-  "imagen": "imagen-1667563099227.png",
-  "categoria": 0
  }
 ]
