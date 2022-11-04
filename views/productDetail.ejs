@@ -28,11 +28,13 @@
           <p class="reseña">
             <%=product.description%>
           </p>
+          <% if (locals.userLogged) { %>
           <a href=""><button class="botones">Comprar</button></a>
           <a href="../edit/<%=product.id%>"><button class="botones">Editar</button></a>
           <form method="POST" action="/products/delete/<%=product.id%>?_method=DELETE">
             <a href=""><button class="botones" type="submit">Borrar</button></a>
           </form>
+          <% } %>  
         </div>
 
       </section>
