@@ -20,7 +20,7 @@
                         <li><a href="users/login">Acceder</a></li>
                         <li><a href="users/register">Registrarse</a></li> <% } %> 
                         <% if (locals.userLogged) { %>
-                            <h2 class="nameUser"> ¡Hola <%= locals.userLogged.nombre%> !</h2>
+                            <a href="/users/profile"><h2 class="nameUser"> ¡Hola <%= locals.userLogged.nombre%>!</h2></a>
                             <img class="imgUser" src="/images/users/<%= locals.userLogged.imagen ? locals.userLogged.imagen : 'default.png' %>" alt="imagen de usuario">
                             <a href="/users/logout"> <button type="button"> Log Out</button> </a> 
                           <%  } else { %> 

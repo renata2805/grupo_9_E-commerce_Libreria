@@ -1,0 +1,25 @@
+:root{
+    --bs-azul: #3452b2;
+    --bs-azulClaro: #6486f2;
+    --bs-naranja: #ff7700;
+    --bs-oscuro: #040615;
+    --bs-gris: #616161;
+    --bs-blanco: #ffffff;
+}
+
+.imgUser {
+    display: flex;
+    width: 65px;
+    height: 65px;
+    border-color: #040615;
+    border-style: double;
+    border-radius: 50%;
+}
+
+.nameUser {
+    align-self: center;
+    font-size: 1.0ren;  
+    font-family: 'Roboto Mono', monospace;
+    color: #3452b2;
+
+}

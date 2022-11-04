@@ -125,7 +125,7 @@ const usersController = {
     },
 
       profile: (req, res) => {
-      return res.render('index', {user: req.session.userLogged})
+      return res.render('profile', {user: req.session.userLogged})
     }
 }
 
