@@ -130,9 +130,7 @@ nav.menuIzquierdo ul li a, nav.menuDerecho ul li a {
         
     font-size: 1.0ren;  
     font-family: 'Roboto Mono', monospace;
-    color: #3452b2;
-    
-    
+    color: #3452b2;    
 
 }
 
@@ -142,8 +140,16 @@ nav.menuIzquierdo ul li a, nav.menuDerecho ul li a {
     height: 65px;
     border-color: #040615;
     border-style: double;
+    border-radius: 50%;
 }
 
+.nameUser {
+    align-self: center;
+    font-size: 1.0ren;  
+    font-family: 'Roboto Mono', monospace;
+    color: #3452b2;
+
+}
 
 
 

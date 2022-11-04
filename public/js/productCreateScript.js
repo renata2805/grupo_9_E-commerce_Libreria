@@ -34,7 +34,6 @@ if (errores.length > 0) {
         ulErrors.innerHTML += `<li >  ${errores[i]} </li>`;
     };
 }else{
-    alert('La validación fué exitosa')
     form.submit();
 }
 

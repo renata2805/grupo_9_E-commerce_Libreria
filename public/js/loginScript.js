@@ -37,7 +37,6 @@ window.onload = function(){
                 ulErrors.innerHTML += `<li>  ${errores[i]} </li>`;
             };
         }else{
-            alert('La validación fué exitosa')
             form.submit();
         }
   })
