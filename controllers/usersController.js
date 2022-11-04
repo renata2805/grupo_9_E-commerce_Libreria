@@ -1,11 +1,22 @@
 const fs = require('fs');
 const path = require('path');
 const multer = require('multer');
+
 const { validationResult }  = require('express-validator');
 const bcryptjs = require('bcryptjs');
-const User = require('../models/User');
-const usersFilePath = path.join(__dirname, '../data/usersDataBase.json');
-var users = JSON.parse(fs.readFileSync(usersFilePath, 'utf-8'));
+ const User = require('../models/User');
+ const usersFilePath = path.join(__dirname, '../data/usersDataBase.json');
+ var users = JSON.parse(fs.readFileSync(usersFilePath, 'utf-8'));
+//const db = require('../database/models');
+
+//Esto es otra forma de declarar los Modelos en nuestro controlador
+//const Product = db.Product; 
+//const Category = db.category;
+//const TipoPago = db.TipoPago;
+//Otra forma
+//const {Product,Category,TipoPago} = require('../database/models');
+
+
 
 const usersController = {
     register: (req, res) => {
@@ -19,6 +30,27 @@ const usersController = {
             oldData: req.body
           });
         }
+         // TENER EN CONSIDERACION CUANDO TRABAJEMOS EN BASE DE DATOS
+        //   save: (req,res)=>{
+      //     //req.body.image = req.file.filename;
+      //     //return res.send(req.body);
+      //     const _body = { 
+      //     //return res.send(_body);
+      //         name : req.body.nombre,
+      //         description: req.body.descripcion,
+      //         price: req.body.precio,
+      //         discount: req.body.descuento,
+      //         image : req.file.filename,
+      //         categoryId : req.body.categoria
+      //     }    
+      //     //return res.send(_body);
+      //     Product.create(_body)
+      //     .then(reloj =>{
+      //         res.redirect('/administrar');
+      //     })
+      //     .catch(error => res.send(error))
+      // },
+  
     
         let userInDB = User.findByField("email", req.body.email);
 
