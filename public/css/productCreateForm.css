@@ -91,3 +91,7 @@ div.form-container-label label.form-label{
     color: #ff7700;
     background: none;
 }
+
+.alert-warning{
+    color: red
+}

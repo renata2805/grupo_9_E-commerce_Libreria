@@ -28,7 +28,7 @@
                 <div class="form-container-label">
                     <input type="text" id="title" class="form-input" name="title"  placeholder="TITULO DEL LIBRO" value="<%= locals.oldData ? oldData.title : null %>">
                     <% if (locals.errors && errors.title) { %>
-                        <div class="text-danger">
+                        <div class="alert-warning">
                             <%= errors.title.msg %> 
                         </div>
                     <% } %>
@@ -71,7 +71,7 @@
             <div class="form-container-label">
                 <textarea name="description" class="form-text" id="description" placeholder="DESCRIPCIÓN DEL LIBRO" style="width: 100%; border: 2px solid #464646;" value="<%= locals.oldData ? oldData.description : null %>"></textarea>
                 <% if (locals.errors && errors.description) { %>
-                    <div class="text-danger">
+                    <div class="alert-warning">
                         <%= errors.description.msg %> 
                     </div>
                 <% } %>
@@ -85,7 +85,7 @@
                 <input type="file" name="image" id="image" class="form-control <%= locals.errors && errors.image ? 'is-invalid' : null %>"
                 >
                 <% if (locals.errors && errors.image) { %>
-                    <div class="text-danger">
+                    <div class="alert-warning">
                         <%= errors.image.msg %>
                     </div>
                 <% } %>
