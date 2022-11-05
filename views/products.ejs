@@ -1,41 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
   <%- include('./partials/head') %>
+
   <body>
-    
-      <%- include('./partials/header') %>
-  
 
     <main>
+      <div class="header"><%- include('./partials/header') %></div>
 
       <section>
-
-      <div class="allproducts">
-        <%products.forEach(function(product){ %>
-                <div class="productbox">
-                  
-
-                  <div class="productbox2">
-                    <a href="/products/productDetail/<%=product.id%>">
-                    <img class="imgCajaRecomendado" src="/images/products/<%= product.image%>" alt=""></a>
-                    <h6> $ <%= product.price%> </h6>
-                    <h6> <%= product.title %>  </h6> 
-                  </div>
-
-                </div>
-                <%  }); %>
-
+        <div class="allproducts">
+          <%products.forEach(function(product){ %>
+          <div class="productbox">
+            <div class="productbox2">
+              <a href="/products/productDetail/<%=product.id%>">
+                <img
+                  class="imgCajaRecomendado"
+                  src="/images/products/<%= product.image%>"
+                  alt=""
+              /></a>
+              <h6>$ <%= product.price%></h6>
+              <!-- <h6><%= product.title %></h6> -->
+            </div>
+          </div>
+          <% }); %>
         </div>
-       </section>
-
+      </section>
     </main>
 
-
-    <footer>
-        <%- include('./partials/footer') %>
-      </footer>
-   
- </body>
-
+    <footer><%- include('./partials/footer') %></footer>
+  </body>
 </html>
-  

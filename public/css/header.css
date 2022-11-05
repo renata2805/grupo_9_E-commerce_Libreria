@@ -7,11 +7,12 @@
     --bs-blanco: #ffffff;
 } 
 
+
 *{
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
-
+    box-sizing: border-box;
+    font-family: 'Istok Web', sans-serif;
 }
 
 ul{
@@ -25,95 +26,59 @@ text-decoration: none;
 img{
     width: 100%;
 }
-.encabezado{
-   
-    
-        display: flex;
-        /* justify-content: center; */
-        width: 100% ;
-        height: 70px;
-         text-align: center; 
-    
+
+.encabezado{ 
+    display: flex;
+    /* justify-content: center; */
+    width: 100% ;
+    height: 80px;
+    text-align: center; 
+    justify-content: center; 
 
 }
 
 nav.menuIzquierdo ul li a, nav.menuDerecho ul li a {
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 1.2em;  
     color: black;
-    size: 3px;
-    
+    size: 3px; 
 
 }
-
-
-    
-
-
-
-
-
-
 
 img.pequeña{
-    width: 80px;
-    height: 80px;
-    
-  }
-
-  /* .Book {
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 900;
-    color: #3452b2;
-    font-size: 2em;
-}
-
-.Express {
-    font-family: Arial, Helvetica, sans-serif;
-    font-style: italic;
-    font-weight: 100;
-    color: #6486f2;
-    margin-left: -10px;
-    font-size: 2em;
-} */
-
-
-
+    width: 5em;
+    height: 5em;
+ }
 
 .menu{
     display: flex;
-    width: 100%;
-    justify-content: space-between;
+    width: 90%;
+    justify-content: space-around;
+}
+
+.logo{
+    width: 10%;
+    justify-content: right;
 }
 
 .menuIzquierdo{
-
-   display: flex;
+    display: flex;
     width: 60%;
     align-items: center ;
-   justify-content: center;
-   
-    
-
+   justify-content: left;
 }
 
 .menuDerecho{
-
-    display: flex;
-   width: 30%;
-   align-items: center ;
-   justify-content: center;
-   
-     
+width: 40%;
+display: flex;
+justify-content: right;
+align-items: center;     
 }
-.opcionesDerecho{
-   
-    display: flex;
-    justify-content: space-around;
-    width: 80%;
-    
-   
 
+.opcionesDerecho{
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    align-items: center;
 }
 
 .opcionesIzquierdo{
@@ -122,13 +87,11 @@ img.pequeña{
     justify-content: space-around;
    width: 80%;
    align-items: flex-end;
-   
-   
 }
 
 nav.menuIzquierdo ul li a, nav.menuDerecho ul li a {
         
-    font-size: 1.0ren;  
+    font-size: 1em;  
     font-family: 'Roboto Mono', monospace;
     color: #3452b2;    
 
@@ -152,10 +115,22 @@ nav.menuIzquierdo ul li a, nav.menuDerecho ul li a {
 }
 
 
+.pagar {
+    height: 30px;
+    width: 80px;
+    background-color: #3452b2;
+    color: #fff;
+    border-radius: 5px;
+    transition: 0.4s;
+    border: #3452b2 2px solid;
+}
 
-
-
-
+.pagar:hover {
+    border-radius: 90px;
+    background-color: #fff;
+    border: #ff7700 2px solid;
+    color: #ff7700;
+}
 
 
   

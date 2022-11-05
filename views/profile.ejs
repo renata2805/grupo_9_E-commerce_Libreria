@@ -1,35 +1,36 @@
-  <!-- if()-->
-  <!DOCTYPE html>
-    <html lang="en">
-        <head>    
-           
-            <link rel="stylesheet" href="../public/css/profile.css" />
-        </head>
-        <body> 
-            <div class="container">
-                
-                    <h2>¡ Hola <%= user.nombre %> !</h2>
-                        <h3>Tus Datos:</h3>
-                            <p>
-                                <ul class="infoUser">
-                                    <li>Nombre: <%=user.nombre%></li>
-                                    <li>Email: <%=user.email%></li>
-                                    <li>Tel: <%=user.tel%></li>
-                                    <li>Categoria: <%=user.categoria%></li>
-                                    <li>Imagen</li>
-                                    <img class="imgUser" src="/images/users/<%= user.imagen %> ">
-                                </ul>
-                            </p>
-                            <p>
-                                <ul>
-                                    <li><a href="./edit/<%= user.id %>">Editar Datos</a></li>
-                                    <li><a href="/users/logout">Cerrar Sesión</a></li>     
-                                </ul>
+<!-- if()-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('./partials/head') %>
+  </head>
+  <body>
+    <div class="CajaMenuHeader"><%- include('./partials/header') %></div>
 
-                            </p>
-                            
-              
-            </div>
-        </body>
-    </html>
-<!-- //Container -->
+    <section class="container">
+      <h2>¡Hola <%= user.nombre %>!</h2>
+
+      <h3>Datos:</h3>
+      <div class="info">
+        <div class="infoUser">
+          <li><strong>Nombre:</strong> <%=user.nombre%></li>
+          <li><strong>Email:</strong> <%=user.email%></li>
+          <li><strong>Telefono:</strong> <%=user.tel%></li>
+          <li><strong>Categoria:</strong> <%=user.categoria%></li>
+        </div>
+        <div class="infoImg">
+          <img class="imgUserProfile" src="/images/users/<%= user.imagen %> " />
+        </div>
+      </div>
+
+      <div class="BotonesEditarCerrar">
+        <div class="EditarBoton">
+          <a href="./edit/<%= user.id %>">Editar Datos</a>
+        </div>
+        <div class="EditarBoton"><a href="/users/logout">Cerrar Sesión</a></div>
+      </div>
+    </section>
+
+    <footer><%- include('./partials/footer') %></footer>
+  </body>
+</html>

@@ -7,19 +7,87 @@
     --bs-blanco: #ffffff;
 }
 
-.imgUser {
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Istok Web', sans-serif;
+  
+}
+
+
+.CajaMenuHeader{
+    width: 100%;
     display: flex;
-    width: 65px;
-    height: 65px;
+
+}
+.container{
+width: 80%;
+display: flex;
+margin-bottom: 50px;
+justify-content: center;
+align-items: center;
+
+}
+
+.imgUserProfile {
+    display: flex;
+    width: 250px;
+    height: 250px;
     border-color: #040615;
     border-style: double;
-    border-radius: 50%;
+    border-radius: 10%;
+    -webkit-border-radius: 10%;
+    -moz-border-radius: 10%;
+    -ms-border-radius: 10%;
+    -o-border-radius: 10%;
 }
 
 .nameUser {
     align-self: center;
     font-size: 1.0ren;  
-    font-family: 'Roboto Mono', monospace;
     color: #3452b2;
 
+}
+
+.EditarBoton {
+    height: auto;
+    width: auto;
+    margin-left: 50px;
+    padding: 10px;
+    background-color: #3452b2;
+    color: #fff;
+    border-radius: 5px;
+    transition: 0.4s;
+    border: #3452b2 2px solid;
+
+}
+
+.EditarBoton:hover {
+    background-color: #08b911;
+    border: #08b911 2px solid;
+    color: #fff;
+
+}
+
+.BotonesEditarCerrar{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+.info{
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.infoUser{
+}
+.infoImg{
+    margin-top: 10px;
 }

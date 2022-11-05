@@ -13,12 +13,14 @@
     font-family: 'Istok Web', sans-serif;
     box-sizing: border-box;
 }
+.header{
+    width: 100%;
 
-
-body {
-    background-color: rgb(236, 236, 236);
 }
-
+main{
+display: flex;
+flex-direction: column;
+}
 
 .allproducts{
     width: 100%;
@@ -26,23 +28,18 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    margin-top: 60px;
 }
-
 
 .productbox {
     display: flex;
-    margin: 50px;
+    margin: 30px;
     width: 15%;
    
     
 }
 
-
-
-
 .productbox2{
-    /* margin: 50px;
-    width: 20%; */
     height: 350px;
     display: flex;
     justify-content: center;
@@ -50,9 +47,11 @@ body {
     flex-direction: column;
 }
 .productbox2 img{
-    border-radius: 30px;
-    
-   
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
 }
 .productbox2 h6{
     width: 100%;
@@ -69,3 +68,4 @@ body {
     height: auto;
     object-fit: cover;
 }
+
