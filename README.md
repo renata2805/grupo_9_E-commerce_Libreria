@@ -35,18 +35,13 @@ ALUMNADOS: Nuestra principal fuente de mejora continua.
 
 **b) Breve descripción de los integrantes del equipo del proyecto integrador:**
 
-CARLOS GIOVANNY VELÁSQUEZ LEIVA
-Intereses: JavaScript - CSS - Node JS, React
-Apasionado: El Aprendizaje Autónomo
-Email: sirbryanheart@gmail.com
-
 RENATA SORIA
 Intereses: El mundo IT - Finanzas y Negocios - Deportes
 Hobbies: la música, los viajes y el gimnasio
 Email: renata.soria.arg@gmail.com
 
 SANTIAGO RESTREPO
-Intereses: La tecnología - Diseño UX/IX - ProgramacióN
+Intereses: La tecnología - Diseño UX/IX - Programación
 Hobbies: jugar basketball, la creacion de paginas web solo por conocer nuevos metodos y el aprendizajes autonomos
 Email: santiagores130@gmail.com
 
