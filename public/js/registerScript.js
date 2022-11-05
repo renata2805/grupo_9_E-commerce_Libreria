@@ -47,23 +47,20 @@ window.onload = function(){
         else if (password.value.length <8) {
             errors.push("La contraseña debe contener al menos 8 caracteres")
         }
+        else {
+            form.imagen.focus();
+        }
+
         
         //Validaciones de la imagen
 
-        campoImg.addEventListener('change', (e)=> {
+        let extensiones = /(.jpg|.jpeg|.png|.gif|.webp)$/i.test(imagen.value);
+        let extensionImagen  
 
-            let extensiones = /(.jpg|.jpeg|.png|.gif|.webp)$/i.test(campoImg.value);
-    
-            if(!extensiones){
-                smallImg.innerHTML = "Solo imagenes con extension jpg, png, gif, webp"
-                campoImg.classList.add("is-invalid")
-            } else {
-                campoImg.classList.remove("is-invalid");
-                campoImg.classList.add("is-valid");
-                smallImg.innerHTML = "";
-            }
-        })
-
+        if(!extensiones){
+            errors.push("Solo se permiten imagenes con extension jpg, png, gif")
+            } 
+            
         //Control de errores
         console.log(errors)
         if (errors.length > 0) {
@@ -77,9 +74,12 @@ window.onload = function(){
         } else {
             form.submit();
         }
+  
                         
     })
 }
+
+
 
 
 

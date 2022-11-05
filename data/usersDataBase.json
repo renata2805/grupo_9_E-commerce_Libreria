@@ -27,5 +27,14 @@
   "password": "$2a$10$M8JVnU2TXBXO7zpmIyuYvuYDz84r0bFRrZOmc6AVW8/sHGHFIqM5e",
   "imagen": "imagen-1664507309874.jpg",
   "categoria": 0
+ },
+ {
+  "id": 5,
+  "nombre": "Renata Soria",
+  "tel": "987654321",
+  "email": "renata.soria.arg@gmail.com",
+  "password": "$2a$10$mfE7EaW8ZLs3aPhD6MblauTvlwPyvn1MvWfwHxuOCBG.C3KJKK80i",
+  "imagen": "imagen-1667606723561.jpg",
+  "categoria": 0
  }
 ]
