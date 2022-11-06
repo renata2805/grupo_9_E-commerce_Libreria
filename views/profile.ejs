@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <!-- if()-->
 <!DOCTYPE html>
 <html lang="en">
@@ -7,39 +6,6 @@
   </head>
   <body>
     <div class="CajaMenuHeader"><%- include('./partials/header') %></div>
-=======
-  <!-- if()-->
-  <!DOCTYPE html>
-    <html lang="en">
-        <%- include('./partials/head') %>
-        <body>
-          
-            <%- include('./partials/header') %>
-        
-      
-        <body>    
-           
-        
-            <div class="container">
-                
-                    <h2>¡ Hola <%= user.nombre %> !</h2>
-                        <h3>Tus Datos:</h3>
-                            <p>
-                                <ul class="infoUser">
-                                    <li>Nombre: <%=user.nombre%></li>
-                                    <li>Email: <%=user.email%></li>
-                                    <li>Tel: <%=user.tel%></li>
-                                    <li>Categoria: <%=user.categoria%></li>
-                                    <li>Imagen</li>
-                                    <img class="imgUser" src="/images/users/<%= user.imagen %> ">
-                                </ul>
-                            </p>
-                            <p>
-                                <ul>
-                                    <li><a href="./edit/<%= user.id %>">Editar Datos</a></li>
-                                    <li><a href="/users/logout">Cerrar Sesión</a></li>     
-                                </ul>
->>>>>>> 3801b65639ae965340292550d5e2b58a058e3e7e
 
     <section class="container">
       <h2>¡Hola <%= user.nombre %>!</h2>
