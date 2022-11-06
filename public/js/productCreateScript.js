@@ -13,9 +13,9 @@ window.onload = function(){
 
     
         if(campoNombre.value == ""){
-            errores.push("el campo del titulo del libro debe estar completo")
+            errores.push("El campo del titulo debe estar completo")
         } else if(campoNombre.value.length < 5){
-            errores.push("el titulo del libro debe tener al menos 5 caracteres")
+            errores.push("El titulo del libro debe tener al menos 5 caracteres")
         }
 
         if(descripcion.value == ""){

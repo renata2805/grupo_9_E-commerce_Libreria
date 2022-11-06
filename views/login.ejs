@@ -12,7 +12,7 @@
             <div class="inputBox">
                 <input type="text" id="email" name="email">
                 <% if (locals.errors && errors.email) { %>
-                    <div class="text-danger">
+                    <div class="alert-warning">
                         <%= errors.email.msg %>
                     </div>
                 <% } %>

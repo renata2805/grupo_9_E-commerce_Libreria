@@ -3,11 +3,11 @@
   <%- include('./partials/head') %>
   <body>
     <div>
-        <ul class="errores"></ul>
         <section id="formulario">
         <div class="logoBox">
             <a href="/"><img class="logo" src="/images/favicon.svg" alt=""></a>
         </div>
+        <ul class="errores"></ul>
         <form method="POST" action="/users/register" enctype="multipart/form-data" class="form">
             <div class="inputBox">
                 <input 
@@ -17,7 +17,7 @@
                 class="form-input <%= locals.errors && errors.nombre? 'is-invalid' : null %>"
 				value="<%= locals.oldData ? oldData.nombre : null %>">
                 <% if (locals.errors && errors.nombre) { %>
-                    <div class="text-danger">
+                    <div class="alert-warning">
                         <%= errors.nombre.msg %> 
                     </div>
                 <% } %>
@@ -42,7 +42,7 @@
                 class="form-input <%= locals.errors && errors.email? 'is-invalid' : null %>"
 				value="<%= locals.oldData ? oldData.email : null %>">
                 <% if (locals.errors && errors.email) { %>
-                    <div class="text-danger">
+                    <div class="alert-warning">
                         <%= errors.email.msg %> 
                     </div>
                 <% } %>
@@ -56,7 +56,7 @@
                 id="password"
                 class="form-input <%= locals.errors && errors.password? 'is-invalid' : null %>">
                 <% if (locals.errors && errors.password) { %>
-                    <div class="text-danger">
+                    <div class="alert-warning">
                         <%= errors.password.msg %>
                     </div>
                 <% } %>
@@ -70,7 +70,7 @@
                 id="confirmPassword"
                 class="form-input <%= locals.errors && errors.password? 'is-invalid' : null %>">
                 <% if (locals.errors && errors.password) { %>
-                    <div class="text-danger">
+                    <div class="alert-warning">
                         <%= errors.password.msg %>
                     </div>
                 <% } %>
@@ -85,7 +85,7 @@
                 id="imagen"
                 class="form-control <%= locals.errors && errors.imagen ? 'is-invalid' : null %>">
 								<% if (locals.errors && errors.imagen) { %>
-									<div class="text-danger">
+									<div class="alert-warning">
 										<%= errors.imagen.msg %>
 									</div>
 								<% } %>
