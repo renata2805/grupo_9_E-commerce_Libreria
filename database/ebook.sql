@@ -3,7 +3,7 @@ USE `ebookdb`;
 
 CREATE TABLE `users` (
    `id` INT NOT NULL,
-   `name ` VARCHAR(45) NOT NULL,
+   `nombre` VARCHAR(45) NOT NULL,
    `tel` INT NOT NULL,
    `email` VARCHAR(255) NOT NULL,
    `password` VARCHAR(255) NOT NULL,
