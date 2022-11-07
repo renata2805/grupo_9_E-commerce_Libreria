@@ -96,11 +96,23 @@ text-decoration: none;
 
  .imagenesRecomendados{ 
     width: 100%;
-    display: flex;
-   
     flex-wrap: wrap;
     justify-content: center;
-    
+    display: flex;
+}
+
+.imagenesNovedades{ 
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    display: none;
+}
+
+.imagenesMasVendidos{ 
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    display: none;
 }
 
 .cajaImg {

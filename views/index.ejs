@@ -28,15 +28,51 @@
       <div class="recomendados">
         <ul class="menu">
           
-          <li><a href="#" >Recomendados</a></li>
-          <li><a href="#">Novedades</a></li>
-          <li><a href="#">Más vendidos</a></li>
+          <li><a id="rec">Recomendados</a></li>
+          <li><a id="nov">Novedades</a></li>
+          <li><a id="ven">Más vendidos</a></li>
       
         </ul>
       </div>
 
       <div class="imagenesRecomendados">
         <%recomendados.forEach(function(product){
+        %>
+            <div class="cajaImg">
+              <div>
+                <a href="/products/productDetail/<%= product.id %>">
+                <img  src="/images/products/<%= product.image%>"  > </a>
+              
+                  </a>
+                  
+                  <h2>usd  <%= toThousand(product.price) %></h2>
+                  <p><%= product.title %></p>
+               
+                </div>
+          </div>
+        <% }) %>
+      </div>
+
+      <div class="imagenesNovedades">
+        <%novedades.forEach(function(product){
+        %>
+            <div class="cajaImg">
+              <div>
+                <a href="/products/productDetail/<%= product.id %>">
+                <img  src="/images/products/<%= product.image%>"  > </a>
+              
+                  </a>
+                  
+                  <h2>usd  <%= toThousand(product.price) %></h2>
+                  <p><%= product.title %></p>
+               
+                </div>
+          </div>
+        <% }) %>
+      </div>
+
+      <div class="imagenesMasVendidos">
+        <%masVendidos.forEach(function(product){
         %>
             <div class="cajaImg">
               <div>
@@ -240,6 +276,68 @@
     <footer>
       <%- include('./partials/footer') %>
     </footer>
+    <script>
+
+window.addEventListener('load', function() {
+  let recomendado = document.getElementById('rec')
+  let imagenesRecomendados = document.querySelector('.imagenesRecomendados')
+  let novedades = document.getElementById('nov')
+  let imagenesNovedades = document.querySelector('.imagenesNovedades')
+  let masVendidos = document.getElementById('ven')
+  let imagenesMasVendidos = document.querySelector('.imagenesMasVendidos')
+
+
+  
+if(novedades){novedades.addEventListener('click', function(e){
+    e.preventDefault();
+    imagenesNovedades.style.display = 'flex';
+    imagenesRecomendados.style.display = 'none';
+    imagenesMasVendidos.style.display = 'none';
+  })
+}else if(masVendidos){
+  masVendidos.addEventListener('click', function(e){
+    e.preventDefault();
+    imagenesMasVendidos.style.display = 'flex';
+    imagenesRecomendados.style.display = 'none';
+    imagenesNovedades.style.display = 'none';
+  })
+}
+if(masVendidos){
+  masVendidos.addEventListener('click', function(e){
+    e.preventDefault();
+    imagenesMasVendidos.style.display = 'flex';
+    imagenesRecomendados.style.display = 'none';
+    imagenesNovedades.style.display = 'none';
+  })
+}
+
+if(recomendado){
+  recomendado.addEventListener('click', function(e){
+    e.preventDefault();
+    imagenesMasVendidos.style.display = 'none';
+    imagenesRecomendados.style.display = 'flex';
+    imagenesNovedades.style.display = 'none';
+  })
+}
+
+  // recomendado.addEventListener('click', function(e){
+  //   e.preventDefault();
+  //   imagenesRecomendados.style.display = 'flex';
+  // })
+
+  // novedades.addEventListener('click', function(e){
+  //   e.preventDefault();
+  //   imagenesNovedades.style.display = 'flex';
+  // })
+
+  // masVendidos.addEventListener('click', function(e){
+  //   e.preventDefault();
+  //   imagenesMasVendidos.style.display = 'flex';
+  // })
+
+})
+
+    </script>
 </body>
 
 </html>
