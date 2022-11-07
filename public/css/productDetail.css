@@ -103,7 +103,18 @@
     border: var(--bs-naranja) 4px solid;
 }
 
-.botones:hover {
+.boton-prod{
+    margin-top: 10px;
+    height: 60px;
+    width: 80px;
+    background-color: var(--bs-naranja);
+    color: #fff;
+    border-radius: 5px;
+    transition: 0.4s;
+    border: var(--bs-naranja) 4px solid;
+}
+
+.boton-prod:hover, .botones:hover {
     background-color: #fff;
     border: #ff7700 2px solid;
     color: #ff7700;
