@@ -115,7 +115,7 @@ nav.menuIzquierdo ul li a, nav.menuDerecho ul li a {
 }
 
 
-.pagar {
+.boton-log {
     height: 30px;
     width: 80px;
     background-color: #3452b2;
@@ -125,7 +125,7 @@ nav.menuIzquierdo ul li a, nav.menuDerecho ul li a {
     border: #3452b2 2px solid;
 }
 
-.pagar:hover {
+.boton-log:hover {
     border-radius: 90px;
     background-color: #fff;
     border: #ff7700 2px solid;
