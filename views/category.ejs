@@ -45,8 +45,8 @@
                     <div>
                       <a href="/products/productDetail/<%=product.id%>">
                       <img src="/images/products/<%= product.image%>" alt=""></a>
-                      <h6> <%= product.price%> </h6>
-                      <h6> <%= product.title %>  </h6> 
+                      <h2>usd  <%= toThousand(product.price) %></h2>
+                      <p><%= product.title %></p>
                     </div>
   
                   </div>
