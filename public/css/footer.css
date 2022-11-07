@@ -14,6 +14,10 @@
     font-family: 'Istok Web', sans-serif;
 }
 
+ body{
+    background: rgb(52,82,178);
+
+ }
 .footer {
     background: rgb(52,82,178);
     /* background: linear-gradient(0deg, rgba(52,82,178,1) 41%, rgba(100,134,242,1) 100%); */

@@ -30,11 +30,20 @@
  },
  {
   "id": 5,
+  "nombre": "SANTIAGO",
+  "tel": "1231445r34",
+  "email": "santiagores130@gmail.com",
+  "password": "$2a$10$6YdBnZjrBF8SWG1jvkWA5eyxuBDXpT/T/jeWGzA0dHXksZPq3dnRO",
+  "imagen": "imagen-1667681967400.png",
+  "categoria": 0
+ },
+ {
+  "id": 6,
   "nombre": "Renata Soria",
-  "tel": "987654321",
+  "tel": "99999999",
   "email": "renata.soria.arg@gmail.com",
-  "password": "$2a$10$mfE7EaW8ZLs3aPhD6MblauTvlwPyvn1MvWfwHxuOCBG.C3KJKK80i",
-  "imagen": "imagen-1667606723561.jpg",
+  "password": "$2a$10$EYIkjUVceKZv5va09Crcxur8T6/OZ5EizNr4VCUjwmqTO0Rd4V4SC",
+  "imagen": "imagen-1667767801712.jpg",
   "categoria": 0
  },
  {

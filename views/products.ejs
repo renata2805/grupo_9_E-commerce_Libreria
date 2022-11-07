@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
   <%- include('./partials/head') %>
+
   <body>
-    
-      <%- include('./partials/header') %>
-  
 
     <main>
+      <div class="header"><%- include('./partials/header') %></div>
 
       <section>
 
@@ -26,16 +25,9 @@
                 <%  }); %>
 
         </div>
-       </section>
-
+      </section>
     </main>
 
-
-    <footer>
-        <%- include('./partials/footer') %>
-      </footer>
-   
- </body>
-
+    <footer><%- include('./partials/footer') %></footer>
+  </body>
 </html>
-  

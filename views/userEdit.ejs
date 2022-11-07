@@ -2,14 +2,12 @@
 <html lang="en">
   <%- include('./partials/head') %>
   <body>
-    <header class="menuM">
-      <%- include('./partials/header') %>
-  </header>
+        <%- include('./partials/header') %>
+
+
     <div>
-        <div class="logoBox">
-            <a href="./index.html"><img class="logo" src="/images/favicon.svg" alt=""></a>
-        </div>
-        <form action="<%=user.id%>?_method=PATCH" method="POST">
+
+        <form class="Formulario" action="<%=user.id%>?_method=PATCH" method="POST">
             <h2>Modificá tus datos y luego hacé clic en "Editar"</h2>
         
             <div class="inputBox">
@@ -40,11 +38,16 @@
         </form>
     </div>
     <form method="POST" action="/users/delete/<%= user.id%>?_method=DELETE">
-        <div> 
+        <div class="CajaEliminar"> 
             <h2>Para eliminar tu registro, hacé clic en "Eliminar"</h2>
             <button typ="submit" class="eliminar">Eliminar</button>
         </div>
     </form>
+
+    <footer>
+        <%- include('./partials/footer') %>
+    </footer>
+
 
 
 </body>

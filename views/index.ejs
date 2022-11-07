@@ -27,6 +27,7 @@
 <section class="recomendadosNovedades">
       <div class="recomendados">
         <ul class="menu">
+          
           <li><a href="#">Recomendados</a></li>
           <li><a href="#">Novedades</a></li>
           <li><a href="#">Más vendidos</a></li>
@@ -34,16 +35,16 @@
         </ul>
       </div>
 
-      <div class="imagenesRecomendados">
+    <div class="imagenesRecomendados">
       <%recomendados.forEach(function(product){ 
       %>
           <div class="cajaImg">
             <!-- <div class = "caja caja2"><img src="image/cometas-en-el-cielo.png"> <p>producto 2</p> <p> precio usd 4</p> </div> -->
 
 
-            <div >
+            <div>
               <a href="/products/productDetail/<%= product.id %>">
-              <img  src="/images/products/<%= product.image%>"  > </a>
+              <img  src="/images/products/<%= product.image%>"> </a>
             
                 </a>
                 
@@ -54,7 +55,7 @@
 
         </div>
       <% }) %>
-
+    </div>    
 </section>
     <!-- FIN RECOMENDADOS NOVEDADES MAS VENDIDOS -->
 

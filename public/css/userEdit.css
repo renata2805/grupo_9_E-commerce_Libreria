@@ -7,27 +7,12 @@
   
 }
 
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    flex-direction: column;
-    background-color: #fff;
-}
-.logoBox{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.logo{
-    width: 100px;
- 
-}
 
 .inputBox {
+    justify-content: center;
+    align-items: center;
     position: relative;
-    width: 250px;
+    width: 400px;
     margin: 15px;
 }
 
@@ -77,13 +62,14 @@ body {
     border: 2px solid #ff7700;
 }
 .botonBox {
+    width: 80%;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 50px;
 }
 .boton {
-    width: 80%;
+    width: 60%;
     padding: 10px;
     border: 2px solid #3452b2;
     background: #3452b2;
@@ -93,9 +79,15 @@ body {
     font-size: 1em;
     transition: 0.5s;    
 }
-
+.CajaEliminar{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 80px;
+}
 .eliminar {
-    width: 100%;
+    width: auto;
     padding: 5px;
     border: 2px solid #ff7700;
     background: #ff7700;
@@ -162,4 +154,9 @@ body {
 .accederCuenta {
     display: flex;
     width: 100%;
+}
+
+.Formulario{
+    justify-content: center;
+    align-items: center;
 }

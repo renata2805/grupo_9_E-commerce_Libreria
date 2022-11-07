@@ -112,11 +112,6 @@ text-decoration: none;
     transition: all 3s ease; 
     overflow: hidden;
    
-   
-   
-
-    
-    /* background-color: #ff7700; */
 }
 
 .cajaImg:hover{
@@ -149,21 +144,6 @@ text-decoration: none;
 }
 
 
-
-
- /* .imgCajaRecomendado{
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-} */
-
-/* .cajaImg:hover{
-    background-color: rgba(44, 30, 240, 0.5);
-} */
-
-
-
-/*  FIN RECOMENDADOS NOVEDADES MAS VENDIDOS  Y RECIENTES */
 
 /* QUIENES SOMOS */
 .quienes-somos{

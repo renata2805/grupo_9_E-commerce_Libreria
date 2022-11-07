@@ -13,12 +13,14 @@
     font-family: 'Istok Web', sans-serif;
     box-sizing: border-box;
 }
+.header{
+    width: 100%;
 
-
-body {
-    background-color: rgb(236, 236, 236);
 }
-
+main{
+display: flex;
+flex-direction: column;
+}
 
 .allproducts{
     width: 100%;
@@ -26,12 +28,13 @@ body {
    
     flex-wrap: wrap;
     justify-content: center;
+    margin-top: 60px;
 }
 
 
   .productbox {
     display: flex;
-    margin: 50px;
+    margin: 30px;
     width: 15%;
     height: 350px;
    
