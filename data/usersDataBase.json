@@ -26,5 +26,14 @@
   "password": "$2a$10$d2rdb3tdtGUf4/f8hJDgDOTLQf75LfDC8VRukPCtTXxLvbBkaHTaa",
   "imagen": "imagen-1667769406643.jpg",
   "categoria": 0
+ },
+ {
+  "id": 6,
+  "nombre": "maria",
+  "tel": "444444",
+  "email": "maria@bookexpress.com",
+  "password": "$2a$10$85H86JHYs9p7jj5IGtGYt.musryUKpIjMuCmJhrazWCU65peTCUca",
+  "imagen": "imagen-1667758909029.jpg",
+  "categoria": 0
  }
 ]
