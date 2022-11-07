@@ -18,7 +18,7 @@
 
 .inputBox input {
     width: 100%;
-    padding: 10px;
+    padding: 7px;
     border: 2px solid #464646;
     background: none;
     border-radius: 5px;
@@ -57,15 +57,15 @@
 }
 
 .botonBox {
-    width: 100%;
+    width: 72%;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 50px;
 }
 .boton {
-    width: 40%;
-    padding: 10px;
+    width: 45%;
+    padding: 8px;
     border: 2px solid #3452b2;
     background: #3452b2;
     border-radius: 5px;
@@ -79,11 +79,15 @@
     align-items: center;
     display: flex;
     flex-direction: column;
-    margin-bottom: 80px;
+    margin-bottom: 60px;
 }
 .eliminar {
-    width: auto;
-    padding: 5px;
+    width: 70%;
+    padding: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
     border: 2px solid #ff7700;
     background: #ff7700;
     border-radius: 5px;

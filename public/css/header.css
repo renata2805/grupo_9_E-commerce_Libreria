@@ -62,13 +62,13 @@ img.pequeña{
 
 .menuIzquierdo{
     display: flex;
-    width: 60%;
+    width: 40%;
     align-items: center ;
    justify-content: left;
 }
 
 .menuDerecho{
-width: 40%;
+width: 60%;
 display: flex;
 justify-content: right;
 align-items: center;     

@@ -23,6 +23,9 @@ body {
     width: 100px;
  
 }
+
+
+
 /* 
 .inputBox {
     position: relative;
@@ -145,4 +148,8 @@ body {
 .accederCuenta {
     display: flex;
     width: 100%;
+}
+
+.label {
+    font-size: small;
 }

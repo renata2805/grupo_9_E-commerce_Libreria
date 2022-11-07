@@ -12,6 +12,7 @@ window.onload = function(){
         let errors =[];
 
         let nombre = document.querySelector('#nombre');
+        let apellido = document.querySelector('#apellido');
         let email = document.querySelector('#email');
         let password = document.querySelector('#password');
         let imagen = document.querySelector('#imagen');
@@ -19,10 +20,18 @@ window.onload = function(){
 
         //Validaciones del nombre
         if (nombre.value == '') {
-            errors.push("Debes completar tu nombre y apellido")
+            errors.push("Debes completar tu nombre")
         }
         else if (nombre.value.length <2) {
             errors.push("Tu nombre debe tener al menos dos caracteres")
+        }
+        else {
+            form.email.focus();
+        };
+
+        //Validaciones del apellido
+        if (apellido.value == '') {
+            errors.push("Debes completar tu apellido")
         }
         else {
             form.email.focus();
@@ -58,7 +67,7 @@ window.onload = function(){
         let extensionImagen  
 
         if(!extensiones){
-            errors.push("Solo se permiten imagenes con extension jpg, png, gif")
+            errors.push("Debes cargar una imagen con extension jpg, png o gif")
             } 
             
         //Control de errores

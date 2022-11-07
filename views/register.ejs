@@ -10,6 +10,7 @@
         <ul class="errores"></ul>
         <form method="POST" action="/users/register" enctype="multipart/form-data" class="form">
             <div class="inputBox">
+                <label class="label">Nombre</label>
                 <input 
                 type="text" 
                 name="nombre" 
@@ -21,20 +22,37 @@
                         <%= errors.nombre.msg %> 
                     </div>
                 <% } %>
-                <span>Nombre Completo</span>
+               
+            </div>
+            <div class="inputBox">
+                <label class="label">Apellido</label>
+                <input 
+                type="text" 
+                name="apellido" 
+                id="apellido"
+                class="form-input <%= locals.errors && errors.apellido? 'is-invalid' : null %>"
+				value="<%= locals.oldData ? oldData.apellido : null %>">
+                <% if (locals.errors && errors.apellido) { %>
+                    <div class="alert-warning">
+                        <%= errors.apellido.msg %> 
+                    </div>
+                <% } %>
+                
             </div>
 
             <div class="inputBox">
+                <label class="label">Celular</label>
                 <input 
                 type="tel" 
                 name="tel" 
                 id="tel"
                 class="form-input"
                 value="<%= locals.oldData ? oldData.tel : null %>"> 
-                <span>Celular</span>
+                
             </div>
 
             <div class="inputBox">
+                <label class="label">Email</label>
                 <input 
                 type="text" 
                 name="email" 
@@ -46,10 +64,11 @@
                         <%= errors.email.msg %> 
                     </div>
                 <% } %>
-                <span>email</span>
+                
             </div>
 
             <div class="inputBox">
+                <label class="label">Contraseña</label>
                 <input 
                 type="password" 
                 name="password" 
@@ -60,10 +79,11 @@
                         <%= errors.password.msg %>
                     </div>
                 <% } %>
-                <span>Contraseña</span>
+                
             </div>
 
             <div class="inputBox">
+                <label class="label">Confirmar Contraseña</label>
                 <input 
                 type="password" 
                 name="confirmPassword" 
@@ -74,7 +94,7 @@
                         <%= errors.password.msg %>
                     </div>
                 <% } %>
-                <span>Confirmar Contraseña</span>
+                
             </div>
 
             <span>Elige una foto de perfil:</span>

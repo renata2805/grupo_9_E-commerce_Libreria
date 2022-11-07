@@ -9,7 +9,6 @@
     <nav class="menuIzquierdo">
       <ul class="opcionesIzquierdo">
         <li><a href="/">Inicio</a></li>
-        <li><a href="products/productCart">Carrito Compras</a></li>
         <li><a href="products">Tienda</a></li>
       </ul>
     </nav>
@@ -33,8 +32,8 @@
         <img
           class="imgUser"
           src="/images/users/<%= locals.userLogged.imagen ? locals.userLogged.imagen : 'default.png' %>"
-          alt="imagen de usuario"
-        />
+          alt="imagen de usuario"/>
+        <li><a href="/products/productCart">Tu Carrito</a></li>  
         <a href="/users/logout"> <button class="boton-log" type="button">Log Out</button> </a>
         <% } else { %> <% } %>
       </ul>
