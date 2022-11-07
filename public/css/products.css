@@ -39,33 +39,34 @@ flex-direction: column;
     
 }
 
-.productbox2{
+/* .productbox2{
     height: 350px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-}
-.productbox2 img{
+} */
+/* .productbox2 img{
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
-}
-.productbox2 h6{
+} */
+/* .productbox2 h6{
     width: 100%;
     text-align: center;
     font-weight: bold;
     margin: 30px; 
     font-size: 20px; 
     color:#040615
-}
+} */
 
 
 .imgCajaRecomendado{
     width: 100%;
     height: auto;
     object-fit: cover;
+    border-radius: 10px;
 }
 

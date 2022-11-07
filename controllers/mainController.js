@@ -9,7 +9,7 @@ const recomendados = products.filter(function(product){
 	return product.status == "recomendados"
 })
 const masVendidos = products.filter(function(product){
-	return product.status == 'mas-vendidos'
+	return product.status == 'masVendidos'
 })
 const mainController = {
     

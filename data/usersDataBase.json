@@ -1,16 +1,6 @@
 [
  {
   "id": 1,
-  "nombre": "Marina Siches",
-  "tel": 123456789,
-  "email": "marinaisiches@gmail.com",
-  "password": "libros123",
-  "confirmPassword": "libros123",
-  "role": 0,
-  "imagen": "fotomaru.jpg"
- },
- {
-  "id": 2,
   "nombre": "Sebastian",
   "tel": 6543212345,
   "email": "diaz.sebastian1988@gmail.com",
@@ -20,21 +10,21 @@
   "imagen": "fotoseba.jpg"
  },
  {
-  "id": 4,
-  "nombre": "Marina",
-  "tel": "1130811308",
-  "email": "maru_siches@hotmail.com",
-  "password": "$2a$10$M8JVnU2TXBXO7zpmIyuYvuYDz84r0bFRrZOmc6AVW8/sHGHFIqM5e",
-  "imagen": "imagen-1664507309874.jpg",
-  "categoria": 0
- },
- {
-  "id": 5,
+  "id": 2,
   "nombre": "SANTIAGO",
   "tel": "1231445r34",
   "email": "santiagores130@gmail.com",
   "password": "$2a$10$6YdBnZjrBF8SWG1jvkWA5eyxuBDXpT/T/jeWGzA0dHXksZPq3dnRO",
   "imagen": "imagen-1667681967400.png",
+  "categoria": 0
+ },
+ {
+  "id": 3,
+  "nombre": "Marina",
+  "tel": "1130811308",
+  "email": "marinaisiches@gmail.com",
+  "password": "$2a$10$d2rdb3tdtGUf4/f8hJDgDOTLQf75LfDC8VRukPCtTXxLvbBkaHTaa",
+  "imagen": "imagen-1667769406643.jpg",
   "categoria": 0
  }
 ]
