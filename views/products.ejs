@@ -9,14 +9,12 @@
 
       <section>
 
-      <div class="allproducts">
+      <div class="imagenesRecomendados">
         <%products.forEach(function(product){ %>
                 <div class="cajaImg">
-                  
-
-                  <div class="productbox2">
+                  <div>
                     <a href="/products/productDetail/<%=product.id%>">
-                    <img class="imgCajaRecomendado" src="/images/products/<%= product.image%>" alt=""></a>
+                    <img src="/images/products/<%= product.image%>" alt=""></a>
                     <h6>usd  <%= product.price%> </h6>
                     <h6> <%= product.title %>  </h6> 
                   </div>

@@ -24,11 +24,26 @@ const productsController = {
     category: (req, res) => {
       let category = req.params.category 
       let product = products.filter(product => product.category == category )
+      function categoryName(){ 
+if(category == 1){ return "Matematica"}
+else if(category == 2){ return "Geografia"}
+else if(category == 3){ return "Historia"}
+else if(category == 4){ return "Ingles"}
+else if(category == 5){ return "Astronomia"}
+else if(category == 6){ return "Informatica"}
+else if(category == 7){ return "Literatura"}
+else if(category == 8){ return "Quimica"}
+else if(category == 9){ return "Biologia"}
+else if(category == 10){ return "Arte"}
+else if(category == 11){ return "Economia"}
+else if(category == 12){ return "Educacion Fisica"}}
       res.render('category', {
-            product,
+            product, categoryName,
           toThousand
       })
-},
+}
+
+,
     create: (req, res) => {
         res.render ('productCreateForm'); // como parametros va el nombre del archivo dentro views
        },

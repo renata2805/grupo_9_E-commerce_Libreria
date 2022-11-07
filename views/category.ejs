@@ -33,17 +33,18 @@
 
 
     <main>
-
+      <div style="display: flex; justify-content: center;">
+              <h2 class="saludo" style="color: #5f6ef7;
+              text-decoration: solid">Bienvenido a la categoria de <%=categoryName()%></h2>
+      </div>
       <section>
 
-        <div class="allproducts">
+        <div class="imagenesRecomendados">
           <%product.forEach(function(product){%>
-                  <div class="productbox">
-                    
-  
-                    <div class="productbox2">
+                  <div class="cajaImg">
+                    <div>
                       <a href="/products/productDetail/<%=product.id%>">
-                      <img class="imgCajaRecomendado" src="/images/products/<%= product.image%>" alt=""></a>
+                      <img src="/images/products/<%= product.image%>" alt=""></a>
                       <h6> <%= product.price%> </h6>
                       <h6> <%= product.title %>  </h6> 
                     </div>
