@@ -11,10 +11,13 @@ const recomendados = products.filter(function(product){
 const masVendidos = products.filter(function(product){
 	return product.status == 'masVendidos'
 })
+const novedades = products.filter(function(product){
+	return product.status == 'novedades'
+})
 const mainController = {
     
      index: (req, res) => {
-         res.render ('index', {recomendados, masVendidos, toThousand}); // como parametros va el nombre del archivo dentro views
+         res.render ('index', {products, recomendados, masVendidos, novedades, toThousand}); // como parametros va el nombre del archivo dentro views
 
     }
     }

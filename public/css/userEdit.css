@@ -12,7 +12,7 @@
     justify-content: center;
     align-items: center;
     position: relative;
-    width: 400px;
+    width: 300px;
     margin: 15px;
 }
 
@@ -39,7 +39,6 @@
     text-transform: uppercase;
 }
 
-.inputBox input:valid ~ span,
 .inputBox input:focus ~ span {
     color: #ff7700;
     transform: translateX(10px) translateY(-7px);
@@ -53,23 +52,19 @@
 }
 
 
-.inputBox input:valid ,
 .inputBox input:focus {
     border: 2px solid #ff7700;
 }
-.inputBox input:valid ,
-.inputBox input:focus {
-    border: 2px solid #ff7700;
-}
+
 .botonBox {
-    width: 80%;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 50px;
 }
 .boton {
-    width: 60%;
+    width: 40%;
     padding: 10px;
     border: 2px solid #3452b2;
     background: #3452b2;

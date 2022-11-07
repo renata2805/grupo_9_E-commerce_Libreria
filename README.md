@@ -50,6 +50,12 @@ Intereses: Javascript-Proyectos y emprendimientos-Deportes
 Aficiones: jugar tenis, la musica, lectura
 Correo electrónico: diaz.sebastian1988@gmail.com
 
+MARINA SICHES
+
+Intereses: Programación Web tanto back como front-end
+Aficiones: musica, lectura, arte
+Correo electrónico: marinaisiches@gmail.com
+
 **CONSIGNA 3: BUSCAR INSPIRACIÓN EN REFERENTES DEL MERCADO**
 Sitios de referencia del mercado:
 

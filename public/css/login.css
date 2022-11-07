@@ -24,7 +24,7 @@ body {
  
 }
 
-.inputBox {
+/* .inputBox {
     position: relative;
     width: 250px;
     margin: 30px;
@@ -79,8 +79,8 @@ body {
     justify-content: center;
     align-items: center;
     margin-bottom: 50px;
-}
-.boton {
+} */
+/* .boton {
     width: 60%;
     padding: 10px;
     border: 2px solid #3452b2;
@@ -96,7 +96,7 @@ body {
     border: 2px solid #ff7700;
     color: #ff7700;
     background: none;
-}
+} */
 
 .passBox,
 .crear_cuenta {
