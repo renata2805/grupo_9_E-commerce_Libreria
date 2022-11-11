@@ -38,12 +38,12 @@
  },
  {
   "id": 7,
-  "nombre": "Renata",
-  "apellido": "Soria",
-  "tel": "987654321",
-  "email": "renata.soria.arg@gmail.com",
-  "password": "$2a$10$ZSVIl7usxsuyzaiAyKc/ZO3oQCKGXLTPIyMebLRE4luqV/IQQcuOu",
-  "imagen": "imagen-1667863332339.jpg",
+  "nombre": "Juan ",
+  "apellido": "X",
+  "tel": "2222222222",
+  "email": "juanx@hotmail.com",
+  "password": "$2a$10$9QUc1OSFl.D3Tvin2tK/ueC227VMn3AitxIIWKEDmmhn8fdteTKc.",
+  "imagen": "imagen-1668126214189.jpg",
   "categoria": 0
  }
 ]

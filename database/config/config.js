@@ -1,8 +1,8 @@
 module.exports = {
     "development": {
       "username": "root",
-      "password": '',
-      "database": "ebook_db",
+      "password": null,
+      "database": "ebookdb",
       "host": "127.0.0.1",
       "dialect": "mysql",
       "operatorAliases" : false,

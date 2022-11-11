@@ -1,7 +1,7 @@
-const { DATEONLY } = require("sequelize");
+// const { DATEONLY } = require("sequelize");
 
 module.exports = (sequelize, dataTypes) => {
-    let alias = 'User'; 
+    let alias = 'UserDB'; 
     let cols = {
         id: {
             type: dataTypes.INT(10).UNSIGNED,
@@ -9,7 +9,7 @@ module.exports = (sequelize, dataTypes) => {
             allowNull: false,
             autoIncrement: true
         },
-        name: {
+        nombre: {
             type: dataTypes.STRING(255),
             allowNull: false
         },
@@ -27,20 +27,20 @@ module.exports = (sequelize, dataTypes) => {
         },
         role_id: dataTypes.INT,
     };
-    let config = {
-        tableName: "users",
-        timestamps: false,
-        underscore:true,
+    // let config = {
+    //     tableName: "users",
+    //     timestamps: false,
+    //     underscore:true,
         // createdAt: 'created_at',
         // updatedAt: 'updated_at',
         // deletedAt: false
-    }
-    const User = sequelize.define(alias,cols,config);
-    User.associate = function (models) {
-        User.belongsTo(models.Role, { 
+    // }
+    const UserDB = sequelize.define(alias,cols);
+    UserDB.associate = function (models) {
+        UserDB.belongsTo(models.Rol, { 
             as: "roles",
             foreignKey: "role_id"
         })
 };
-    return User
+    return UserDB
 };
