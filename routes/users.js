@@ -3,6 +3,8 @@ const router= express.Router();
 const path = require("path");
 const multer = require('multer');
 const { body } = require("express-validator");
+const db = require('../database/models');
+const UserDB = db.UserDB;
 
 //Controlador
 const usersController= require('../controllers/usersController'); 

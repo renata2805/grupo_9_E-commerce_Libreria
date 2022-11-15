@@ -2,24 +2,21 @@ const fs = require('fs');
 const path = require('path');
 const multer = require('multer');
 
-const { validationResult }  = require('express-validator');
+const { validationResult } = require('express-validator');
 const bcryptjs = require('bcryptjs');
-const User = require('../models/User');
-const usersFilePath = path.join(__dirname, '../data/usersDataBase.json');
-var users = JSON.parse(fs.readFileSync(usersFilePath, 'utf-8'));
+// const User = require('../models/User');
+// const usersFilePath = path.join(__dirname, '../data/usersDataBase.json');
+// var users = JSON.parse(fs.readFileSync(usersFilePath, 'utf-8'));
+const db = require('../database/models');
+const UserDB = db.UserDB
 
-
-//Esto es otra forma de declarar los Modelos en nuestro controlador
-//const Product = db.Product; 
-//const Category = db.category;
-//const TipoPago = db.TipoPago;
-//Otra forma
-//const {Product,Category,TipoPago} = require('../database/models');
 
 const usersController = {
+
     register: (req, res) => {
         res.render ('register'); //  como parametros va el nombre del archivo dentro views
        },
+       
     registerProcess: (req, res) => {
         const resultValidation = validationResult(req);
         if (resultValidation.errors.length > 0) {
@@ -28,40 +25,33 @@ const usersController = {
             oldData: req.body
           });
         }
-         
-        let userInDB = User.findByField("email", req.body.email);
 
-        if (userInDB) {
-          return res.render('register', {
-            errors: {
-              email: {
-                msg: 'Este email ya está registrado'
-              }
-            },
-            oldData: req.body
-          });
-        }
-        
-        let userToCreate = {
-          nombre: req.body.nombre,
-          apellido: req.body.apellido,
-          tel: req.body.tel,
-          email: req.body.email,
-          password: bcryptjs.hashSync(req.body.password, 10),
-          imagen: req.file.filename,
-          categoria: 0
-        }
-        let userCreated = User.create(userToCreate);
-        
-        return res.redirect('/users/login');
-      },
+          let userToCreate = {
+            nombre: req.body.nombre,
+            apellido: req.body.apellido,
+            tel: req.body.tel,
+            email: req.body.email,
+            password: bcryptjs.hashSync(req.body.password, 10),
+            imagen: req.file.filename,
+            categoria: 0
+          };
+          
+          UserDB
+          .create(userToCreate)
+          .then((storedUser) => {
+              return  res.redirect('/login');
+          })
+          .catch(errors => console.log(errors));
+        },        
+      
     
     login: (req, res) => {
         res.render ('login'); // como parametros va el nombre del archivo dentro views
       },
 
     loginProcess: (req, res) => {
-        let userToLogin = User.findByField('email', req.body.email);
+        
+      let userToLogin = User.findByField('email', req.body.email);
         
         if(userToLogin) {
           let isOkThePassword = bcryptjs.compareSync(req.body.password, userToLogin.password);
@@ -93,13 +83,13 @@ const usersController = {
         });
       },
 
-      edit: function(req,res) {
+    edit: function(req,res) {
         let id = req.params.id;
         let user = users.find(user => user.id == id)
         res.render("userEdit", {user});
       },
 
-      editProcess: (req, res) => {
+    editProcess: (req, res) => {
         let id = req.params.id;
 		    let userToEdit = users.find(user => user.id == id)
 		    
@@ -122,19 +112,19 @@ const usersController = {
 		  res.redirect('/');
       },
     
-      delete: (req,res) => {
+    delete: (req,res) => {
         let id = req.params.id;
         let finalUsers = users.filter(user => user.id != id);
         fs.writeFileSync(usersFilePath, JSON.stringify(finalUsers, null, ' '));
         res.redirect('/users/logout');
       },
 
-      logout: (req,res) => {
+    logout: (req,res) => {
       req.session.destroy();
       return res.redirect('/');
     },
 
-      profile: (req, res) => {
+    profile: (req, res) => {
       return res.render('profile', {user: req.session.userLogged})
     }
 }
