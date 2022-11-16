@@ -8,8 +8,7 @@ const bcryptjs = require('bcryptjs');
 // const usersFilePath = path.join(__dirname, '../data/usersDataBase.json');
 // var users = JSON.parse(fs.readFileSync(usersFilePath, 'utf-8'));
 const db = require('../database/models');
-const UserDB = db.UserDB
-
+const UserDB = db.UserDB;
 
 const usersController = {
 
@@ -32,14 +31,14 @@ const usersController = {
             tel: req.body.tel,
             email: req.body.email,
             password: bcryptjs.hashSync(req.body.password, 10),
-            imagen: req.file.filename,
-            categoria: 0
+            image: req.file ? req.file.filename : "",
+            role_id: null
           };
           
           UserDB
           .create(userToCreate)
           .then((storedUser) => {
-              return  res.redirect('/login');
+              return  res.redirect('/users/login');
           })
           .catch(errors => console.log(errors));
         },        
@@ -51,7 +50,7 @@ const usersController = {
 
     loginProcess: (req, res) => {
         
-      let userToLogin = User.findByField('email', req.body.email);
+      let userToLogin = UserDB.findByField('email', req.body.email);
         
         if(userToLogin) {
           let isOkThePassword = bcryptjs.compareSync(req.body.password, userToLogin.password);

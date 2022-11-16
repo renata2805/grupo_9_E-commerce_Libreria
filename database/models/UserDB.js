@@ -5,7 +5,7 @@
 	    let alias = 'UserDB'; 
 	    let cols = {
 	        id: {
-	            type: dataTypes.INT(10).UNSIGNED,
+	            type: dataTypes.INTEGER(10).UNSIGNED,
 	            primaryKey: true,
 	            allowNull: false,
 	            autoIncrement: true
@@ -19,7 +19,7 @@
                 allowNull: false
             },
 	        tel: {
-	            type: dataTypes.INT(20),
+	            type: dataTypes.INTEGER(20),
 	            allowNull: false
 	        },
 	        email: {
@@ -30,19 +30,19 @@
 	            type: dataTypes.STRING(50),
 	            allowNull: false
 	        },
-	        role_id: dataTypes.INT,
+			image: {
+				type: dataTypes.STRING(255),
+				allowNull: false 
+			},
+	        role_id: dataTypes.INTEGER,
 	    };
-	    // let config = {
-	    //     tableName: "users",
-	    //     timestamps: false,
-	    //     underscore:true,
-	        // createdAt: 'created_at',
-	        // updatedAt: 'updated_at',
-	        // deletedAt: false
-	    // }
-	    const UserDB = sequelize.define(alias,cols);
+	    let config = {
+	        tableName: "users",
+	        timestamps: false,
+	    }
+	    const UserDB = sequelize.define(alias,cols,config);
 	//     UserDB.associate = function (models) {
-	//         UserDB.belongsTo(models.Rol, { 
+	//         UserDB.belongsTo(models.RolDB, { 
 	//             as: "roles",
 	//             foreignKey: "role_id"
 	//         })

@@ -2,9 +2,9 @@ CREATE DATABASE IF NOT EXISTS `ebookdb`;
 USE `ebookdb`;
 
 CREATE TABLE `users` (
-   `id` INT NOT NULL,
-   `nombre` VARCHAR(45) NOT NULL,
-   `apellido` VARCHAR(45) NOT NULL,
+   `id` INT NOT NULL AUTO_INCREMENT, 
+   `nombre` VARCHAR(100) NOT NULL,
+   `apellido` VARCHAR(100) NOT NULL,
    `tel` INT NOT NULL,
    `email` VARCHAR(255) NOT NULL,
    `password` VARCHAR(255) NOT NULL,
@@ -13,16 +13,16 @@ CREATE TABLE `users` (
 );
 
 CREATE TABLE `products` (
-   `id` INT NOT NULL,
+   `id` INT NOT NULL AUTO_INCREMENT,
    `title` VARCHAR(255) NOT NULL,
-   `author` VARCHAR(40) NOT NULL,
+   `author` VARCHAR(100) NOT NULL,
    `editorial` VARCHAR(120) NOT NULL,
    `origin` VARCHAR(40) NOT NULL,
    `pages` INT NOT NULL,
    `public_date` DATE NOT NULL,
-   `description` VARCHAR(1000) NOT NULL,
+   `description` TEXT NOT NULL,
    `price` DECIMAL NOT NULL,
-   `calification` TINYINT NOT NULL,
+   `calification` SMALLINT NOT NULL,
    `about_author` VARCHAR(255) NOT NULL,
    `category_id` INT,
    `status_id` INT,
@@ -31,19 +31,19 @@ CREATE TABLE `products` (
 );
 
 CREATE TABLE `categories` (
-   `id` INT,
+   `id` INT NOT NULL AUTO_INCREMENT,
    `category` VARCHAR(255) NOT NULL,
    PRIMARY KEY (`id`)
 );
 
 CREATE TABLE `status` (
-   `id` INT,
+   `id` INT NOT NULL AUTO_INCREMENT,
    `status` VARCHAR(255),
    PRIMARY KEY (`id`)
 );
 
 CREATE TABLE `roles` (
-   `id` INT,
+   `id` INT NOT NULL AUTO_INCREMENT,
    `role` VARCHAR(50) NOT NULL,
    PRIMARY KEY (`id`)
 );
