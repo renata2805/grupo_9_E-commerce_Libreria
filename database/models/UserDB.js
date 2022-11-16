@@ -1,6 +1,5 @@
 // const { DATEONLY } = require("sequelize");
 	
-
 	module.exports = (sequelize, dataTypes) => {
 	    let alias = 'UserDB'; 
 	    let cols = {
